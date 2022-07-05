@@ -38,6 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 // $routes->get('pages', 'Pages::index');
 $routes->get('(:any)', 'Home::view/$1');
+hello 
 /*
  * --------------------------------------------------------------------
  * Additional Routing
