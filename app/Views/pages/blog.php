@@ -39,7 +39,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="index"><img src="img/logo.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -49,36 +49,36 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="category.html">Shop Category</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-product.html">Product Details</a></li>
-									<li class="nav-item"><a class="nav-link" href="checkout.html">Product Checkout</a></li>
-									<li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
-									<li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li>
+									<li class="nav-item"><a class="nav-link" href="category">Shop Category</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-product">Product Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="checkout">Product Checkout</a></li>
+									<li class="nav-item"><a class="nav-link" href="cart">Shopping Cart</a></li>
+									<li class="nav-item"><a class="nav-link" href="confirmation">Confirmation</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown active">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+									<li class="nav-item active"><a class="nav-link" href="blog">Blog</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-blog">Blog Details</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-									<li class="nav-item"><a class="nav-link" href="tracking.html">Tracking</a></li>
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+									<li class="nav-item"><a class="nav-link" href="login">Login</a></li>
+									<li class="nav-item"><a class="nav-link" href="tracking">Tracking</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements">Elements</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
@@ -109,8 +109,8 @@
                 <div class="col-first">
                     <h1>Blog Page</h1>
                     <nav class="d-flex align-items-center">
-                        <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-                        <a href="category.html">Blog</a>
+                        <a href="index">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="category">Blog</a>
                     </nav>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                         <img src="img/blog/cat-post/cat-post-3.jpg" alt="post">
                         <div class="categories_details">
                             <div class="categories_text">
-                                <a href="blog-details.html">
+                                <a href="blog-details">
                                     <h5>Social Life</h5>
                                 </a>
                                 <div class="border_line"></div>
@@ -141,7 +141,7 @@
                         <img src="img/blog/cat-post/cat-post-2.jpg" alt="post">
                         <div class="categories_details">
                             <div class="categories_text">
-                                <a href="blog-details.html">
+                                <a href="blog-details">
                                     <h5>Politics</h5>
                                 </a>
                                 <div class="border_line"></div>
@@ -155,7 +155,7 @@
                         <img src="img/blog/cat-post/cat-post-1.jpg" alt="post">
                         <div class="categories_details">
                             <div class="categories_text">
-                                <a href="blog-details.html">
+                                <a href="blog-details">
                                     <h5>Food</h5>
                                 </a>
                                 <div class="border_line"></div>
@@ -196,13 +196,13 @@
                                 <div class="blog_post">
                                     <img src="img/blog/main-blog/m-blog-1.jpg" alt="">
                                     <div class="blog_details">
-                                        <a href="single-blog.html">
+                                        <a href="single-blog">
                                             <h2>Astronomy Binoculars A Great Alternative</h2>
                                         </a>
                                         <p>MCSE boot camps have its supporters and its detractors. Some people do not
                                             understand why you should have to spend money on boot camp when you can get
                                             the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="white_bg_btn">View More</a>
+                                        <a href="single-blog" class="white_bg_btn">View More</a>
                                     </div>
                                 </div>
                             </div>
@@ -228,13 +228,13 @@
                                 <div class="blog_post">
                                     <img src="img/blog/main-blog/m-blog-2.jpg" alt="">
                                     <div class="blog_details">
-                                        <a href="single-blog.html">
+                                        <a href="single-blog">
                                             <h2>The Basics Of Buying A Telescope</h2>
                                         </a>
                                         <p>MCSE boot camps have its supporters and its detractors. Some people do not
                                             understand why you should have to spend money on boot camp when you can get
                                             the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="white_bg_btn">View More</a>
+                                        <a href="single-blog" class="white_bg_btn">View More</a>
                                     </div>
                                 </div>
                             </div>
@@ -260,13 +260,13 @@
                                 <div class="blog_post">
                                     <img src="img/blog/main-blog/m-blog-3.jpg" alt="">
                                     <div class="blog_details">
-                                        <a href="single-blog.html">
+                                        <a href="single-blog">
                                             <h2>The Glossary Of Telescopes</h2>
                                         </a>
                                         <p>MCSE boot camps have its supporters and its detractors. Some people do not
                                             understand why you should have to spend money on boot camp when you can get
                                             the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="white_bg_btn">View More</a>
+                                        <a href="single-blog" class="white_bg_btn">View More</a>
                                     </div>
                                 </div>
                             </div>
@@ -292,13 +292,13 @@
                                 <div class="blog_post">
                                     <img src="img/blog/main-blog/m-blog-4.jpg" alt="">
                                     <div class="blog_details">
-                                        <a href="single-blog.html">
+                                        <a href="single-blog">
                                             <h2>The Night Sky</h2>
                                         </a>
                                         <p>MCSE boot camps have its supporters and its detractors. Some people do not
                                             understand why you should have to spend money on boot camp when you can get
                                             the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="white_bg_btn">View More</a>
+                                        <a href="single-blog" class="white_bg_btn">View More</a>
                                     </div>
                                 </div>
                             </div>
@@ -324,13 +324,13 @@
                                 <div class="blog_post">
                                     <img src="img/blog/main-blog/m-blog-5.jpg" alt="">
                                     <div class="blog_details">
-                                        <a href="single-blog.html">
+                                        <a href="single-blog">
                                             <h2>Telescopes 101</h2>
                                         </a>
                                         <p>MCSE boot camps have its supporters and its detractors. Some people do not
                                             understand why you should have to spend money on boot camp when you can get
                                             the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="white_bg_btn">View More</a>
+                                        <a href="single-blog" class="white_bg_btn">View More</a>
                                     </div>
                                 </div>
                             </div>
@@ -391,7 +391,7 @@
                             <div class="media post_item">
                                 <img src="img/blog/popular-post/post1.jpg" alt="post">
                                 <div class="media-body">
-                                    <a href="blog-details.html">
+                                    <a href="blog-details">
                                         <h3>Space The Final Frontier</h3>
                                     </a>
                                     <p>02 Hours ago</p>
@@ -400,7 +400,7 @@
                             <div class="media post_item">
                                 <img src="img/blog/popular-post/post2.jpg" alt="post">
                                 <div class="media-body">
-                                    <a href="blog-details.html">
+                                    <a href="blog-details">
                                         <h3>The Amazing Hubble</h3>
                                     </a>
                                     <p>02 Hours ago</p>
@@ -409,7 +409,7 @@
                             <div class="media post_item">
                                 <img src="img/blog/popular-post/post3.jpg" alt="post">
                                 <div class="media-body">
-                                    <a href="blog-details.html">
+                                    <a href="blog-details">
                                         <h3>Astronomy Or Astrology</h3>
                                     </a>
                                     <p>03 Hours ago</p>
@@ -418,7 +418,7 @@
                             <div class="media post_item">
                                 <img src="img/blog/popular-post/post4.jpg" alt="post">
                                 <div class="media-body">
-                                    <a href="blog-details.html">
+                                    <a href="blog-details">
                                         <h3>Asteroids telescope</h3>
                                     </a>
                                     <p>01 Hours ago</p>

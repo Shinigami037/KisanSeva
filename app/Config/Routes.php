@@ -18,7 +18,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
-$routes->setDefaultMethod('index');
+$routes->setDefaultMethod('');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
@@ -36,10 +36,19 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-// $routes->get('pages', 'Pages::index');
-// $routes->get('/', 'Home::index');
+// $routes->get('pages', 'Pages::');
+$routes->get('/index', 'Home::index');
 $routes->get('/category', 'Home::category');
-
+$routes->get('/single-blog', 'Home::single_blog');
+$routes->get('/single-product', 'Home::single_product');
+$routes->get('/login', 'Home::login');
+$routes->get('/elements', 'Home::elements');
+$routes->get('/checkout', 'Home::checkout');
+$routes->get('/tracking', 'Home::tracking');
+$routes->get('/contact', 'Home::contact');
+$routes->get('/blog', 'Home::blog');
+$routes->get('/cart', 'Home::cart');
+$routes->get('/confirmation', 'Home::confirmation');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
