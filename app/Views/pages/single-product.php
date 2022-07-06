@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Karma Shop</title>
+	<title>Fit Health</title>
 	<!--
 			CSS
 			============================================= -->
@@ -52,9 +52,9 @@
 							<li class="nav-item"><a class="nav-link" href="index">Home</a></li>
 							<li class="nav-item submenu dropdown active">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Shop</a>
+								 aria-expanded="fFit Health</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="category">Shop Category</a></li>
+									<li class="nav-item"><a class="nav-link" href="cateFit Health Category</a></li>
 									<li class="nav-item active"><a class="nav-link" href="single-product">Product Details</a></li>
 									<li class="nav-item"><a class="nav-link" href="checkout">Product Checkout</a></li>
 									<li class="nav-item"><a class="nav-link" href="cart">Shopping Cart</a></li>
@@ -110,7 +110,7 @@
 					<h1>Product Details Page</h1>
 					<nav class="d-flex align-items-center">
 						<a href="index">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
+						<a hreFit Health<span class="lnr lnr-arrow-right"></span></a>
 						<a href="single-product">product-details</a>
 					</nav>
 				</div>
