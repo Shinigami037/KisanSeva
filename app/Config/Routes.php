@@ -49,6 +49,9 @@ $routes->get('/contact', 'Home::contact');
 $routes->get('/blog', 'Home::blog');
 $routes->get('/cart', 'Home::cart');
 $routes->get('/confirmation', 'Home::confirmation');
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

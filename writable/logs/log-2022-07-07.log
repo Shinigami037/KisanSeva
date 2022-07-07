@@ -1,0 +1,18 @@
+CRITICAL - 2022-07-07 04:44:59 --> Invalid file: pages/login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/login.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/login', [], true)
+ 3 APPPATH\Controllers\Home.php(23): view('pages/login')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-07 04:56:50 --> Invalid file: pages/login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/login.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/login', [], true)
+ 3 APPPATH\Controllers\Home.php(23): view('pages/login')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
