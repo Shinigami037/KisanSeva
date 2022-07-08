@@ -10,58 +10,58 @@ class Home extends BaseController
         // return view('welcome_message');
         $userlist = new UserModel;
         $data = $userlist->findAll();
-        return view("pages/index",['name' => $data]);
+        return view("user/pages/index",['name' => $data]);
     }
     public function category()
     {
         // return view('welcome_message');
-        return view('pages/' . "category");
+        return view('user/pages/' . "category");
     }
     public function login()
     {
         // return view('welcome_message');
-        return view('pages/' . "login");
+        return view('user/pages/' . "login");
     }
     public function single_blog()
     {
         // return view('welcome_message');
-        return view('pages/' . "single_blog");
+        return view('user/pages/' . "single_blog");
     }
     public function single_product()
     {
         // return view('welcome_message');
-        return view('pages/' . "single_product");
+        return view('user/pages/' . "single_product");
     }public function elements()
     {
         // return view('welcome_message');
-        return view('pages/' . "elements");
+        return view('user/pages/' . "elements");
     }public function confirmation()
     {
         // return view('welcome_message');
-        return view('pages/' . "confirmation");
+        return view('user/pages/' . "confirmation");
     }
     public function contact()
     {
         // return view('welcome_message');
-        return view('pages/' . "contact");
+        return view('user/pages/' . "contact");
     }public function checkout()
     {
         // return view('welcome_message');
-        return view('pages/' . "checkout");
+        return view('user/pages/' . "checkout");
     }
     public function cart()
     {
         // return view('welcome_message');
-        return view('pages/' . "cart");
+        return view('user/pages/' . "cart");
     }
     public function blog()
     {
         // return view('welcome_message');
-        return view('pages/' . "blog");
+        return view('user/pages/' . "blog");
     }public function tracking()
     {
         // return view('welcome_message');
-        return view('pages/' . "tracking");
+        return view('user/pages/' . "tracking");
     }
   /* public function view($page = 'home')
     {
