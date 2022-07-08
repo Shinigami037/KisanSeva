@@ -94,3 +94,39 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-08 02:45:31 --> Invalid file: user/pages/single_product.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/pages/single_product.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/pages/single_product', [], true)
+ 3 APPPATH\Controllers\Home.php(33): view('user/pages/single_product')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->single_product()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-08 02:51:46 --> Invalid file: user/pages/single_blog.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/pages/single_blog.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/pages/single_blog', [], true)
+ 3 APPPATH\Controllers\Home.php(28): view('user/pages/single_blog')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->single_blog()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-08 03:00:07 --> Invalid file: user/pages/single_product.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/pages/single_product.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/pages/single_product', [], true)
+ 3 APPPATH\Controllers\Home.php(33): view('user/pages/single_product')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->single_product()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-08 04:02:04 --> Invalid file: user/pages/single_product.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/pages/single_product.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/pages/single_product', [], true)
+ 3 APPPATH\Controllers\Home.php(33): view('user/pages/single_product')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->single_product()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

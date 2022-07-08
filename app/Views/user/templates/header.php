@@ -4,7 +4,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index"><img src="img/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="index"><img src="<?php echo base_url('img/logo.png'); ?>" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -20,29 +20,28 @@
 								 aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="category">Shop Category</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-product">Product Details</a></li>
-									<li class="nav-item"><a class="nav-link" href="checkout">Product Checkout</a></li>
+									<!-- <li class="nav-item"><a class="nav-link" href="single-product">Product Details</a></li> -->
+									<!-- <li class="nav-item"><a class="nav-link" href="checkout">Product Checkout</a></li> -->
 									<li class="nav-item"><a class="nav-link" href="cart">Shopping Cart</a></li>
-									<li class="nav-item"><a class="nav-link" href="confirmation">Confirmation</a></li>
+									<!-- <li class="nav-item"><a class="nav-link" href="confirmation">Confirmation</a></li> -->
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
+							<!-- <li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
 									<li class="nav-item"><a class="nav-link" href="single-blog">Blog Details</a></li>
 								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
+							</li> -->
+                            <li class="nav-item"><a class="nav-link" href="login">Login</a></li>
+							<!-- <li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="login">Login</a></li>
 									<li class="nav-item"><a class="nav-link" href="tracking">Tracking</a></li>
 									<li class="nav-item"><a class="nav-link" href="elements">Elements</a></li>
 								</ul>
-							</li>
+							</li> -->
 							<li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">

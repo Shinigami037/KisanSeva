@@ -41,7 +41,7 @@ $routes->get('/index', 'Home::index');
 $routes->get('/category', 'Home::category');
 $routes->get('/single-blog', 'Home::single_blog');
 $routes->get('/single-product', 'Home::single_product');
-$routes->get('/login', 'Home::login');
+$routes->get('/login', 'Login::login');
 $routes->get('/elements', 'Home::elements');
 $routes->get('/checkout', 'Home::checkout');
 $routes->get('/tracking', 'Home::tracking');
