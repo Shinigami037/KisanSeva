@@ -35,20 +35,37 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+
+
+// routes for user start here
+
+// routes get method start here
 $routes->get('/', 'Home::index');
-// $routes->get('pages', 'Pages::');
 $routes->get('/index', 'Home::index');
-$routes->get('/category', 'Home::category');
-$routes->get('/single-blog', 'Home::single_blog');
-$routes->get('/single-product', 'Home::single_product');
+$routes->get('/category', 'Category::category');
+$routes->get('/single-product', 'Product::single_product');
 $routes->get('/login', 'Login::login');
-$routes->get('/elements', 'Home::elements');
-$routes->get('/checkout', 'Home::checkout');
-$routes->get('/tracking', 'Home::tracking');
-$routes->get('/contact', 'Home::contact');
-$routes->get('/blog', 'Home::blog');
-$routes->get('/cart', 'Home::cart');
-$routes->get('/confirmation', 'Home::confirmation');
+$routes->get('/checkout', 'Order::checkout');
+$routes->get('/tracking', 'Order::tracking');
+$routes->get('/contact', 'Contact::contact');
+$routes->get('/cart', 'Product::cart');
+$routes->get('/confirmation', 'Order::confirmation');
+// routes get method ends here
+// routes post method start here
+$routes->post('/contact-process','Login::userLogin');
+$routes->post('/login', 'Login::login');
+// routes post method ends here
+// routes for user ends here
+
+
+
+// routes for admin start here
+
+$routes->get('/admin', 'Admin::index');
+
+
+// routes for admin end here
 
 
 
