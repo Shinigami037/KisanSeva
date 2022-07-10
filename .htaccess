@@ -32,16 +32,11 @@ Options All -Indexes
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	# RewriteRule ^([\s\S]*)$ index.php/$1 [L,NC,QSA]
-    
-    # RewriteEngine On
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
+
     RewriteRule ^(.*)$ index.php/$1 [L]
     RewriteRule  ^$ public/    [L]
     RewriteRule  (.*) public/$1 [L]
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteRule ^(.*)$ public/ [L]
+
 
 	# Ensure Authorization header is passed along
 	RewriteCond %{HTTP:Authorization} .
