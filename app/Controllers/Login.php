@@ -7,6 +7,10 @@ use Config\App;
 
 class Login extends BaseController
 {
+    public function __construct()
+    {
+        helper(['url','form']);
+    }
     public function login()
     {
         return view('user/login/' . "login");
@@ -17,21 +21,22 @@ class Login extends BaseController
     }
     public function userLogin()
     {
+        // var_dump(md5($this->request->getVar("password")));
         $validation = $this->validate([
             'username' => 'required',
-            'password' => 'required|min_lenght[8]|max_lenght[16]',
+            'password' => 'required|min_length[8]|max_length[16]',
         ]);
-        // if(!$validation){
-        //     return view('user/login/registration',['validation'=>$this->validator]);
-        // }
-        // else{
-        //     // echo 'VValidated';
-        // }
-        $username = $this->request->getVar("username");
-        $password = $this->request->getVar("password");
+        if(!$validation){
+            return view('user/login/login',['validation'=>$this->validator]);
+        }
+        else{
+            echo 'Validated';
+        }
+        // $username = $this->request->getVar("username");
+        // $password = $this->request->getVar("password");
         // echo "Hello $newvar";
         // var_dump(md5($this->request->getVar("password")));
-        return view('user/login/' . "login");
+        // return view('user/login/' . "login");
         // var_dump($this->request->getPost());
     }
     public function userSignup()
