@@ -64,6 +64,8 @@
                                     </div>
 
                                     <form action="registration" method="post" class="row g-3 needs-validation" novalidate>
+                                        <?= csrf_field() ?>
+                                        
                                         <div class="col-12">
                                             <label for="yourName" class="form-label">Your Name</label>
                                             <input type="text" name="name" class="form-control" id="yourName" required>

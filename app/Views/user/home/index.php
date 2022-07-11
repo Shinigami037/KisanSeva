@@ -2,9 +2,6 @@
 
 <?= $this->section('content') ?>
 
-<!-- <?php echo "<pre>";
-        print_r($name);
-        echo "</pre>" ?> -->
 
 <section class="banner-area">
     <div class="container">

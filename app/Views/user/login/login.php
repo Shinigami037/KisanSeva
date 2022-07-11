@@ -73,12 +73,12 @@
 						<form class="row login_form" action="<?= base_url('login'); ?>" method="post" id="contactForm" novalidate>
                             <?= csrf_field() ?>
                             <div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="uname" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
-                                <span class="text-danger"><?= isset($validation) ? display_error($validation,'username') : '' ?></span>
+								<input type="text" class="form-control" id="uname" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" >
+                                <!-- <span class="text-danger"><?= isset($validation) ? display_error($validation,'username') : '' ?></span> -->
                             </div>
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="upassword" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required>
-                                <span class="text-danger"><?= isset($validation) ? display_error($validation,'password') : '' ?></span>
+								<input type="text" class="form-control" id="upassword" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required >
+                                <!-- <span class="text-danger"><?= isset($validation) ? display_error($validation,'password') : '' ?></span> -->
                             </div>
 							<div class="col-md-12 form-group">
 								<div class="creat_account">

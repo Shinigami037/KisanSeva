@@ -7,10 +7,10 @@ use Config\App;
 
 class Login extends BaseController
 {
-    public function __construct()
-    {
-        helper(['url','form']);
-    }
+    // public function __construct()
+    // {
+    //     helper(['url','form']);
+    // }
     public function login()
     {
         return view('user/login/' . "login");
@@ -26,17 +26,17 @@ class Login extends BaseController
             'username' => 'required',
             'password' => 'required|min_length[8]|max_length[16]',
         ]);
-        if(!$validation){
-            return view('user/login/login',['validation'=>$this->validator]);
-        }
-        else{
-            echo 'Validated';
-        }
+        // if(!$validation){
+        //     return view('user/login/login',['validation'=>$this->validator]);
+        // }
+        // else{
+        //     echo 'Validated';
+        // }
         // $username = $this->request->getVar("username");
         // $password = $this->request->getVar("password");
         // echo "Hello $newvar";
         // var_dump(md5($this->request->getVar("password")));
-        // return view('user/login/' . "login");
+        return view('user/login/' . "login");
         // var_dump($this->request->getPost());
     }
     public function userSignup()
@@ -56,9 +56,10 @@ class Login extends BaseController
         $userModel = new \App\Models\UserModel();
         $query = $userModel->insert($values);
         if(!$query){
-            return redirect()->back()->with('fail','Something went wrong');
+            return redirect()->back()->with('fail','Something wrong');
         }else{
-            return redirect()->to('registration')->with('Fail','Something went wrong');
+            // return redirect()->to('/registration')->with('success','Something went wrong');
+            return view('user/home/index');
         }
         // return view('user/login/' . "registration");
     }
