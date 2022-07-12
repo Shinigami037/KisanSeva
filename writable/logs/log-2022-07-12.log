@@ -58,3 +58,75 @@ in APPPATH\Views\user\login\login.php on line 73.
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 06:05:37 --> Invalid file: pages/register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/register.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/register', [], true)
+ 3 APPPATH\Controllers\Login.php(30): view('pages/register', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 06:05:46 --> Invalid file: pages/register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/register.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/register', [], true)
+ 3 APPPATH\Controllers\Login.php(30): view('pages/register', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 13:33:00 --> Undefined variable $validation
+in APPPATH\Views\user\login\login.php on line 74.
+ 1 APPPATH\Views\user\login\login.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\user\\login\\login.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\login\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/login/login', [], true)
+ 5 APPPATH\Controllers\Login.php(16): view('user/login/login')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 13:46:41 --> Undefined variable $validation
+in APPPATH\Views\user\login\login.php on line 74.
+ 1 APPPATH\Views\user\login\login.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\user\\login\\login.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\login\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/login/login', [], true)
+ 5 APPPATH\Controllers\Login.php(16): view('user/login/login')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 13:46:51 --> syntax error, unexpected token "{", expecting "," or ";"
+in APPPATH\Views\user\login\login.php on line 74.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/login/login', [], true)
+ 3 APPPATH\Controllers\Login.php(16): view('user/login/login')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-12 15:25:47 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-07-12 15:25:47 --> Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM user WHERE username=\'Shinigami\' AND password=\'rootroot\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM user WHERE username=\'Shinigami\' AND password=\'rootroot\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM user WHERE username=\'Shinigami\' AND password=\'rootroot\' ')
+ 4 APPPATH\Controllers\Login.php(41): CodeIgniter\Database\BaseConnection->query('SELECT * FROM user WHERE username=? AND password=? ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 15:26:31 --> session_start(): Ignoring session_start() because a session is already active
+in APPPATH\Views\user\home\index.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'APPPATH\\Views\\user\\home\\index.php', 8)
+ 2 APPPATH\Views\user\home\index.php(8): session_start()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\home\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/home/index', [], true)
+ 6 APPPATH\Controllers\Login.php(66): view('user/home/index')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

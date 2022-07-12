@@ -4,6 +4,13 @@
 
 
 <section class="banner-area">
+    <?php
+    session_start();
+    if (!isset($_SESSION['login']) || $_SESSION['login'] != true ) {
+        echo "<h1> Your are not login </h1>";
+        exit;
+    }
+    ?>
     <div class="container">
         <div class="row fullscreen align-items-center justify-content-start">
             <div class="col-lg-12">
