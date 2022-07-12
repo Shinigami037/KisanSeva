@@ -24,19 +24,19 @@ class Login extends BaseController
         // var_dump(md5($this->request->getVar("password")));
         $validation = $this->validate([
             'username' => 'required',
-            'password' => 'required|min_length[8]|max_length[16]',
+            'password' => 'required|min_length[8]',
         ]);
-        // if(!$validation){
-        //     return view('user/login/login',['validation'=>$this->validator]);
-        // }
-        // else{
-        //     echo 'Validated';
-        // }
+        if(!$validation){
+            return view('user/login/login',['validation'=>$this->validator]);
+        }
+        else{
+            echo 'Validated';
+        }
         // $username = $this->request->getVar("username");
         // $password = $this->request->getVar("password");
         // echo "Hello $newvar";
         // var_dump(md5($this->request->getVar("password")));
-        return view('user/login/' . "login");
+        // return view('user/login/' . "login");
         // var_dump($this->request->getPost());
     }
     public function userSignup()
@@ -56,10 +56,12 @@ class Login extends BaseController
         $userModel = new \App\Models\UserModel();
         $query = $userModel->insert($values);
         if(!$query){
-            return redirect()->back()->with('fail','Something wrong');
+            // return redirect()->back()->with('fail','Something wrong');
+            // return view('user/login/registration'); 
+            return redirect()->back();
         }else{
-            return redirect()->to('registration')->with('success','Something went wrong');
-            // return view('user/home/index'); 
+            return redirect('index');
+            // return view('user/login/login'); 
         }
         // return view('user/login/' . "registration");
     }

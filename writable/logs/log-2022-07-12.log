@@ -1,0 +1,43 @@
+CRITICAL - 2022-07-12 03:17:17 --> Call to undefined function display_error()
+in APPPATH\Views\user\login\login.php on line 77.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/login/login', [], true)
+ 4 APPPATH\Controllers\Login.php(30): view('user/login/login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 03:20:46 --> Undefined variable $validation
+in APPPATH\Views\user\login\login.php on line 75.
+ 1 APPPATH\Views\user\login\login.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\user\\login\\login.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\login\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/login/login', [], true)
+ 5 APPPATH\Controllers\Login.php(16): view('user/login/login')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 03:32:20 --> Undefined variable $validation
+in APPPATH\Views\user\login\login.php on line 75.
+ 1 APPPATH\Views\user\login\login.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\user\\login\\login.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\login\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/login/login', [], true)
+ 5 APPPATH\Controllers\Login.php(16): view('user/login/login')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 04:00:31 --> Undefined variable $validation
+in APPPATH\Views\user\login\login.php on line 75.
+ 1 APPPATH\Views\user\login\login.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\user\\login\\login.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\login\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/login/login', [], true)
+ 5 APPPATH\Controllers\Login.php(16): view('user/login/login')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
