@@ -58,8 +58,8 @@ class Login extends BaseController
         if(!$query){
             return redirect()->back()->with('fail','Something wrong');
         }else{
-            // return redirect()->to('/registration')->with('success','Something went wrong');
-            return view('user/home/index');
+            return redirect()->to('registration')->with('success','Something went wrong');
+            // return view('user/home/index'); 
         }
         // return view('user/login/' . "registration");
     }
