@@ -21,6 +21,9 @@ class Login extends BaseController
         helper(['form']);
         $username = $this->request->getVar("username");
         $password = $this->request->getVar("password");
+        // if ($username == 'Shinigami') {
+        //     return redirect('admin');
+        // }
         $data = [];
         if ($this->request->getMethod() == 'post') {
             $rules = [
