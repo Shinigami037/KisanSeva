@@ -2,21 +2,24 @@
 
 <?= $this->section('content') ?>
 
-<?php
-class check{
-function check_login()
-{
-    session_start();
-    if (!isset($_SESSION['login']) || $_SESSION['login'] != true) {
-        echo "<h1>You are not logged in.</h1>";
-        exit;
-    }
-}
-}
-$obj= new check;
-$obj->check_login();
-?>
+
 <section class="banner-area">
+    <?php
+    class check
+    {
+        function check_login()
+        {
+            session_start();
+            if (!isset($_SESSION['username']) || $_SESSION['login'] != true) {
+                echo "<h1>You are not logged in.</h1>";
+                echo $_SESSION['username'];
+                exit;
+            }
+        }
+    }
+    $obj = new check;
+    $obj->check_login();
+    ?>
     <?php echo $_SESSION['username']; ?>
     <div class="container">
         <div class="row fullscreen align-items-center justify-content-start">

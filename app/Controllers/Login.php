@@ -40,9 +40,10 @@ class Login extends BaseController
                     $userModel = new \App\Models\UserModel();
                     $currentPass = md5($password);
                     $users = $userModel->where('user_name', $username)->first();
-                    if(!isset($users)){
-                        die('Enter Valid Username');
-                    }else{
+                    if (!isset($users)) {
+                        session()->setFlashdata('fail', 'Incorrect Username');
+                        return redirect('login')->withInput();
+                    } else {
                         $oldPass = $users['user_password'];
                         if ($oldPass == $currentPass) {
                             session_start();
@@ -53,11 +54,13 @@ class Login extends BaseController
                             // header("location: index.php");
                         } else {
                             // die('bhad me jao');
-                            return redirect('login');
+                            session()->setFlashdata('fail', 'Incorrect Password');
+                            return redirect('login')->withInput();
+                            // return redirect('login');
                         }
                     }
                     // print_r($users);
-                    
+
                     // $query   = $db->query('SELECT user_name, user_password FROM user');
                     // $result = $query->getResult();
                     // $oldPass = $result->user_password;
@@ -70,7 +73,7 @@ class Login extends BaseController
                     //     break;
                     // }
                     // die();
-                    
+
                 }
                 // die('form submit');
             }

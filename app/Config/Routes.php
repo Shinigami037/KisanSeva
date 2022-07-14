@@ -65,8 +65,12 @@ $routes->post('/registration', 'Login::userSignup');
 // routes for admin start here
 
 $routes->get('/admin', 'Admin::index');
+$routes->get('/addcategory', 'AdminProduct::category');
 
-
+// routes post method start here
+$routes->post('/addsub', 'AdminProduct::subCategory');
+$routes->post('/addmain', 'AdminProduct::mainCategory');
+// routes post method ends here
 // routes for admin end here
 
 

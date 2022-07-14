@@ -34,7 +34,7 @@
 
     <!-- Start Header Area -->
     <?php echo $this->include('user/templates/header'); ?>
-
+    
     <!-- End Header Area -->
 
     <!-- Start Banner Area -->
@@ -75,6 +75,9 @@
                             echo $validation->listErrors();
                         }
                         ?>
+                        <?php if (!empty(session()->getFlashdata('fail'))) : ?>
+                            <div class="alert alert-danger"><?= session()->getFlashdata('fail'); ?></div>
+                        <?php endif ?>
                         <form class="row login_form" action="login" method="post" id="contactForm" novalidate>
                             <?= csrf_field() ?>
                             <div class="col-md-12 form-group">
