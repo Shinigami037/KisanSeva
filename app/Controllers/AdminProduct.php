@@ -8,6 +8,10 @@ class AdminProduct extends BaseController
     {
         return view('admin/inventory/' . "category");
     }
+    public function product()
+    {
+        return view('admin/product/' . "product");
+    }
     public function mainCategory(){
         $name = $this->request->getVar("mainname");
         $category = new \App\Models\MainCategoryModel();

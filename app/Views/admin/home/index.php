@@ -3,7 +3,23 @@
 <?= $this->section('content') ?>
 
 <main id="main" class="main">
-
+    <?php
+    class check
+    {
+        function check_login()
+        {
+            session_start();
+            if (!isset($_SESSION['uname']) || $_SESSION['log'] != true) {
+                header('location: adminlogin');
+                // echo "<h1>You are not logged in.</h1>";
+                // echo $_SESSION['username'];
+                // exit;
+            }
+        }
+    }
+    $obj = new check;
+    $obj->check_login();
+    ?>
     <div class="pagetitle">
         <h1>Dashboard</h1>
         <nav>

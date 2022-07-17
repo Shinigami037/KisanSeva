@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1658083945;_ci_previous_url|s:37:"http://localhost/FitHealth/adminlogin";fail|s:18:"Incorrect Username";__ci_vars|a:2:{s:4:"fail";s:3:"old";s:13:"_ci_old_input";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:14:"csrf_test_name";s:32:"f9a1e5a65de7d184905fac6b41177b35";s:8:"username";s:7:"Shiniga";s:8:"password";s:6:"sdgdgs";}}
