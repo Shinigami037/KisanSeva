@@ -44,12 +44,12 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Add Categories</h1>
+            <h1>Add Product</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="admin">Home</a></li>
                     <li class="breadcrumb-item">Forms</li>
-                    <li class="breadcrumb-item active">Categories</li>
+                    <li class="breadcrumb-item active">Product Details</li>
                 </ol>
             </nav>
         </div>
@@ -61,33 +61,54 @@
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">New Categories</h5>
+                            <h5 class="card-title">Add Product</h5>
 
-                            <?php if (!empty(session()->getFlashdata('status'))) : ?>
+                            <?php if (session()->getFlashdata('status')) : ?>
                                 <?= session()->getFlashdata('status'); ?>
                             <?php endif ?>
-                            <!-- Start Add Main Category Form -->
-                            <form action="addmain" method="post" enctype="multipart/form-data">
+
+                            <!-- Start Add Product Details Form -->
+                            <form action="addproduct" method="post" enctype="multipart/form-data">
                                 <div class="row mb-3">
-                                    <label for="inputText" class="col-sm-2 col-form-label">Main Category</label>
+                                    <label for="inputText" class="col-sm-2 col-form-label">Product Name</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name='mainname'>
+                                        <input type="text" class="form-control" name='name'>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <label class="col-sm-2 col-form-label">Save Details</label>
+                                    <label for="inputText" class="col-sm-2 col-form-label">Product Main Category</label>
                                     <div class="col-sm-10">
-                                        <button type="submit" class="btn btn-primary">ADD</button>
+                                        <input type="text" class="form-control" name='maincat'>
                                     </div>
                                 </div>
-                            </form>
-                            <!-- End Add Main Category Form -->
-                            <!-- Start Add Sub Category Form -->
-                            <form action="addsub" method="post" enctype="multipart/form-data">
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Product Sub Category</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name='subname'>
+                                        <input type="text" class="form-control" name='subcat'>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputNumber" class="col-sm-2 col-form-label">Product Price</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" name='price'>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputNumber" class="col-sm-2 col-form-label">Product Image</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" name='image' type="file" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputNumber" class="col-sm-2 col-form-label">Product Quantity</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" name='quantity'>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Product Detail</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" name='detail' style="height: 100px"></textarea>
                                     </div>
                                 </div>
 
@@ -97,8 +118,10 @@
                                         <button type="submit" class="btn btn-primary">ADD</button>
                                     </div>
                                 </div>
+
                             </form>
-                            <!-- End Add Sub Category Form -->
+                            <!-- End Add Product Details Form -->
+
                         </div>
                     </div>
 

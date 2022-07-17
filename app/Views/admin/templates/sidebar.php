@@ -94,8 +94,13 @@
             </a>
             <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="addproduct">
+                    <a href="product">
                         <i class="bi bi-circle"></i><span>Add Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="addcategory">
+                        <i class="bi bi-circle"></i><span>Add Categories</span>
                     </a>
                 </li>
                 <!-- <li>

@@ -66,12 +66,13 @@ $routes->post('/registration', 'Login::userSignup');
 $routes->get('/adminlogin', 'Admin::login');
 $routes->get('/admin', 'Admin::index');
 $routes->get('/addcategory', 'AdminProduct::category');
-$routes->get('/addproduct', 'AdminProduct::product');
+$routes->get('/product', 'AdminProduct::product');
 $routes->get('/profile', 'Admin::profile');
 
 // routes post method start here
 $routes->post('/addsub', 'AdminProduct::subCategory');
 $routes->post('/addmain', 'AdminProduct::mainCategory');
+$routes->post('/addproduct', 'AdminProduct::addproduct');
 $routes->post('/adminlogin', 'Admin::start');
 // routes post method ends here
 // routes for admin end here

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\UserModel;
 
 class Admin extends BaseController
 {
@@ -21,7 +22,7 @@ class Admin extends BaseController
         $password = $this->request->getVar("password");
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $userModel = new \App\Models\UserModel();
+            $userModel = new UserModel();
             $currentPass = md5($password);
             $users = $userModel->where('user_name', $username)->first();
             if (!isset($users)) {

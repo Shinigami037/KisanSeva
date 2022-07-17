@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\UserModel;
 
 use Config\App;
 
@@ -37,7 +37,7 @@ class Login extends BaseController
             } else {
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     // $db = \Config\Database::connect();
-                    $userModel = new \App\Models\UserModel();
+                    $userModel = new UserModel();
                     $currentPass = md5($password);
                     $users = $userModel->where('user_name', $username)->first();
                     if (!isset($users)) {
@@ -92,7 +92,7 @@ class Login extends BaseController
             'user_email' => $email,
             'customer_name' => $name,
         ];
-        $userModel = new \App\Models\UserModel();
+        $userModel = new UserModel();
         $query = $userModel->insert($values);
         if (!$query) {
             // return redirect()->back()->with('fail','Something wrong');
