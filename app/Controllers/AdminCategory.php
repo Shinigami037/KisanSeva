@@ -13,7 +13,7 @@ class AdminCategory extends BaseController
     public function scategory()
     {
         $maincategory = new MainCategoryModel();
-        $data['name'] = $maincategory->findAll();
+        $data['category'] = $maincategory->findAll();
         return view('admin/inventory/subcategory',$data);
     }
     public function mainCategory()

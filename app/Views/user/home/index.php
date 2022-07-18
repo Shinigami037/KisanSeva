@@ -4,15 +4,7 @@
 
 
 <section class="banner-area">
-<?php
-    include 'check_session_user.php';
-    class check1 extends check
-    {
-        //....
-    }
-    $obj = new check1;
-    $obj->check_login();
-    ?>
+
     
     <div class="container">
         <div class="row fullscreen align-items-center justify-content-start">

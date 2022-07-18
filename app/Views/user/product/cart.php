@@ -31,13 +31,22 @@
 </head>
 
 <body>
-
+    <?php
+    include "app/Views/user/session/check_session_user.php";
+    class check1 extends check
+    {
+        //....
+    }
+    $obj = new check1;
+    $obj->check_login();
+    ?>
     <!-- Start Header Area -->
     <?php echo $this->include('user/templates/header'); ?>
     <!-- End Header Area -->
 
     <!-- Start Banner Area -->
     <section class="banner-area organic-breadcrumb">
+
         <div class="container">
             <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
                 <div class="col-first">

@@ -69,27 +69,17 @@
                             <!-- Start Add Main Category Form -->
 
                             <form action="addmain" method="post" enctype="multipart/form-data">
-                                <!-- <div class="row mb-3">
-                                <label class="col-sm-2 col-form-label">Select Main Category</label>
-                                <div class="col-sm-10">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </div> -->
                                 <div class="row mb-3">
-                                    <label for="inputText" class="col-sm-2 col-form-label">Main Category</label>
+                                    <label class="col-sm-2 col-form-label">Select Main Category</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name='mainname'>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label class="col-sm-2 col-form-label">Save Details</label>
-                                    <div class="col-sm-10">
-                                        <button type="submit" class="btn btn-primary">ADD</button>
+                                        <select name="category" id="category" class="form-select">
+                                            <option value="">Select Main Category</option>
+                                            <?php 
+                                                foreach ($category as $row){
+                                                    echo '<option value="'.$row["id"].'">'.$row["name"].'</option>';
+                                                }
+                                            ?>
+                                        </select>
                                     </div>
                                 </div>
                             </form>

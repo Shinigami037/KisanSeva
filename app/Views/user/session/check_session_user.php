@@ -7,11 +7,11 @@ class check
             session_start();
         }
         if (!isset($_SESSION['username']) || $_SESSION['login'] != true) {
-            echo "<h1>You are not logged in.";
-            echo "You will be redirected";
+            // echo "<h1>You are not logged in.";
+            // echo "You will be redirected";
             echo "<script>
                         var timer = setTimeout(function() {
-                        window.location='adminlogin'},1000);
+                        window.location='login'},0);
                         </script></h1>";
             exit;
         }
