@@ -6,9 +6,15 @@ use App\Models\SubCategoryModel;
 
 class AdminCategory extends BaseController
 {
-    public function category()
+    public function mcategory()
     {
-        return view('admin/inventory/' . "category");
+        return view('admin/inventory/' . "maincategory");
+    }
+    public function scategory()
+    {
+        $maincategory = new MainCategoryModel();
+        $data['name'] = $maincategory->findAll();
+        return view('admin/inventory/subcategory',$data);
     }
     public function mainCategory()
     {

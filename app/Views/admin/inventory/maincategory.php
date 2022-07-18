@@ -82,23 +82,6 @@
                                 </div>
                             </form>
                             <!-- End Add Main Category Form -->
-                            <!-- Start Add Sub Category Form -->
-                            <form action="addsub" method="post" enctype="multipart/form-data">
-                                <div class="row mb-3">
-                                    <label for="inputText" class="col-sm-2 col-form-label">Product Sub Category</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" name='subname'>
-                                    </div>
-                                </div>
-
-                                <div class="row mb-3">
-                                    <label class="col-sm-2 col-form-label">Save Details</label>
-                                    <div class="col-sm-10">
-                                        <button type="submit" class="btn btn-primary">ADD</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <!-- End Add Sub Category Form -->
                         </div>
                     </div>
 

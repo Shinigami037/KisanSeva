@@ -65,7 +65,8 @@ $routes->post('/registration', 'Login::userSignup');
 // routes for admin start here
 $routes->get('/adminlogin', 'Admin::login');
 $routes->get('/admin', 'Admin::index');
-$routes->get('/addcategory', 'AdminCategory::category');
+$routes->get('/addmaincategory', 'AdminCategory::mcategory');
+$routes->get('/addsubcategory', 'AdminCategory::scategory');
 $routes->get('/product', 'AdminProduct::product');
 $routes->get('/profile', 'Admin::profile');
 $routes->get('/adminlogout', 'AdminLogout::logout');

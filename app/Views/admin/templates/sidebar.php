@@ -99,8 +99,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="addcategory">
-                        <i class="bi bi-circle"></i><span>Add Categories</span>
+                    <a href="addmaincategory">
+                        <i class="bi bi-circle"></i><span>Add Main Categories</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="addsubcategory">
+                        <i class="bi bi-circle"></i><span>Add Sub Categories</span>
                     </a>
                 </li>
                 <!-- <li>
