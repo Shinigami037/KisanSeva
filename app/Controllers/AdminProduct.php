@@ -3,59 +3,39 @@
 namespace App\Controllers;
 
 use App\Models\ProductModel;
-use App\Models\MainCategoryModel;
-use App\Models\SubCategoryModel;
+
 
 class AdminProduct extends BaseController
 {
-    public function category()
+    public function inventory()
     {
-        return view('admin/inventory/' . "category");
+        $product = new ProductModel();
+        $data = $product->findAll();
+        // $hell = $data['name'];
+        // // echo $data
+        // // echo $data
+        // die($hell);
+        // foreach ($data as $row) {
+        //     echo $row->category;    
+        //     echo $row->name;
+        //         // $oldPass = $row->user_password;
+        //         // break;
+        //     }
+        return view('admin/inventory/inventory', ['name' => $data]);
     }
     public function product()
     {
         return view('admin/inventory/' . "product");
     }
-    public function mainCategory()
-    {
-        $name = $this->request->getVar("mainname");
-        $category = new MainCategoryModel();
-        $query = $category->insert(['name' => $name]);
-        if (!$query) {
-            // return redirect()->back()->with('fail','Something wrong');
-            // return view('user/login/registration'); 
-            return redirect()->back();
-        } else {
-            return redirect('addcategory');
-            // return view('user/login/login'); 
-        }
-        // die("Hello main");
-    }
-    public function subCategory()
-    {
-        $name = $this->request->getVar("subname");
-        $category = new SubCategoryModel();
-        $query = $category->insert(['name' => $name]);
-        if (!$query) {
-            // return redirect()->back()->with('fail','Something wrong');
-            // return view('user/login/registration'); 
-            return redirect()->back();
-        } else {
-            return redirect('addcategory');
-            // return view('user/login/login'); 
-        }
-        // die("Hello sub");
-    }
     public function addproduct()
     {
         $product = new ProductModel();
         $file = $this->request->getFile('image');
-
-        if ($file->isValid() && ! $file->hasMoved()) {
+        if ($file->isValid() && !$file->hasMoved()) {
             $imageName = $file->getName();
-            $file->move('uploads/', $imageName);
+            $file->move('public/uploads/', $imageName);
         }
-        $data =[
+        $data = [
             'category' => $this->request->getPost('maincat'),
             'sub_category' => $this->request->getPost('subcat'),
             'detail' => $this->request->getPost('detail'),
@@ -65,6 +45,11 @@ class AdminProduct extends BaseController
             'image' => $imageName,
         ];
         $product->save($data);
-        return redirect()->to('product')->with('status','Product and Image Saved');
+        return redirect()->to('product')->with('status', 'Product and Image Saved');
+    }
+    public function show()
+    {
+        $product = new ProductModel();
+        $data = $product->findAll();
     }
 }

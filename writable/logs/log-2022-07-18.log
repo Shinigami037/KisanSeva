@@ -1,0 +1,411 @@
+CRITICAL - 2022-07-18 03:26:25 --> include(check_session.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\home\index.php on line 7.
+ 1 APPPATH\Views\admin\home\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(check_session.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\home\\index.php', 7)
+ 2 APPPATH\Views\admin\home\index.php(7): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\home\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 6 APPPATH\Controllers\Admin.php(10): view('admin/home/index')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 03:26:47 --> include(pages/check_session.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\home\index.php on line 7.
+ 1 APPPATH\Views\admin\home\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(pages/check_session.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\home\\index.php', 7)
+ 2 APPPATH\Views\admin\home\index.php(7): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\home\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 6 APPPATH\Controllers\Admin.php(10): view('admin/home/index')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 03:26:48 --> include(pages/check_session.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\home\index.php on line 7.
+ 1 APPPATH\Views\admin\home\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(pages/check_session.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\home\\index.php', 7)
+ 2 APPPATH\Views\admin\home\index.php(7): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\home\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 6 APPPATH\Controllers\Admin.php(10): view('admin/home/index')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 04:11:36 --> Access denied for user 'username'@'localhost' (using password: YES)
+in APPPATH\Views\admin\inventory\inventory.php on line 72.
+ 1 APPPATH\Views\admin\inventory\inventory.php(72): mysqli_connect('localhost', 'username', 'pssword', 'database')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/inventory')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 04:13:20 --> Undefined array key "category_name"
+in APPPATH\Views\admin\inventory\inventory.php on line 112.
+ 1 APPPATH\Views\admin\inventory\inventory.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_name"', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 112)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/inventory')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 04:17:14 --> Undefined array key "category_name"
+in APPPATH\Views\admin\inventory\inventory.php on line 112.
+ 1 APPPATH\Views\admin\inventory\inventory.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_name"', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 112)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/inventory')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 04:35:58 --> Undefined variable $imageName
+in APPPATH\Controllers\AdminProduct.php on line 69.
+ 1 APPPATH\Controllers\AdminProduct.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\AdminProduct.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 04:51:30 --> Undefined global variable $_SESSION
+in APPPATH\Views\admin\inventory\display.php on line 108.
+ 1 APPPATH\Views\admin\inventory\display.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'APPPATH\\Views\\admin\\inventory\\display.php', 108)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:01:01 --> Undefined global variable $_SESSION
+in APPPATH\Views\admin\inventory\display.php on line 108.
+ 1 APPPATH\Views\admin\inventory\display.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'APPPATH\\Views\\admin\\inventory\\display.php', 108)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:01:23 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:01:31 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:05:05 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:05:05 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:05:06 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:05:06 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:05:06 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:05:07 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:05:07 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:05:07 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:05:12 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 05:08:46 --> Undefined variable $next
+in APPPATH\Views\admin\inventory\display.php on line 216.
+ 1 APPPATH\Views\admin\inventory\display.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $next', 'APPPATH\\Views\\admin\\inventory\\display.php', 216)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\display.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/display', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(13): view('admin/inventory/display')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:33:14 --> Undefined variable $data
+in APPPATH\Views\admin\inventory\inventory.php on line 53.
+ 1 APPPATH\Views\admin\inventory\inventory.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(14): view('admin/inventory/inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:34:46 --> Undefined variable $name
+in APPPATH\Views\admin\inventory\inventory.php on line 53.
+ 1 APPPATH\Views\admin\inventory\inventory.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(14): view('admin/inventory/inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:35:27 --> Array to string conversion
+in APPPATH\Controllers\AdminProduct.php on line 14.
+ 1 APPPATH\Controllers\AdminProduct.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminProduct.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:35:45 --> Array to string conversion
+in APPPATH\Controllers\AdminProduct.php on line 14.
+ 1 APPPATH\Controllers\AdminProduct.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminProduct.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:06 --> Array to string conversion
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:19 --> Attempt to read property "id" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:23 --> Attempt to read property "id" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:31 --> Attempt to read property "name" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:32 --> Attempt to read property "name" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:32 --> Attempt to read property "name" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:32 --> Attempt to read property "name" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:32 --> Attempt to read property "name" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:33 --> Attempt to read property "name" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:38:33 --> Attempt to read property "name" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:43:47 --> Attempt to read property "name" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:45:03 --> Attempt to read property "category" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:47:59 --> Attempt to read property "category" on array
+in APPPATH\Controllers\AdminProduct.php on line 15.
+ 1 APPPATH\Controllers\AdminProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'APPPATH\\Controllers\\AdminProduct.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:52:15 --> Undefined array key "name"
+in APPPATH\Controllers\AdminProduct.php on line 14.
+ 1 APPPATH\Controllers\AdminProduct.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminProduct.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 13:54:54 --> Undefined array key "name"
+in APPPATH\Controllers\AdminProduct.php on line 14.
+ 1 APPPATH\Controllers\AdminProduct.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminProduct.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 14:11:21 --> Undefined array key "name"
+in APPPATH\Controllers\AdminProduct.php on line 14.
+ 1 APPPATH\Controllers\AdminProduct.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminProduct.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 14:11:37 --> Array to string conversion
+in APPPATH\Views\admin\inventory\inventory.php on line 53.
+ 1 APPPATH\Views\admin\inventory\inventory.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(24): view('admin/inventory/inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 14:16:04 --> Undefined array key "id"
+in APPPATH\Views\admin\inventory\inventory.php on line 53.
+ 1 APPPATH\Views\admin\inventory\inventory.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(24): view('admin/inventory/inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 14:17:26 --> Undefined array key 0
+in APPPATH\Views\admin\inventory\inventory.php on line 53.
+ 1 APPPATH\Views\admin\inventory\inventory.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(24): view('admin/inventory/inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

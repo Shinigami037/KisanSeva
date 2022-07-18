@@ -4,20 +4,12 @@
 
 <main id="main" class="main">
     <?php
-    class check
+    include 'check_session.php';
+    class check1 extends check
     {
-        function check_login()
-        {
-            session_start();
-            if (!isset($_SESSION['uname']) || $_SESSION['log'] != true) {
-                header('location: adminlogin');
-                // echo "<h1>You are not logged in.</h1>";
-                // echo $_SESSION['username'];
-                // exit;
-            }
-        }
+        //....
     }
-    $obj = new check;
+    $obj = new check1;
     $obj->check_login();
     ?>
     <div class="pagetitle">

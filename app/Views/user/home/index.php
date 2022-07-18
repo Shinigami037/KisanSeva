@@ -4,24 +4,16 @@
 
 
 <section class="banner-area">
-    <?php
-    class check
+<?php
+    include 'check_session_user.php';
+    class check1 extends check
     {
-        function check_login()
-        {
-            session_start();
-            if (!isset($_SESSION['username']) || $_SESSION['login'] != true) {
-                header('location: index');
-                echo "<h1>You are not logged in.</h1>";
-                echo $_SESSION['username'];
-                exit;
-            }
-        }
+        //....
     }
-    $obj = new check;
+    $obj = new check1;
     $obj->check_login();
     ?>
-    <?php echo $_SESSION['username']; ?>
+    
     <div class="container">
         <div class="row fullscreen align-items-center justify-content-start">
             <div class="col-lg-12">
