@@ -44,7 +44,7 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Add Product</h1>
+            <h1>Edit Product</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="admin">Home</a></li>

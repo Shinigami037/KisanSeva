@@ -48,7 +48,7 @@
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="admin">Home</a></li>
-                    <li class="breadcrumb-item">Forms</li>
+                    <li class="breadcrumb-item">Category</li>
                     <li class="breadcrumb-item active">Categories</li>
                 </ol>
             </nav>

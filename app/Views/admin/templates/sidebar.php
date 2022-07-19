@@ -90,14 +90,10 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-journal-text"></i><span>Category</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                <li>
-                    <a href="product">
-                        <i class="bi bi-circle"></i><span>Add Products</span>
-                    </a>
-                </li>
+                
                 <li>
                     <a href="addmaincategory">
                         <i class="bi bi-circle"></i><span>Add Main Categories</span>
@@ -129,7 +125,7 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-layout-text-window-reverse"></i><span>Products</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <!-- <li>
@@ -139,9 +135,15 @@
                 </li> -->
                 <li>
                     <a href="inventory">
-                        <i class="bi bi-circle"></i><span>Data Tables</span>
+                        <i class="bi bi-circle"></i><span>Product Tables</span>
                     </a>
                 </li>
+                <li>
+                    <a href="product">
+                        <i class="bi bi-circle"></i><span>Add Products</span>
+                    </a>
+                </li>
+                
             </ul>
         </li>
         <!-- End Tables Nav -->

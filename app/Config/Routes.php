@@ -68,6 +68,7 @@ $routes->get('/admin', 'Admin::index');
 $routes->get('/addmaincategory', 'AdminCategory::mcategory');
 $routes->get('/addsubcategory', 'AdminCategory::scategory');
 $routes->get('/product', 'AdminProduct::product');
+$routes->get('/edit', 'AdminProduct::edit');
 $routes->get('/profile', 'Admin::profile');
 $routes->get('/adminlogout', 'AdminLogout::logout');
 $routes->get('/inventory', 'AdminProduct::inventory');

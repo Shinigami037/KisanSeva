@@ -48,11 +48,9 @@
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="admin">Home</a></li>
-                    <li class="breadcrumb-item">Tables</li>
+                    <li class="breadcrumb-item">Products</li>
                     <li class="breadcrumb-item active">Data</li>
-                    <?php echo "<pre>";
-                    print_r($name[0]['name']);
-                    echo "</pre>" ?>
+                    
                 </ol>
             </nav>
         </div>
@@ -63,12 +61,12 @@
                 <div class="col-lg-12">
 
                     <div class="card" style="overflow-x: auto;">
-                        <div class="table table-responsive" >
-                            <h5 class="card-title">Datatables</h5>
+                        <div class="table table-responsive">
+                            <!-- <h5 class="card-title">Datatable</h5> -->
                             <!-- <p>Add lightweight datatables to your project with using the <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable</p> -->
-                            
+
                             <!-- Table with stripped rows -->
-                            <table class="table table-striped w-100" >
+                            <table class="table table-striped w-100">
                                 <thead>
                                     <tr>
                                         <th class="text-left">#</th>
@@ -79,30 +77,30 @@
                                         <th class="text-left">Quantity</th>
                                         <th class="text-left">Detail</th>
                                         <th class="text-left">Image</th>
-                                        
+
                                     </tr>
                                 </thead>
 
                                 <tbody>
-                                    <?php foreach ($name as $key => $value): ?>
+                                    <?php foreach ($name as $key => $value) : ?>
                                         <tr>
-                                            
-                                            <form method="post" id="the-form" enctype="multipart/form-data">
-                                                <td><?php echo ($value['id']);  ?></td>
-                                                <td><?php echo ($value['name']); ?></td>
-                                                <td><input type="text" class="form-control" name="category" value="<?php echo ($value['category']); ?>"></td>
-                                                <td><input type="text" class="form-control" name="sub_category" value="<?php echo ($value['sub_category']); ?>"></td>
 
-                                                <td><input type="number" class="form-control" name="price" value="<?php echo ($value['price']); ?>"></td>
-                                                <td><input type="number" class="form-control" name="quantity" value="<?php echo ($value['quantity']); ?>"></td>
-                                                <td><input type="text" class="form-control" name="detail" value="<?php echo ($value['detail']); ?>"></td>
-                                                <td><?php echo ($value['image']);  ?></td>
+                                            <!-- <form method="post" id="the-form" enctype="multipart/form-data"> -->
+                                                <td><?php echo ($value['id']); ?></td>
+                                                <td><?php echo ($value['name']); ?></td>
+                                                <td><?php echo ($value['category']); ?>"></td>
+                                                <td><?php echo ($value['sub_category']); ?></td>
+                                                <td><?php echo ($value['price']); ?></td>
+                                                <td><?php echo ($value['quantity']); ?></td>
+                                                <td><?php echo ($value['detail']); ?></td>
+                                                <td><?php echo ($value['image']); ?></td>
+                                                <td><a href="edit">Edit</a></td>
                                                 <!-- <td><button type="submit" formaction="products-update.php" class="form-control">Update</button></td> -->
                                                 <!-- <td><button type="submit" formaction="" class="form-control">Delete</button></td> -->
-                                            </form>
+                                            <!-- </form> -->
                                         </tr>
                                     <?php endforeach; ?>
-                                            
+
                                 </tbody>
                             </table>
                             <!-- End Table with stripped rows -->

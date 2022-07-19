@@ -3,14 +3,20 @@
 namespace App\Controllers;
 
 use App\Models\ProductModel;
-
+use App\Models\MainCategoryModel;
+use CodeIgniter\Config\View;
 
 class AdminProduct extends BaseController
 {
+    public function edit(){
+        return view('admin/inventory/' . 'edit');
+    }
     public function inventory()
     {
         $product = new ProductModel();
         $data = $product->findAll();
+        $maincategory = new MainCategoryModel();
+        $data2 = $maincategory->findAll();
         // $hell = $data['name'];
         // // echo $data
         // // echo $data
@@ -21,7 +27,7 @@ class AdminProduct extends BaseController
         //         // $oldPass = $row->user_password;
         //         // break;
         //     }
-        return view('admin/inventory/inventory', ['name' => $data]);
+        return view('admin/inventory/inventory', ['name' => $data , 'category' => $data2]);
     }
     public function product()
     {
