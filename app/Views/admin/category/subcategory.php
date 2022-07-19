@@ -68,24 +68,25 @@
                             <?php endif ?>
                             <!-- Start Add Main Category Form -->
 
-                            <form action="addmain" method="post" enctype="multipart/form-data">
+                            <!-- <form action="addmain" method="post" enctype="multipart/form-data">
+
+                            </form> -->
+                            <!-- End Add Main Category Form -->
+                            <!-- Start Add Sub Category Form -->
+                            <form action="addsub" method="post" enctype="multipart/form-data">
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Select Main Category</label>
                                     <div class="col-sm-10">
                                         <select name="category" id="category" class="form-select">
                                             <option value="">Select Main Category</option>
-                                            <?php 
-                                                foreach ($category as $row){
-                                                    echo '<option value="'.$row["id"].'">'.$row["name"].'</option>';
-                                                }
+                                            <?php
+                                            foreach ($category as $row) {
+                                                echo '<option value="' . $row["id"] . '">' . $row["name"] . '</option>';
+                                            }
                                             ?>
                                         </select>
                                     </div>
                                 </div>
-                            </form>
-                            <!-- End Add Main Category Form -->
-                            <!-- Start Add Sub Category Form -->
-                            <form action="addsub" method="post" enctype="multipart/form-data">
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Product Sub Category</label>
                                     <div class="col-sm-10">

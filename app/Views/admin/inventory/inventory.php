@@ -91,7 +91,7 @@
                                                 <td><?php echo ($value['id']);  ?></td>
                                                 <td><?php echo ($value['name']); ?></td>
                                                 <td><input type="text" class="form-control" name="category" value="<?php echo ($value['category']); ?>"></td>
-                                                <td><input type="text" class="form-control" name="sub_category" value="<?php echo ($value['sub_category']); ?>" readonly></td>
+                                                <td><input type="text" class="form-control" name="sub_category" value="<?php echo ($value['sub_category']); ?>"></td>
 
                                                 <td><input type="number" class="form-control" name="price" value="<?php echo ($value['price']); ?>"></td>
                                                 <td><input type="number" class="form-control" name="quantity" value="<?php echo ($value['quantity']); ?>"></td>

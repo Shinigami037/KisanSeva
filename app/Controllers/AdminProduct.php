@@ -47,9 +47,9 @@ class AdminProduct extends BaseController
         $product->save($data);
         return redirect()->to('product')->with('status', 'Product and Image Saved');
     }
-    public function show()
-    {
-        $product = new ProductModel();
-        $data = $product->findAll();
-    }
+    // public function show()
+    // {
+    //     $product = new ProductModel();
+    //     $data = $product->findAll();
+    // }
 }
