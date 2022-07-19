@@ -50,7 +50,9 @@
                     <li class="breadcrumb-item"><a href="admin">Home</a></li>
                     <li class="breadcrumb-item">Tables</li>
                     <li class="breadcrumb-item active">Data</li>
-                    <?php  echo "<pre>"; print_r($name[0]['name']); echo "</pre>" ?>
+                    <?php echo "<pre>";
+                    print_r($name[0]['name']);
+                    echo "</pre>" ?>
                 </ol>
             </nav>
         </div>
@@ -60,30 +62,13 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <div class="card">
-                        <div class="table table-responsive" style="overflow-x:auto;" >
+                    <div class="card" style="overflow-x: auto;">
+                        <div class="table table-responsive" >
                             <h5 class="card-title">Datatables</h5>
                             <!-- <p>Add lightweight datatables to your project with using the <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable</p> -->
-                            <?php
-                            // Display the products as pagination with maximum products in a page.
-                            $limit = 5;
-                            $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? $_GET['page'] : 1;
-                            $paginationStart = ($page - 1) * $limit;
-
-                            $db = mysqli_connect('localhost', 'rootuser', 'root', 'fithealth_db');
-                            $query = "SELECT COUNT(*) AS id FROM product";
-                            $result = mysqli_query($db, $query);
-                            $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-                            $total = $row['id'];
-                            $pages = ceil($total / $limit);
-
-                            $query1 = "SELECT * FROM product LIMIT $paginationStart,$limit";
-                            $result1 = mysqli_query($db, $query1);
-
-
-                            ?>
+                            
                             <!-- Table with stripped rows -->
-                            <table class="table table-striped w-100">
+                            <table class="table table-striped w-100" >
                                 <thead>
                                     <tr>
                                         <th class="text-left">#</th>
@@ -94,32 +79,31 @@
                                         <th class="text-left">Quantity</th>
                                         <th class="text-left">Detail</th>
                                         <th class="text-left">Image</th>
+                                        
                                     </tr>
                                 </thead>
-                                
+
                                 <tbody>
-                                <?php while ($row1 = mysqli_fetch_array($result1, MYSQLI_ASSOC)) { ?>
-                                    <tr>
-                                        <form method="post" id="the-form" enctype="multipart/form-data">
-                                        <input type="hidden" class="form-control" id="id" name="id" value="<?php echo ($row1['id']);  ?>" readonly>
-                                            <td><input type="text" class="form-control" name="name" value="<?php echo ($row1['name']); ?>" readonly></td>
-                                            <td><input type="text" class="form-control" name="category" value="<?php echo ($row1['category']); ?>"></td>
-                                            <input type="hidden" class="form-control" name="sub_category" value="<?php echo ($row1['sub_category']); ?>" readonly>
+                                    <?php foreach ($name as $key => $value): ?>
+                                        <tr>
                                             
-                                            <td><input type="number" class="form-control" name="price" value="<?php echo ($row1['price']); ?>"></td>
-                                            <td><input type="number" class="form-control" name="quantity" value="<?php echo ($row1['quantity']); ?>"></td>
-                                            <td><input type="text" class="form-control" name="detail" value="<?php echo ($row1['detail']); ?>"></td>
+                                            <form method="post" id="the-form" enctype="multipart/form-data">
+                                                <td><?php echo ($value['id']);  ?></td>
+                                                <td><?php echo ($value['name']); ?></td>
+                                                <td><input type="text" class="form-control" name="category" value="<?php echo ($value['category']); ?>"></td>
+                                                <td><input type="text" class="form-control" name="sub_category" value="<?php echo ($value['sub_category']); ?>" readonly></td>
+
+                                                <td><input type="number" class="form-control" name="price" value="<?php echo ($value['price']); ?>"></td>
+                                                <td><input type="number" class="form-control" name="quantity" value="<?php echo ($value['quantity']); ?>"></td>
+                                                <td><input type="text" class="form-control" name="detail" value="<?php echo ($value['detail']); ?>"></td>
+                                                <td><?php echo ($value['image']);  ?></td>
+                                                <!-- <td><button type="submit" formaction="products-update.php" class="form-control">Update</button></td> -->
+                                                <!-- <td><button type="submit" formaction="" class="form-control">Delete</button></td> -->
+                                            </form>
+                                        </tr>
+                                    <?php endforeach; ?>
                                             
-                                            <!-- <td><button type="submit" formaction="products-update.php" class="form-control">Update</button></td> -->
-                                            <!-- <td><button type="submit" formaction="" class="form-control">Delete</button></td> -->
-                                        </form>
-
-
-                                    </tr>
-                                <?php
-                                } ?>
-
-                            </tbody>
+                                </tbody>
                             </table>
                             <!-- End Table with stripped rows -->
 
