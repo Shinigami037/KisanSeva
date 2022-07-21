@@ -16,3 +16,56 @@ in SYSTEMPATH\HTTP\RedirectResponse.php on line 56.
  5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
  6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-19 13:11:56 --> Undefined variable $category
+in APPPATH\Views\admin\inventory\edit.php on line 84.
+ 1 APPPATH\Views\admin\inventory\edit.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\admin\\inventory\\edit.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/edit', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(12): view('admin/inventory/edit')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-19 13:23:23 --> Undefined variable $row
+in APPPATH\Views\admin\inventory\inventory.php on line 97.
+ 1 APPPATH\Views\admin\inventory\inventory.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 5 APPPATH\Controllers\AdminProduct.php(35): view('admin/inventory/inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-19 13:35:49 --> Cannot use object of type App\Models\ProductModel as array
+in APPPATH\Views\admin\inventory\edit.php on line 75.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/edit', [], true)
+ 4 APPPATH\Controllers\AdminProduct.php(21): view('admin/inventory/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-19 23:51:31 --> Undefined variable $imageName
+in APPPATH\Controllers\AdminProduct.php on line 32.
+ 1 APPPATH\Controllers\AdminProduct.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\AdminProduct.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->update('6')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-19 23:52:23 --> Undefined variable $imageName
+in APPPATH\Controllers\AdminProduct.php on line 32.
+ 1 APPPATH\Controllers\AdminProduct.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\AdminProduct.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->update('6')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-19 23:53:27 --> Undefined variable $imageName
+in APPPATH\Controllers\AdminProduct.php on line 32.
+ 1 APPPATH\Controllers\AdminProduct.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\AdminProduct.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->update('6')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

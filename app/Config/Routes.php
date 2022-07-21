@@ -68,7 +68,7 @@ $routes->get('/admin', 'Admin::index');
 $routes->get('/addmaincategory', 'AdminCategory::mcategory');
 $routes->get('/addsubcategory', 'AdminCategory::scategory');
 $routes->get('/product', 'AdminProduct::product');
-$routes->get('/edit', 'AdminProduct::edit');
+$routes->get('/edit/(:num)', 'AdminProduct::edit/$1');
 $routes->get('/profile', 'Admin::profile');
 $routes->get('/adminlogout', 'AdminLogout::logout');
 $routes->get('/inventory', 'AdminProduct::inventory');
@@ -79,6 +79,9 @@ $routes->post('/addmain', 'AdminCategory::mainCategory');
 $routes->post('/addproduct', 'AdminProduct::addproduct');
 $routes->post('/adminlogin', 'Admin::start');
 // routes post method ends here
+//routes put method starts here
+$routes->put('/update/(:num)', 'AdminProduct::update/$1');
+//routes put method ends here
 // routes for admin end here
 
 

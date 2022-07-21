@@ -77,7 +77,7 @@
                                         <th class="text-left">Quantity</th>
                                         <th class="text-left">Detail</th>
                                         <th class="text-left">Image</th>
-
+                                        <th class="text-left">Action</th>
                                     </tr>
                                 </thead>
 
@@ -88,13 +88,13 @@
                                             <!-- <form method="post" id="the-form" enctype="multipart/form-data"> -->
                                                 <td><?php echo ($value['id']); ?></td>
                                                 <td><?php echo ($value['name']); ?></td>
-                                                <td><?php echo ($value['category']); ?>"></td>
+                                                <td><?php echo ($value['category']); ?></td>
                                                 <td><?php echo ($value['sub_category']); ?></td>
                                                 <td><?php echo ($value['price']); ?></td>
                                                 <td><?php echo ($value['quantity']); ?></td>
                                                 <td><?php echo ($value['detail']); ?></td>
                                                 <td><?php echo ($value['image']); ?></td>
-                                                <td><a href="edit">Edit</a></td>
+                                                <td><a href="<?php echo base_url('edit/'.$value['id']); ?>">Edit</a></td>
                                                 <!-- <td><button type="submit" formaction="products-update.php" class="form-control">Update</button></td> -->
                                                 <!-- <td><button type="submit" formaction="" class="form-control">Delete</button></td> -->
                                             <!-- </form> -->

@@ -13,7 +13,7 @@ class AdminCategory extends BaseController
     public function scategory()
     {
         $maincategory = new MainCategoryModel();
-        $data['category'] = $maincategory->findAll();
+        $data['category'] = $maincategory->orderBy('name', 'ASC')->findAll();
         return view('admin/category/subcategory',$data);
     }
     public function mainCategory()

@@ -1,0 +1,53 @@
+CRITICAL - 2022-07-20 00:10:05 --> Array to string conversion
+in APPPATH\Controllers\AdminProduct.php on line 23.
+ 1 APPPATH\Controllers\AdminProduct.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminProduct.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->update('6')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-20 00:22:14 --> Undefined variable $imageName
+in APPPATH\Controllers\AdminProduct.php on line 35.
+ 1 APPPATH\Controllers\AdminProduct.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\AdminProduct.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->update('10')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-20 00:22:38 --> Undefined variable $imageName
+in APPPATH\Controllers\AdminProduct.php on line 36.
+ 1 APPPATH\Controllers\AdminProduct.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\AdminProduct.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->update('10')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-20 22:57:56 --> Call to undefined method App\Models\MainCategoryModel::order_by
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\AdminCategory.php(16): CodeIgniter\Model->__call('order_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->scategory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-20 22:58:20 --> Call to undefined method App\Models\MainCategoryModel::order_by
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\AdminCategory.php(16): CodeIgniter\Model->__call('order_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->scategory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-20 22:58:21 --> Call to undefined method App\Models\MainCategoryModel::order_by
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\AdminCategory.php(16): CodeIgniter\Model->__call('order_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->scategory()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-20 22:58:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\category\subcategory.php on line 84.
+ 1 APPPATH\Views\admin\category\subcategory.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\category\\subcategory.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\subcategory.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/category/subcategory', [], true)
+ 5 APPPATH\Controllers\AdminCategory.php(17): view('admin/category/subcategory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->scategory()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

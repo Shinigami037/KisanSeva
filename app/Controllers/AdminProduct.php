@@ -4,12 +4,62 @@ namespace App\Controllers;
 
 use App\Models\ProductModel;
 use App\Models\MainCategoryModel;
+use App\Models\SubCategoryModel;
 use CodeIgniter\Config\View;
+use CodeIgniter\Entity\Cast\BaseCast;
 
 class AdminProduct extends BaseController
 {
-    public function edit(){
-        return view('admin/inventory/' . 'edit');
+    public function update($id = null) {
+        $var = $this->request->getPost('maincat');
+        $var2 = $this->request->getPost('subcat');
+        $data = [
+            'category' => $var,
+            'sub_category' => $var2,
+            'detail' => $this->request->getPost('detail'),
+            'name' => $this->request->getPost('name'),
+            'quantity' => $this->request->getPost('quantity'),
+            'price' => $this->request->getPost('price'),
+            // 'image' => $imageName,
+        ];
+        $product = new ProductModel();
+        
+        // die($var);
+        // var_dump($var);
+        if (isset($var)){
+            $col = $product->where('id',$id)->findColumn('category');
+            // $data = ['category' => $col[0]];
+            echo print_r($data['category']);
+            // die(print_r($col[0]));
+        }
+        die($data['category']);
+        // var_dump($var);
+        if (isset($var2)){
+            $col = $product->where('id',$id)->findColumn('sub_category');
+            $var2 = $col[0];
+            // echo print_r($col);
+            // die(print_r($col[0]));
+        }
+        $file = $this->request->getFile('image');
+        if ($file->isValid() && !$file->hasMoved()) {
+            $imageName = $file->getName();
+            $file->move('public/uploads/', $imageName);
+        }
+        // die($var);
+        
+        $product->update($id,$data);
+        return redirect()->to('inventory');
+    }
+    public function edit($id = null){
+        echo $id;
+        $maincategory = new MainCategoryModel();
+        $product = new ProductModel();
+        $subcategory = new SubCategoryModel();
+
+        $data = $maincategory->findAll();
+        $data2 = $subcategory->findAll();
+        $data3 = $product->find($id);
+        return view('admin/inventory/edit',['subcategory' => $data2 , 'category' => $data , 'product' => $data3]);
     }
     public function inventory()
     {
