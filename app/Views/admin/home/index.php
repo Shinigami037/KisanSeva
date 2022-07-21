@@ -4,7 +4,7 @@
 
 <main id="main" class="main">
     <?php
-    include 'check_session.php';
+    include 'app/Views/admin/checksession/check_session.php';
     class check1 extends check
     {
         //....

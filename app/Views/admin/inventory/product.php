@@ -169,14 +169,14 @@
             // City change
             $('#maincategory').change(function() {
                 var maincategory_id = $('#maincategory').val();
-                var action = 'getSub';
+                // var action = 'getSub';
                 if (maincategory_id != '') {
                     $.ajax({
                         url: "<?= base_url('/action') ?>",
                         method: "post",
                         data: {
                             maincategory_id: maincategory_id,
-                            action: action,
+                            // action: action,
                         },
                         dataType: 'JSON',
                         success: function(data) {

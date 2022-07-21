@@ -43,15 +43,21 @@ $routes->set404Override();
 // routes get method start here
 $routes->get('/', 'Home::index');
 $routes->get('/index', 'Home::index');
+
 $routes->get('/category', 'Category::category');
+
 $routes->get('/single-product', 'Product::single_product');
+$routes->get('/cart', 'Product::cart');
+
 $routes->get('/login', 'Login::login');
 $routes->get('/registration', 'Login::signup');
+
 $routes->get('/checkout', 'Order::checkout');
 $routes->get('/tracking', 'Order::tracking');
-$routes->get('/contact', 'Contact::contact');
-$routes->get('/cart', 'Product::cart');
 $routes->get('/confirmation', 'Order::confirmation');
+
+$routes->get('/contact', 'Contact::contact');
+
 // routes get method ends here
 // routes post method start here
 // $routes->post('/contact-process','Login::userLogin');
@@ -63,27 +69,42 @@ $routes->post('/registration', 'Login::userSignup');
 
 
 // routes for admin start here
+//Get routes for admin start here
 $routes->get('/adminlogin', 'Admin::login');
 $routes->get('/admin', 'Admin::index');
+$routes->get('/profile', 'Admin::profile');
+//Get routes for admin ends here
+//Post routes for admin start here
+$routes->post('/adminlogin', 'Admin::start');
+//Post routes for admin end here
+//Get routes for AdminCategory start here
 $routes->get('/addmaincategory', 'AdminCategory::mcategory');
 $routes->get('/addsubcategory', 'AdminCategory::scategory');
-$routes->get('/product', 'AdminProduct::product');
-$routes->get('/edit/(:num)', 'AdminProduct::edit/$1');
-$routes->get('/profile', 'Admin::profile');
-$routes->get('/adminlogout', 'AdminLogout::logout');
-$routes->get('/inventory', 'AdminProduct::inventory');
-$routes->post('/getSub', 'AdminProduct::getSub');
-$routes->post('/action', 'AdminProduct::action');
-
-// routes post method start here
+$routes->get('/displaymain', 'AdminCategory::displaymain');
+$routes->get('/displaysub', 'AdminCategory::displaysub');
+//Get routes for AdminCategory end here
+//Post routes for AdminCategory start here
 $routes->post('/addsub', 'AdminCategory::subCategory');
 $routes->post('/addmain', 'AdminCategory::mainCategory');
+//Post routes for AdminCategory end here
+//Get routes for AdminLogout start here
+$routes->get('/adminlogout', 'AdminLogout::logout');
+//Get routes for AdminLogout end here
+//Post routes for AdminLogout start here
+//Post routes for AdminLogout end here
+//Get routes for AdminProduct start here
+$routes->get('/inventory', 'AdminProduct::inventory');
+$routes->get('/product', 'AdminProduct::product');
+$routes->get('/edit/(:num)', 'AdminProduct::edit/$1');
+//Get routes for AdminProduct end here
+//Post routes for AdminProduct start here
+$routes->post('/getSub', 'AdminProduct::getSub');
+$routes->post('/action', 'AdminProduct::action');
 $routes->post('/addproduct', 'AdminProduct::addproduct');
-$routes->post('/adminlogin', 'Admin::start');
-// routes post method ends here
-//routes put method starts here
+//Post routes for AdminProduct end here
+//Put routes for AdminProduct start here
 $routes->put('/update/(:num)', 'AdminProduct::update/$1');
-//routes put method ends here
+//Put routes for AdminProduct end here
 // routes for admin end here
 
 

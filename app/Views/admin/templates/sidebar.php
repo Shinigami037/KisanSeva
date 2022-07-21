@@ -104,6 +104,16 @@
                         <i class="bi bi-circle"></i><span>Add Sub Categories</span>
                     </a>
                 </li>
+                <li>
+                    <a href="displaymain">
+                        <i class="bi bi-circle"></i><span>Main Categories</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="displaysub">
+                        <i class="bi bi-circle"></i><span>Sub Categories</span>
+                    </a>
+                </li>
                 <!-- <li>
                     <a href="forms-layouts.html">
                         <i class="bi bi-circle"></i><span>Form Layouts</span>

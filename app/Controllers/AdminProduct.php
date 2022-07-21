@@ -11,30 +11,14 @@ use CodeIgniter\Entity\Cast\BaseCast;
 
 class AdminProduct extends BaseController
 {
-    public function action(){
-        if($this->request->getVar('action')){
-            $action = $this->request->getVar('action');
-            if($action == 'getSub'){
-                $subcategory = new SubCategoryModel();
-                $data = $subcategory->where('category_id',$this->request->getVar('maincategory_id'))->findAll();
-                echo json_encode($data);
-            }
-        }
-    }
-    public function getSub(){
-        // $maincategory = new MainCategoryModel();
-        $id = $this->request->getPost('mainc');
-        echo("<script type='text/javascript'> console.log($id);</script>");
-        die($id);
+    public function action()
+    {
         $subcategory = new SubCategoryModel();
-        
-        // die($id);
-        // $data = $maincategory->findAll();
-        $data = $subcategory->where('category_id',$id)->orderBy()->findAll();
+        $data = $subcategory->where('category_id', $this->request->getVar('maincategory_id'))->findAll();
         echo json_encode($data);
     }
-    public function update($id = null) {
-        
+    public function update($id = null)
+    {
         $product = new ProductModel();
         $var = $this->request->getPost('maincat');
         $var2 = $this->request->getPost('subcat');
@@ -49,16 +33,16 @@ class AdminProduct extends BaseController
         ];
         // die($var);
         // var_dump($var);
-        if (isset($var)){
-            $col = $product->where('id',$id)->findColumn('category');
+        if (isset($var)) {
+            $col = $product->where('id', $id)->findColumn('category');
             $data = ['category' => $col[0]];
             // echo print_r($data['category']);
             // die(print_r($col[0]));
         }
         // die($data['category']);
         // var_dump($var);
-        if (isset($var2)){
-            $col = $product->where('id',$id)->findColumn('sub_category');
+        if (isset($var2)) {
+            $col = $product->where('id', $id)->findColumn('sub_category');
             $var2 = $col[0];
             // echo print_r($col);
             // die(print_r($col[0]));
@@ -69,11 +53,12 @@ class AdminProduct extends BaseController
             $file->move('public/uploads/', $imageName);
         }
         // die($var);
-        
-        $product->update($id,$data);
+
+        $product->update($id, $data);
         return redirect()->to('inventory');
     }
-    public function edit($id = null){
+    public function edit($id = null)
+    {
         echo $id;
         $maincategory = new MainCategoryModel();
         $product = new ProductModel();
@@ -82,7 +67,7 @@ class AdminProduct extends BaseController
         $data = $maincategory->findAll();
         $data2 = $subcategory->findAll();
         $data3 = $product->find($id);
-        return view('admin/inventory/edit',['subcategory' => $data2 , 'category' => $data , 'product' => $data3]);
+        return view('admin/inventory/edit', ['subcategory' => $data2, 'category' => $data, 'product' => $data3]);
     }
     public function inventory()
     {
@@ -100,7 +85,7 @@ class AdminProduct extends BaseController
         //         // $oldPass = $row->user_password;
         //         // break;
         //     }
-        return view('admin/inventory/inventory', ['name' => $data , 'category' => $data2]);
+        return view('admin/inventory/inventory', ['name' => $data, 'category' => $data2]);
     }
     public function product()
     {
@@ -112,15 +97,20 @@ class AdminProduct extends BaseController
     }
     public function addproduct()
     {
+        $maincategory = new MainCategoryModel();
+        $subcategory = new SubCategoryModel();
         $product = new ProductModel();
         $file = $this->request->getFile('image');
         if ($file->isValid() && !$file->hasMoved()) {
             $imageName = $file->getName();
             $file->move('public/uploads/', $imageName);
         }
+        $cat = $maincategory->find($this->request->getPost('maincat'));
+        $sub = $subcategory->find($this->request->getPost('subcat'));
+        // die(print_r($cat['name']));
         $data = [
-            'category' => $this->request->getPost('maincat'),
-            'sub_category' => $this->request->getPost('subcat'),
+            'category' => $cat['name'],
+            'sub_category' => $sub['name'],
             'detail' => $this->request->getPost('detail'),
             'name' => $this->request->getPost('name'),
             'quantity' => $this->request->getPost('quantity'),

@@ -1,5 +1,13 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
-
+    <?php
+    include 'app/Views/admin/checksession/check_session.php';
+    class check1 extends check
+    {
+        //....
+    }
+    $obj = new check1;
+    $obj->check_login();
+    ?>
     <div class="d-flex align-items-center justify-content-between">
         <a href="admin" class="logo d-flex align-items-center">
             <img src="public/assets/img/logo.png" alt="">

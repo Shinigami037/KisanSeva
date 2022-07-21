@@ -76,14 +76,16 @@
                                         <input type="text" value="<?= $product['name'] ?>" class="form-control" name='name'>
                                     </div>
                                 </div>
+                                
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Select Main Category</label>
                                     <div class="col-sm-10">
-                                        <select name="maincat" id="mainc" class="form-select">
+                                        <select name="maincat" id="maincategory" class="form-select">
+                                            <!-- <option value="">Select Main Category</option> -->
                                             <option value=""><?= $product['category'] ?></option>
                                             <?php
                                             foreach ($category as $row) {
-                                                echo '<option value="' . $row["name"] . '">' . $row["name"] . '</option>';
+                                                echo '<option value="' . $row["id"] . '">' . $row["name"] . '</option>';
                                             }
                                             ?>
                                         </select>
@@ -92,9 +94,10 @@
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Select Sub Category</label>
                                     <div class="col-sm-10">
-                                        <select name="subcat" id="subcat" class="form-select">
-                                            <option value=""><?= $product['sub_category'] ?></option>
-                                            
+                                        <select name="subcat" id="subcategory" class="form-select">
+                                        <option value=""><?= $product['sub_category'] ?></option>
+                                            <!-- <option value="">Select Sub Category</option> -->
+
                                         </select>
                                     </div>
                                 </div>
@@ -163,53 +166,34 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script type='text/javascript'>
+    <script>
         // baseURL variable
-        var baseURL = "<?php echo base_url(); ?>";
         $(document).ready(function() {
             // City change
-            $('#mainc').change(function() {
-                var mainCategory = $('#mainc').val();
-                // AJAX request
-                $.ajax({
-                    url: '<?= base_url() ?>/getSub',
-                    method: 'post',
-                    data: {
-                        mainc: mainCategory
-                    },
-                    dataType: 'json',
-                    success: function(response) {
-                        // Remove options 
-                        $('#subcat').find('option').not(':first').remove();
-                        // $('#city_id').find('option').not(':first').remove();
-                        // Add options
-                        $.each(response, function(index, data) {
-                            $('#subcat').append('<option value="' + data['id'] + '">' + data['name'] + '</option>');
-                        });
-                    }
-                });
+            $('#maincategory').change(function() {
+                var maincategory_id = $('#maincategory').val();
+                // var action = 'getSub';
+                if (maincategory_id != '') {
+                    $.ajax({
+                        url: "<?= base_url('/action') ?>",
+                        method: "post",
+                        data: {
+                            maincategory_id: maincategory_id,
+                            // action: action,
+                        },
+                        dataType: 'JSON',
+                        success: function(data) {
+                            var html = '<option value="">Select Sub Category</option>';
+                            for (var i = 0; i < data.length; i++) {
+                                html += '<option value="'+data[i].id+'">'+data[i].name+'</option>';
+                            }
+                            $('#subcategory').html(html);
+                        }
+                    });
+                } else {
+                    $('#subcategory').val('');
+                }
             });
-            // Department change
-            // $('#subcategory').change(function() {
-            //     var state_id = $(this).val();
-            //     // AJAX request
-            //     $.ajax({
-            //         url: '/DropdownAjaxController/getCities',
-            //         method: 'post',
-            //         data: {
-            //             state_id: state_id
-            //         },
-            //         dataType: 'json',
-            //         success: function(response) {
-            //             // Remove options
-            //             $('#city_id').find('option').not(':first').remove();
-            //             // Add options
-            //             $.each(response, function(index, data) {
-            //                 $('#city_id').append('<option value="' + data['id'] + '">' + data['name'] + '</option>');
-            //             });
-            //         }
-            //     });
-            // });
         });
     </script>
     

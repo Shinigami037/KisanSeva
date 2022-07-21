@@ -105,3 +105,75 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
 11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
 12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-21 15:31:58 --> Undefined variable $imageName
+in APPPATH\Controllers\AdminProduct.php on line 115.
+ 1 APPPATH\Controllers\AdminProduct.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\AdminProduct.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-21 15:32:15 --> Column 'category' cannot be null
+CRITICAL - 2022-07-21 15:32:15 --> Column 'category' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`) VALUES (NULL, \'15\', \'Ut amet deleniti vo\', \'Cedric Weaver\', \'465\', \'203\', \'p7.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`) VALUES (NULL, \'15\', \'Ut amet deleniti vo\', \'Cedric Weaver\', \'465\', \'203\', \'p7.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`) VALUES (NULL, \'15\', \'Ut amet deleniti vo\', \'Cedric Weaver\', \'465\', \'203\', \'p7.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`) VALUES (:category:, :sub_category:, :detail:, :name:, :quantity:, :price:, :image:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\AdminProduct.php(117): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-21 15:33:41 --> Array to string conversion
+in APPPATH\Controllers\AdminProduct.php on line 109.
+ 1 APPPATH\Controllers\AdminProduct.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminProduct.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-21 15:35:54 --> Undefined variable $imageName
+in APPPATH\Controllers\AdminProduct.php on line 117.
+ 1 APPPATH\Controllers\AdminProduct.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\AdminProduct.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-21 15:54:36 --> Undefined variable $name
+in APPPATH\Views\admin\category\category.php on line 72.
+ 1 APPPATH\Views\admin\category\category.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'APPPATH\\Views\\admin\\category\\category.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\category.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/category/category', [], true)
+ 5 APPPATH\Controllers\AdminCategory.php(11): view('admin/category/category')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaymain()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-21 16:11:49 --> include(check_session.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\inventory\inventory.php on line 46.
+ 1 APPPATH\Views\admin\inventory\inventory.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(check_session.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 46)
+ 2 APPPATH\Views\admin\inventory\inventory.php(46): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 6 APPPATH\Controllers\AdminProduct.php(88): view('admin/inventory/inventory', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-21 16:12:12 --> include(home/check_session.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\inventory\inventory.php on line 46.
+ 1 APPPATH\Views\admin\inventory\inventory.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(home/check_session.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\inventory\\inventory.php', 46)
+ 2 APPPATH\Views\admin\inventory\inventory.php(46): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\inventory.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/inventory', [], true)
+ 6 APPPATH\Controllers\AdminProduct.php(88): view('admin/inventory/inventory', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->inventory()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
