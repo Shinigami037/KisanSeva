@@ -5,12 +5,37 @@ namespace App\Controllers;
 use App\Models\ProductModel;
 use App\Models\MainCategoryModel;
 use App\Models\SubCategoryModel;
+use CodeIgniter\CLI\Console;
 use CodeIgniter\Config\View;
 use CodeIgniter\Entity\Cast\BaseCast;
 
 class AdminProduct extends BaseController
 {
+    public function action(){
+        if($this->request->getVar('action')){
+            $action = $this->request->getVar('action');
+            if($action == 'getSub'){
+                $subcategory = new SubCategoryModel();
+                $data = $subcategory->where('category_id',$this->request->getVar('maincategory_id'))->findAll();
+                echo json_encode($data);
+            }
+        }
+    }
+    public function getSub(){
+        // $maincategory = new MainCategoryModel();
+        $id = $this->request->getPost('mainc');
+        echo("<script type='text/javascript'> console.log($id);</script>");
+        die($id);
+        $subcategory = new SubCategoryModel();
+        
+        // die($id);
+        // $data = $maincategory->findAll();
+        $data = $subcategory->where('category_id',$id)->orderBy()->findAll();
+        echo json_encode($data);
+    }
     public function update($id = null) {
+        
+        $product = new ProductModel();
         $var = $this->request->getPost('maincat');
         $var2 = $this->request->getPost('subcat');
         $data = [
@@ -22,17 +47,15 @@ class AdminProduct extends BaseController
             'price' => $this->request->getPost('price'),
             // 'image' => $imageName,
         ];
-        $product = new ProductModel();
-        
         // die($var);
         // var_dump($var);
         if (isset($var)){
             $col = $product->where('id',$id)->findColumn('category');
-            // $data = ['category' => $col[0]];
-            echo print_r($data['category']);
+            $data = ['category' => $col[0]];
+            // echo print_r($data['category']);
             // die(print_r($col[0]));
         }
-        die($data['category']);
+        // die($data['category']);
         // var_dump($var);
         if (isset($var2)){
             $col = $product->where('id',$id)->findColumn('sub_category');
@@ -81,7 +104,11 @@ class AdminProduct extends BaseController
     }
     public function product()
     {
-        return view('admin/inventory/' . "product");
+        $maincategory = new MainCategoryModel();
+        $data = $maincategory->orderBy('name', 'ASC')->findAll();
+        // $maincategory = new SubCategoryModel();
+        // $data['category'] = $category->orderBy('name', 'ASC')->findAll();
+        return view('admin/inventory/product', ['category' => $data]);
     }
     public function addproduct()
     {

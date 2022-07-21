@@ -28,6 +28,7 @@
 
     <!-- Template Main CSS File -->
     <link href="public/assets/css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -76,6 +77,28 @@
                                     </div>
                                 </div>
                                 <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Select Main Category</label>
+                                    <div class="col-sm-10">
+                                        <select name="maincat" id="maincategory" class="form-select">
+                                            <option value="">Select Main Category</option>
+                                            <?php
+                                            foreach ($category as $row) {
+                                                echo '<option value="' . $row["id"] . '">' . $row["name"] . '</option>';
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Select Sub Category</label>
+                                    <div class="col-sm-10">
+                                        <select name="subcat" id="subcategory" class="form-select">
+                                            <option value="">Select Sub Category</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Product Main Category</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name='maincat'>
@@ -86,7 +109,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name='subcat'>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row mb-3">
                                     <label for="inputNumber" class="col-sm-2 col-form-label">Product Price</label>
                                     <div class="col-sm-10">
@@ -140,6 +163,36 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
+    <script>
+        // baseURL variable
+        $(document).ready(function() {
+            // City change
+            $('#maincategory').change(function() {
+                var maincategory_id = $('#maincategory').val();
+                var action = 'getSub';
+                if (maincategory_id != '') {
+                    $.ajax({
+                        url: "<?= base_url('/action') ?>",
+                        method: "post",
+                        data: {
+                            maincategory_id: maincategory_id,
+                            action: action,
+                        },
+                        dataType: 'JSON',
+                        success: function(data) {
+                            var html = '<option value="">Select Sub Category</option>';
+                            for (var i = 0; i < data.length; i++) {
+                                html += '<option value="'+data[i].id+'">'+data[i].name+'</option>';
+                            }
+                            $('#subcategory').html(html);
+                        }
+                    });
+                } else {
+                    $('#subcategory').val('');
+                }
+            });
+        });
+    </script>
     <script src="public/assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="public/assets/vendor/chart.js/chart.min.js"></script>

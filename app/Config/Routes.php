@@ -72,6 +72,8 @@ $routes->get('/edit/(:num)', 'AdminProduct::edit/$1');
 $routes->get('/profile', 'Admin::profile');
 $routes->get('/adminlogout', 'AdminLogout::logout');
 $routes->get('/inventory', 'AdminProduct::inventory');
+$routes->post('/getSub', 'AdminProduct::getSub');
+$routes->post('/action', 'AdminProduct::action');
 
 // routes post method start here
 $routes->post('/addsub', 'AdminCategory::subCategory');

@@ -28,6 +28,7 @@
 
     <!-- Template Main CSS File -->
     <link href="<?= base_url('public/assets/css/style.css') ?>" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -67,8 +68,8 @@
                             <?php endif ?>
 
                             <!-- Start Add Product Details Form -->
-                            <form action="<?= base_url('update/'.$product['id']); ?>" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="_method" value="PUT" />
+                            <form action="<?= base_url('update/' . $product['id']); ?>" method="post" enctype="multipart/form-data">
+                                <input type="hidden" name="_method" value="PUT" />
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Product Name</label>
                                     <div class="col-sm-10">
@@ -78,7 +79,7 @@
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Select Main Category</label>
                                     <div class="col-sm-10">
-                                        <select name="maincat" id="maincategory" class="form-select">
+                                        <select name="maincat" id="mainc" class="form-select">
                                             <option value=""><?= $product['category'] ?></option>
                                             <?php
                                             foreach ($category as $row) {
@@ -91,13 +92,9 @@
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Select Sub Category</label>
                                     <div class="col-sm-10">
-                                        <select name="subcat" id="subcategory" class="form-select">
+                                        <select name="subcat" id="subcat" class="form-select">
                                             <option value=""><?= $product['sub_category'] ?></option>
-                                            <?php
-                                            foreach ($subcategory as $row) {
-                                                echo '<option value="' . $row["name"] . '">' . $row["name"] . '</option>';
-                                            }
-                                            ?>
+                                            
                                         </select>
                                     </div>
                                 </div>
@@ -122,13 +119,13 @@
                                 <div class="row mb-3">
                                     <label for="inputNumber" class="col-sm-2 col-form-label">Product Image</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control"  name='image' type="file" id="formFile">
+                                        <input class="form-control" name='image' type="file" id="formFile">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputNumber" class="col-sm-2 col-form-label">Product Quantity</label>
                                     <div class="col-sm-10">
-                                        <input type="number" value="<?= $product['quantity'] ?>"class="form-control" name='quantity'>
+                                        <input type="number" value="<?= $product['quantity'] ?>" class="form-control" name='quantity'>
                                     </div>
                                 </div>
                                 <!-- <div class="row mb-3">
@@ -166,6 +163,56 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
+    <script type='text/javascript'>
+        // baseURL variable
+        var baseURL = "<?php echo base_url(); ?>";
+        $(document).ready(function() {
+            // City change
+            $('#mainc').change(function() {
+                var mainCategory = $('#mainc').val();
+                // AJAX request
+                $.ajax({
+                    url: '<?= base_url() ?>/getSub',
+                    method: 'post',
+                    data: {
+                        mainc: mainCategory
+                    },
+                    dataType: 'json',
+                    success: function(response) {
+                        // Remove options 
+                        $('#subcat').find('option').not(':first').remove();
+                        // $('#city_id').find('option').not(':first').remove();
+                        // Add options
+                        $.each(response, function(index, data) {
+                            $('#subcat').append('<option value="' + data['id'] + '">' + data['name'] + '</option>');
+                        });
+                    }
+                });
+            });
+            // Department change
+            // $('#subcategory').change(function() {
+            //     var state_id = $(this).val();
+            //     // AJAX request
+            //     $.ajax({
+            //         url: '/DropdownAjaxController/getCities',
+            //         method: 'post',
+            //         data: {
+            //             state_id: state_id
+            //         },
+            //         dataType: 'json',
+            //         success: function(response) {
+            //             // Remove options
+            //             $('#city_id').find('option').not(':first').remove();
+            //             // Add options
+            //             $.each(response, function(index, data) {
+            //                 $('#city_id').append('<option value="' + data['id'] + '">' + data['name'] + '</option>');
+            //             });
+            //         }
+            //     });
+            // });
+        });
+    </script>
+    
     <script src="<?= base_url('public/assets/vendor/apexcharts/apexcharts.min.js') ?>"></script>
     <script src="<?= base_url('public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
     <script src="<?= base_url('public/assets/vendor/chart.js/chart.min.js') ?>"></script>
