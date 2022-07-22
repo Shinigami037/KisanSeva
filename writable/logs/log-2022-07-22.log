@@ -1,0 +1,216 @@
+CRITICAL - 2022-07-22 01:18:58 --> Cannot declare class check, because the name is already in use
+in APPPATH\Views\admin\checksession\check_session.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-07-22 01:19:12 --> Cannot declare class check, because the name is already in use
+in APPPATH\Views\admin\checksession\check_session.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-07-22 01:20:40 --> Cannot declare class check, because the name is already in use
+in APPPATH\Views\admin\checksession\check_session.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-07-22 01:20:48 --> Cannot declare class check, because the name is already in use
+in APPPATH\Views\admin\checksession\check_session.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-07-22 02:49:19 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'FCPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(606): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(585): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(932): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 APPPATH\Views\admin\inventory\product.php(67): session()
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\product.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/product', [], true)
+13 APPPATH\Controllers\AdminProduct.php(96): view('admin/inventory/product', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->product()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 02:56:04 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'FCPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(606): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(585): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(932): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 APPPATH\Views\admin\inventory\product.php(67): session()
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\inventory\\product.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/inventory/product', [], true)
+13 APPPATH\Controllers\AdminProduct.php(96): view('admin/inventory/product', [...])
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->product()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 03:06:19 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'FCPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(606): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(585): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(932): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 APPPATH\Views\admin\category\maincategory.php(66): session()
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\maincategory.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/category/maincategory', [], true)
+13 APPPATH\Controllers\AdminCategory.php(26): view('admin/category/maincategory')
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->mcategory()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-22 04:42:26 --> Column 'name' in field list is ambiguous
+CRITICAL - 2022-07-22 04:42:26 --> Column 'name' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `name`
+FROM `sub_category`
+JOIN `main_category` ON `main_category`.`id` = `sub_category`.`category_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`
+FROM `sub_category`
+JOIN `main_category` ON `main_category`.`id` = `sub_category`.`category_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`
+FROM `sub_category`
+JOIN `main_category` ON `main_category`.`id` = `sub_category`.`category_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`
+FROM `sub_category`
+JOIN `main_category` ON `main_category`.`id` = `sub_category`.`category_id`', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminCategory.php(22): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:48:22 --> Undefined array key "main_category"
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "main_category"', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:48:38 --> Undefined array key "main_category"
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "main_category"', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:48:39 --> Undefined array key "main_category"
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "main_category"', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:48:39 --> Undefined array key "main_category"
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "main_category"', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:48:39 --> Undefined array key "main_category"
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "main_category"', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:49:19 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$main_category
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$main_category', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:49:20 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$main_category
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$main_category', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:07 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$mainCategoryModel
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$mainCategoryModel', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:08 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$mainCategoryModel
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$mainCategoryModel', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:08 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$mainCategoryModel
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$mainCategoryModel', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:08 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$mainCategoryModel
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$mainCategoryModel', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:17 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$MainCategoryModel
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$MainCategoryModel', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:18 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$MainCategoryModel
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$MainCategoryModel', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:18 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$MainCategoryModel
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$MainCategoryModel', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:24 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$MainCategory
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$MainCategory', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:24 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$MainCategory
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$MainCategory', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 04:50:25 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$MainCategory
+in APPPATH\Controllers\AdminCategory.php on line 23.
+ 1 APPPATH\Controllers\AdminCategory.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$MainCategory', 'APPPATH\\Controllers\\AdminCategory.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminCategory->displaysub()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminCategory))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-22 05:11:03 --> Undefined array key "name"
+in APPPATH\Controllers\AdminProduct.php on line 112.
+ 1 APPPATH\Controllers\AdminProduct.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminProduct.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

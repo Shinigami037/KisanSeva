@@ -11,5 +11,5 @@ class SubCategoryModel extends Model
     protected $useAutoIncrement = true;
 
     protected $returnType = 'array';
-    protected $allowedFields = ['name','category_id'];
+    protected $allowedFields = ['sub_cat_name','category_id'];
 }

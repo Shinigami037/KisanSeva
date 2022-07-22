@@ -11,5 +11,5 @@ class MainCategoryModel extends Model
     protected $useAutoIncrement = true;
 
     protected $returnType = 'array';
-    protected $allowedFields = ['name'];
+    protected $allowedFields = ['main_cat_name'];
 }

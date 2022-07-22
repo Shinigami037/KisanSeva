@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 use App\Models\UserModel;
+use CodeIgniter\Session\Session;
+use SessionHandler;
 
 class Admin extends BaseController
 {
@@ -31,10 +33,12 @@ class Admin extends BaseController
             } else {
                 $oldPass = $users['user_password'];
                 if ($oldPass == $currentPass) {
-                    session_start();
-                    $_SESSION['log'] = true;
-                    $_SESSION['uname'] = $username;
-                    $_SESSION['id'] = $users['id'];
+                    $session = session();
+                    $session->set('log', true);
+                    $session->set('uname', $username);
+                    $session->set('id', $users['id']);
+                    // $_SESSION['uname'] = $username;
+                    // $_SESSION['id'] = $users['id'];
                     return redirect('admin');
                     // header("location: index.php");
                 } else {

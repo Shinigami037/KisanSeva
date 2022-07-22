@@ -90,7 +90,8 @@
                                             <td><?php echo ($value['price']); ?></td>
                                             <td><?php echo ($value['quantity']); ?></td>
                                             <td><?php echo ($value['detail']); ?></td>
-                                            <td><?php echo ($value['image']); ?></td>
+                                            <td><img src="public/uploads/<?php echo ($value['image']); ?>" height="150px" width="150px" /></td>
+                                            
                                             <td><a href="<?php echo base_url('edit/' . $value['id']); ?>">Edit</a></td>
                                             <!-- <td><button type="submit" formaction="products-update.php" class="form-control">Update</button></td> -->
                                             <!-- <td><button type="submit" formaction="" class="form-control">Delete</button></td> -->

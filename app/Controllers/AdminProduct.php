@@ -90,7 +90,7 @@ class AdminProduct extends BaseController
     public function product()
     {
         $maincategory = new MainCategoryModel();
-        $data = $maincategory->orderBy('name', 'ASC')->findAll();
+        $data = $maincategory->orderBy('main_cat_name', 'ASC')->findAll();
         // $maincategory = new SubCategoryModel();
         // $data['category'] = $category->orderBy('name', 'ASC')->findAll();
         return view('admin/inventory/product', ['category' => $data]);
@@ -109,8 +109,8 @@ class AdminProduct extends BaseController
         $sub = $subcategory->find($this->request->getPost('subcat'));
         // die(print_r($cat['name']));
         $data = [
-            'category' => $cat['name'],
-            'sub_category' => $sub['name'],
+            'category' => $cat['main_cat_name'],
+            'sub_category' => $sub['sub_cat_name'],
             'detail' => $this->request->getPost('detail'),
             'name' => $this->request->getPost('name'),
             'quantity' => $this->request->getPost('quantity'),

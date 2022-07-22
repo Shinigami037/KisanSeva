@@ -72,7 +72,7 @@
                                     <?php foreach ($name as $key => $value) : ?>
                                         <tr>
                                             <td><?php echo ($value['id']); ?></td>
-                                            <td><?php echo ($value['name']); ?></td>
+                                            <td><?php echo ($value['main_cat_name']); ?></td>
                                             <td><a href="<?php echo base_url('edit/' . $value['id']); ?>">Edit</a></td>
                                         </tr>
                                     <?php endforeach; ?>

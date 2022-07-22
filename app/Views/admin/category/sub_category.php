@@ -70,18 +70,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    
                                     <?php foreach ($name as $key => $value) : ?>
                                         <tr>
                                             <td><?php echo ($value['id']); ?></td>
-                                            <td><?php echo ($value['name']); ?></td>
+                                            <td><?php echo ($value['sub_cat_name']); ?></td>
                                             <td>
-                                                <?php foreach ($maincategory as $key => $val) : ?>
-                                                    <?php 
-                                                        if ($val['id'] == $value['category_id']){
-                                                            echo ($val['name']);
-                                                        }
-                                                    ?>
-                                                <?php endforeach; ?>
+                                            <?php echo ($value['main_cat_name']); ?>
                                             </td>
                                             <td><a href="<?php echo base_url('edit/' . $value['id']); ?>">Edit</a></td>
                                         </tr>

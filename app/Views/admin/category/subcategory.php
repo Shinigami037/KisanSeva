@@ -81,7 +81,7 @@
                                             <option value="">Select Main Category</option>
                                             <?php
                                             foreach ($category as $row) {
-                                                echo '<option value="' . $row["id"] . '">' . $row["name"] . '</option>';
+                                                echo '<option value="' . $row["id"] . '">' . $row["main_cat_name"] . '</option>';
                                             }
                                             ?>
                                         </select>

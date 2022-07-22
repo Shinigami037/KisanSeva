@@ -3,15 +3,7 @@
 <?= $this->section('content') ?>
 
 <main id="main" class="main">
-    <?php
-    include 'app/Views/admin/checksession/check_session.php';
-    class check1 extends check
-    {
-        //....
-    }
-    $obj = new check1;
-    $obj->check_login();
-    ?>
+
     <div class="pagetitle">
         <h1>Dashboard</h1>
         <nav>

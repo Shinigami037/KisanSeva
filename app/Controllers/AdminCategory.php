@@ -16,10 +16,15 @@ class AdminCategory extends BaseController
     public function displaysub()
     {
         $subcategory = new SubCategoryModel();
-        $data = $subcategory->findAll();
-        $maincategory = new MainCategoryModel();
-        $data2 = $maincategory->findAll();
-        return view('admin/category/sub_category', ['name' => $data , 'maincategory' => $data2]);
+        $subcategory->select('*');
+        $subcategory->join('main_category', 'main_category.id = sub_category.category_id');
+        // $maincategory = new MainCategoryModel();
+        // $data2 = $maincategory->findAll();
+        $data = $subcategory->get()->getResultArray();
+        // echo "<pre>"; print_r($data); echo "</pre>";
+        // echo '<pre>'.print_r($data).'</pre>';
+        // die();
+        return view('admin/category/sub_category', ['name' => $data]);
     }
     public function mcategory()
     {
@@ -28,7 +33,7 @@ class AdminCategory extends BaseController
     public function scategory()
     {
         $maincategory = new MainCategoryModel();
-        $data['category'] = $maincategory->orderBy('name', 'ASC')->findAll();
+        $data['category'] = $maincategory->orderBy('main_cat_name', 'ASC')->findAll();
         return view('admin/category/subcategory', $data);
     }
     public function mainCategory()
@@ -53,7 +58,7 @@ class AdminCategory extends BaseController
         // die($maincategoryid);
         $category = new SubCategoryModel();
         $data = [
-            'name' => $name,
+            'sub_cat_name' => $name,
             'category_id' => $maincategoryid,
         ];
         $query = $category->insert($data);

@@ -85,7 +85,7 @@
                                             <option value=""><?= $product['category'] ?></option>
                                             <?php
                                             foreach ($category as $row) {
-                                                echo '<option value="' . $row["id"] . '">' . $row["name"] . '</option>';
+                                                echo '<option value="' . $row["id"] . '">' . $row["main_cat_name"] . '</option>';
                                             }
                                             ?>
                                         </select>
@@ -185,7 +185,7 @@
                         success: function(data) {
                             var html = '<option value="">Select Sub Category</option>';
                             for (var i = 0; i < data.length; i++) {
-                                html += '<option value="'+data[i].id+'">'+data[i].name+'</option>';
+                                html += '<option value="'+data[i].id+'">'+data[i].sub_cat_name+'</option>';
                             }
                             $('#subcategory').html(html);
                         }
