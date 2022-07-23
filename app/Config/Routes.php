@@ -58,6 +58,8 @@ $routes->get('/confirmation', 'Order::confirmation');
 
 $routes->get('/contact', 'Contact::contact');
 
+$routes->get('/userlogout', 'UserLogout::logout');
+
 // routes get method ends here
 // routes post method start here
 // $routes->post('/contact-process','Login::userLogin');

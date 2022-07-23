@@ -46,10 +46,10 @@ class Login extends BaseController
                     } else {
                         $oldPass = $users['user_password'];
                         if ($oldPass == $currentPass) {
-                            session_start();
-                            $_SESSION['login'] = true;
-                            $_SESSION['username'] = $username;
-                            $_SESSION['id'] = $users['id'];
+                            $session = session();
+                            $session->set('login', true);
+                            $session->set('username', $username);
+                            // $session->set('id', $users['id']);
                             return redirect('index');
                             // header("location: index.php");
                         } else {

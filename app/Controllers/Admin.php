@@ -36,7 +36,7 @@ class Admin extends BaseController
                     $session = session();
                     $session->set('log', true);
                     $session->set('uname', $username);
-                    $session->set('id', $users['id']);
+                    // $session->set('id', $users['id']);
                     // $_SESSION['uname'] = $username;
                     // $_SESSION['id'] = $users['id'];
                     return redirect('admin');

@@ -10,6 +10,7 @@
 <!-- Start Header Area -->
 <header class="header_area sticky-header">
     <div class="main_menu">
+        <?php echo session('username'); ?>
         <nav class="navbar navbar-expand-lg navbar-light main_box">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,8 +41,20 @@
 									<li class="nav-item"><a class="nav-link" href="single-blog">Blog Details</a></li>
 								</ul>
 							</li> -->
-                        
-                        <li class="nav-item"><a class="nav-link" href="login">Login</a></li>
+
+                        <li class="nav-item">
+                            <?php
+                            if (session('login') == true) {
+                                // echo "<h1>You are not logged in.";
+                                // echo "You will be redirected";
+                                echo '<a class="nav-link" href="userlogout">Log Out</a>';
+                            } else {
+                                echo '<a class="nav-link" href="login">Login</a>';
+                            }
+                            ?>
+
+                            <!-- <a class="nav-link" href="login">Login</a> -->
+                        </li>
                         <!-- <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
