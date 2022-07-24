@@ -6,13 +6,15 @@ class UserLogout extends BaseController
 {
     public function logout()
     {
-        session_start();
+        // session_start();
         // echo session('username');
-        session_unset();
+        // session_unset();
         // echo session('username');
         // session_->stop();
-        session_destroy();
+        // session_destroy();
+        $session = session();
+        $session->destroy();
         // die("session_destroy");
-        return view('user/home/' . "index");
+        return redirect('index');
     }
 }

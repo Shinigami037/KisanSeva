@@ -1,0 +1,7 @@
+CRITICAL - 2022-07-24 10:24:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminProduct.php on line 113.
+ 1 APPPATH\Controllers\AdminProduct.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminProduct.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

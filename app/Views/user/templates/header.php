@@ -10,7 +10,7 @@
 <!-- Start Header Area -->
 <header class="header_area sticky-header">
     <div class="main_menu">
-        <?php echo session('username'); ?>
+        
         <nav class="navbar navbar-expand-lg navbar-light main_box">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,7 +27,7 @@
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="category">Shop Category</a></li>
+                                <li class="nav-item"><a class="nav-link" href="category">All Products</a></li>
                                 <!-- <li class="nav-item"><a class="nav-link" href="single-product">Product Details</a></li> -->
                                 <!-- <li class="nav-item"><a class="nav-link" href="checkout">Product Checkout</a></li> -->
                                 <li class="nav-item"><a class="nav-link" href="cart">Shopping Cart</a></li>

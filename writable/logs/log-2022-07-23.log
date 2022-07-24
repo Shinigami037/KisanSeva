@@ -106,3 +106,25 @@ in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
 11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogout))
 12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-23 17:08:17 --> Undefined variable $seller_deals
+in APPPATH\Views\user\category\category.php on line 241.
+ 1 APPPATH\Views\user\category\category.php(241): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $seller_deals', 'APPPATH\\Views\\user\\category\\category.php', 241)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\category\\category.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/category/category', [], true)
+ 5 APPPATH\Controllers\Category.php(10): view('user/category/category')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Category->category()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-23 17:13:46 --> Undefined variable $product
+in APPPATH\Views\user\category\category.php on line 241.
+ 1 APPPATH\Views\user\category\category.php(241): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\user\\category\\category.php', 241)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\category\\category.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/category/category', [], true)
+ 5 APPPATH\Controllers\Category.php(12): view('user/category/category', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Category->category()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
