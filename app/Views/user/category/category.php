@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="public/css/nouislider.min.css">
     <link rel="stylesheet" href="public/css/bootstrap.css">
     <link rel="stylesheet" href="public/css/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body id="category">
@@ -239,36 +241,38 @@
                     <div class="row">
                         <!-- new try -->
                         <?php foreach ($category as $key => $value) : ?>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product">
-                                    <img class="img-fluid" src="public/uploads/<?php echo ($value['image']); ?>" alt="">
-                                    <div class="product-details">
-                                        <h6><?php echo ($value['name']); ?></h6>
-                                        <div class="price">
-                                            <h6>$<?php echo ($value['price']); ?></h6>
-                                            <h6 class="l-through">$<?php echo ($value['price'] + 100); ?></h6>
-                                        </div>
-                                        <div class="prd-bottom">
-                                            <a href="" class="social-info">
-                                                <span class="ti-bag"></span>
-                                                <p class="hover-text">add to bag</p>
+                            <?php if ($value['status'] == 1) : ?>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-product">
+                                        <img class="img-fluid" src="public/uploads/<?php echo ($value['image']); ?>" alt="">
+                                        <div class="product-details">
+                                            <h6><?php echo ($value['name']); ?></h6>
+                                            <div class="price">
+                                                <h6>$<?php echo ($value['price']); ?></h6>
+                                                <h6 class="l-through">$<?php echo ($value['price'] + 100); ?></h6>
+                                            </div>
+                                            <div class="prd-bottom">
+                                                <a href="" class="social-info">
+                                                    <span class="ti-bag"></span>
+                                                    <p class="hover-text">add to bag</p>
+                                                </a>
+                                                <a href="<?php echo base_url('buy/' . $value['id']); ?>" class="social-info">
+                                                    <span class="bi bi-box-seam-fill"></span>
+                                                    <p class="hover-text">Buy Now</p>
+                                                </a>
+                                                <!-- <a href="" class="social-info">
+                                                <span class="lnr lnr-sync"></span>
+                                                <p class="hover-text">compare</p>
                                             </a>
-                                            <!-- <a href="" class="social-info">
-                                            <span class="lnr lnr-heart"></span>
-                                            <p class="hover-text">Wishlist</p>
-                                        </a> -->
-                                            <!-- <a href="" class="social-info">
-                                            <span class="lnr lnr-sync"></span>
-                                            <p class="hover-text">compare</p>
-                                        </a> -->
-                                            <!-- <a href="" class="social-info">
-                                            <span class="lnr lnr-move"></span>
-                                            <p class="hover-text">view more</p>
-                                        </a> -->
+                                            <a href="" class="social-info">
+                                                <span class="lnr lnr-move"></span>
+                                                <p class="hover-text">view more</p>
+                                            </a> -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                         <!-- succsesful -->
                     </div>
@@ -276,21 +280,22 @@
                 <!-- End Best Seller -->
                 <!-- Start Filter Bar -->
                 <div class="filter-bar d-flex flex-wrap align-items-center">
-                    <div class="sorting mr-auto">
+                    <!-- <div class="sorting mr-auto">
                         <select>
                             <option value="1">Show 12</option>
                             <option value="1">Show 12</option>
                             <option value="1">Show 12</option>
                         </select>
-                    </div>
-                    <div class="pagination">
-                        <a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                    </div> -->
+                    <div>
+                        <?= $pager->links() ?>
+                        <!-- <a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
                         <a href="#" class="active">1</a>
                         <a href="#">2</a>
                         <a href="#">3</a>
                         <a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
                         <a href="#">6</a>
-                        <a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
                     </div>
                 </div>
                 <!-- End Filter Bar -->
@@ -518,6 +523,9 @@
     <script src="public/js/jquery.magnific-popup.min.js"></script>
     <script src="public/js/owl.carousel.min.js"></script>
     <!--gmaps Js-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="public/js/gmaps.min.js"></script>
     <script src="public/js/main.js"></script>

@@ -64,20 +64,20 @@
                         <div class="card-body">
                             <h5 class="card-title">Add Product</h5>
 
-                            
+
 
                             <!-- Start Add Product Details Form -->
                             <form action="addproduct" method="post" enctype="multipart/form-data">
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Product Name</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name='name'>
+                                        <input type="text" class="form-control" name='name' required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Select Main Category</label>
                                     <div class="col-sm-10">
-                                        <select name="maincat" id="maincategory" class="form-select">
+                                        <select name="maincat" id="maincategory" class="form-select" required>
                                             <option value="">Select Main Category</option>
                                             <?php
                                             foreach ($category as $row) {
@@ -120,12 +120,12 @@
                                         <input class="form-control" name='image' type="file" id="formFile">
                                     </div>
                                 </div>
-                                <div class="row mb-3">
+                                <!-- <div class="row mb-3">
                                     <label for="inputNumber" class="col-sm-2 col-form-label">Product Quantity</label>
                                     <div class="col-sm-10">
                                         <input type="number" class="form-control" name='quantity'>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row mb-3">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Product Detail</label>
                                     <div class="col-sm-10">
@@ -162,6 +162,18 @@
 
     <!-- Vendor JS Files -->
     <script>
+        $(document).ready(function() {
+            <?php if (session()->getFlashdata('status')) { ?>
+                swal({
+                title: "<?= session()->getFlashdata('status') ?>",
+                text: "<?= session()->getFlashdata('status_text') ?>",
+                icon: "<?= session()->getFlashdata('status_icon') ?>",
+                button: "Ok",
+            });
+            <?php } ?>
+        });
+    </script>
+    <script>
         // baseURL variable
         $(document).ready(function() {
             // City change
@@ -180,7 +192,7 @@
                         success: function(data) {
                             var html = '<option value="">Select Sub Category</option>';
                             for (var i = 0; i < data.length; i++) {
-                                html += '<option value="'+data[i].id+'">'+data[i].sub_cat_name+'</option>';
+                                html += '<option value="' + data[i].id + '">' + data[i].sub_cat_name + '</option>';
                             }
                             $('#subcategory').html(html);
                         }
@@ -200,6 +212,7 @@
     <script src="public/assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="public/assets/vendor/php-email-form/validate.js"></script>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Template Main JS File -->
     <script src="public/assets/js/main.js"></script>
 

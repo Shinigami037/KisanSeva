@@ -29,6 +29,7 @@ class AdminProduct extends BaseController
             'name' => $this->request->getPost('name'),
             'quantity' => $this->request->getPost('quantity'),
             'price' => $this->request->getPost('price'),
+            'status' => 1,
             // 'image' => $imageName,
         ];
         // die($var);
@@ -107,18 +108,23 @@ class AdminProduct extends BaseController
         }
         $cat = $maincategory->find($this->request->getPost('maincat'));
         $sub = $subcategory->find($this->request->getPost('subcat'));
+        if ($sub == NULL){
+            // die("No category");
+            return redirect()->to('product')->with('status', 'Category is not selected')->with('status_text', 'Choose a Sub Category')->with('status_icon', 'warning');
+        }
         // die(print_r($cat['name']));
         $data = [
             'category' => $cat['main_cat_name'],
             'sub_category' => $sub['sub_cat_name'],
             'detail' => $this->request->getPost('detail'),
             'name' => $this->request->getPost('name'),
-            'quantity' => $this->request->getPost('quantity'),
+            'quantity' => 1,
             'price' => $this->request->getPost('price'),
             'image' => $imageName,
+            'status' => 1,
         ];
         $product->save($data);
-        return redirect()->to('product')->with('status', 'Product and Image Saved');
+        return redirect()->to('product')->with('status', 'Data Saved')->with('status_text', '')->with('status_icon', 'success');
     }
     // public function show()
     // {

@@ -8,8 +8,5 @@ class Product extends BaseController
     {
         return view('user/product/' . "single_product");
     }
-    public function cart()
-    {
-        return view('user/product/' . "cart");
-    }
+
 }

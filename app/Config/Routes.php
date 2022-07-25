@@ -47,7 +47,6 @@ $routes->get('/index', 'Home::index');
 $routes->get('/category', 'Category::category');
 
 $routes->get('/single-product', 'Product::single_product');
-$routes->get('/cart', 'Product::cart');
 
 $routes->get('/login', 'Login::login');
 $routes->get('/registration', 'Login::signup');
@@ -59,6 +58,9 @@ $routes->get('/confirmation', 'Order::confirmation');
 $routes->get('/contact', 'Contact::contact');
 
 $routes->get('/userlogout', 'UserLogout::logout');
+
+$routes->get('/cart', 'Cart::cart');
+$routes->get('/buy/(:num)', 'Cart::buy/$1');
 
 // routes get method ends here
 // routes post method start here

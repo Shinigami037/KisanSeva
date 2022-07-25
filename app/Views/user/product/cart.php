@@ -73,35 +73,44 @@
                                 <th scope="col">Price</th>
                                 <th scope="col">Quantity</th>
                                 <th scope="col">Total</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="public/img/cart.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <p>Minimalistic shop for multipurpose use</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$360.00</h5>
-                                </td>
-                                <td>
-                                    <div class="product_count">
-                                        <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$720.00</h5>
-                                </td>
-                            </tr>
-                            <tr>
+                            <?php if ($items) : ?>
+                                <?php foreach ($items as $value) : ?>
+                                    <tr>
+                                        <td>
+                                            <div class="media">
+                                                <div class="d-flex">
+                                                    <img src="public/uploads/<?php echo ($value['image']); ?>">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p><?php echo ($value['name']); ?></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <h5>$<?php echo ($value['price']); ?></h5>
+                                        </td>
+                                        <td>
+                                            <div class="product_count">
+                                                <h5><?php echo ($value['quantity']); ?></h5>
+                                                <!-- <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty"> -->
+                                                <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button> -->
+                                                <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button> -->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <h5>$<?php echo ($value['price'] * $value['quantity']); ?></h5>
+                                        </td>
+                                        <td>
+                                            <a class="gray_btn" href="#">Update</a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                            <!-- <tr>
                                 <td>
                                     <div class="media">
                                         <div class="d-flex">
@@ -164,14 +173,14 @@
                                 <td>
 
                                 </td>
-                                <!-- <td>
+                                <td>
                                     <div class="cupon_text d-flex align-items-center">
                                         <input type="text" placeholder="Coupon Code">
                                         <a class="primary-btn" href="#">Apply</a>
                                         <a class="gray_btn" href="#">Close Coupon</a>
                                     </div>
-                                </td> -->
-                            </tr>
+                                </td>
+                            </tr> -->
                             <tr>
                                 <td>
 

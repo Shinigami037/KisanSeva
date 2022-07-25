@@ -125,12 +125,7 @@
                                         <input class="form-control" name='image' type="file" id="formFile">
                                     </div>
                                 </div>
-                                <div class="row mb-3">
-                                    <label for="inputNumber" class="col-sm-2 col-form-label">Product Quantity</label>
-                                    <div class="col-sm-10">
-                                        <input type="number" value="<?= $product['quantity'] ?>" class="form-control" name='quantity'>
-                                    </div>
-                                </div>
+                                
                                 <!-- <div class="row mb-3">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Product Detail</label>
                                     <div class="col-sm-10">

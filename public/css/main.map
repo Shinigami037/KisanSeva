@@ -13,7 +13,7 @@
 		"../scss/theme/_elements.scss",
 		"../scss/theme/_header.scss",
 		"../scss/theme/_home.scss",
-		"../scss/theme/_common.scss",
+		"../public/scss/theme/_common.scss",
 		"../scss/theme/_footer.scss"
 	],
 	"sourcesContent": [

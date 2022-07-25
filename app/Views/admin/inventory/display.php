@@ -166,7 +166,7 @@
                                             <td><input type="text" class="form-control" name="category" value="<?php echo ($row1['category']); ?>"></td>
                                             <input type="hidden" class="form-control" name="sub_category" value="<?php echo ($row1['sub_category']); ?>" readonly>
                                             <td><input type="number" class="form-control" name="price" value="<?php echo ($row1['price']); ?>"></td>
-                                            <td><input type="number" class="form-control" name="quantity" value="<?php echo ($row1['quantity']); ?>"></td>
+                                            
                                             <td><input type="text" class="form-control" name="detail" value="<?php echo ($row1['detail']); ?>"></td>
                                         </form>
                                     </tr>

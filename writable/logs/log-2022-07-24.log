@@ -5,3 +5,170 @@ in APPPATH\Controllers\AdminProduct.php on line 113.
  3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
  4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 10:47:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminProduct.php on line 112.
+ 1 APPPATH\Controllers\AdminProduct.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminProduct.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 10:47:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminProduct.php on line 112.
+ 1 APPPATH\Controllers\AdminProduct.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminProduct.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 14:56:25 --> Undefined variable $category
+in APPPATH\Views\user\product\cart.php on line 79.
+ 1 APPPATH\Views\user\product\cart.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\user\\product\\cart.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(16): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:03:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 85.
+ 1 APPPATH\Views\user\product\cart.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(17): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:03:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 85.
+ 1 APPPATH\Views\user\product\cart.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(17): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:04:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 85.
+ 1 APPPATH\Views\user\product\cart.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(17): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:04:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 85.
+ 1 APPPATH\Views\user\product\cart.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(17): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:06:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 85.
+ 1 APPPATH\Views\user\product\cart.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(17): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:10:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 85.
+ 1 APPPATH\Views\user\product\cart.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(17): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:11:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 93.
+ 1 APPPATH\Views\user\product\cart.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(17): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:11:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 93.
+ 1 APPPATH\Views\user\product\cart.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(17): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:13:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 93.
+ 1 APPPATH\Views\user\product\cart.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(17): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:21:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\product\cart.php on line 93.
+ 1 APPPATH\Views\user\product\cart.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\user\\product\\cart.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(18): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:36:50 --> array_values(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Cart.php on line 16.
+ 1 APPPATH\Controllers\Cart.php(16): array_values(null)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:38:04 --> array_values(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Cart.php on line 16.
+ 1 APPPATH\Controllers\Cart.php(16): array_values(null)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 15:50:57 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Cart.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cart.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cart')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Cart', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-24 16:00:31 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Cart.php on line 45.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cart.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cart')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cart')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Cart', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

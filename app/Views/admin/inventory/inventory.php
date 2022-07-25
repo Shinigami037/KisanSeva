@@ -71,7 +71,7 @@
                                         <th class="text-left">Main Category</th>
                                         <th class="text-left">Sub Category</th>
                                         <th class="text-left">Price</th>
-                                        <th class="text-left">Quantity</th>
+                                        <!-- <th class="text-left">Quantity</th> -->
                                         <th class="text-left">Detail</th>
                                         <th class="text-left">Image</th>
                                         <th class="text-left">Action</th>
@@ -88,7 +88,7 @@
                                             <td><?php echo ($value['category']); ?></td>
                                             <td><?php echo ($value['sub_category']); ?></td>
                                             <td><?php echo ($value['price']); ?></td>
-                                            <td><?php echo ($value['quantity']); ?></td>
+                                            
                                             <td><?php echo ($value['detail']); ?></td>
                                             <td><img src="public/uploads/<?php echo ($value['image']); ?>" height="150px" width="150px" /></td>
                                             

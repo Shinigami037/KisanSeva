@@ -1,0 +1,112 @@
+CRITICAL - 2022-07-25 03:36:35 --> array_values(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Cart.php on line 16.
+ 1 APPPATH\Controllers\Cart.php(16): array_values(null)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 03:50:22 --> Undefined array key "quantity"
+in APPPATH\Controllers\Cart.php on line 41.
+ 1 APPPATH\Controllers\Cart.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'APPPATH\\Controllers\\Cart.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('15')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 04:10:23 --> array_push(): Argument #1 ($array) cannot be passed by reference
+in APPPATH\Controllers\Cart.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('28')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-25 04:28:54 --> Column 'quantity' cannot be null
+CRITICAL - 2022-07-25 04:28:54 --> Column 'quantity' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`, `status`) VALUES (\'Deirdre Harper\', \'shoes\', \'Veritatis pariatur \', \'Germaine Henson\', NULL, \'687\', \'p6.jpg\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`, `status`) VALUES (\'Deirdre Harper\', \'shoes\', \'Veritatis pariatur \', \'Germaine Henson\', NULL, \'687\', \'p6.jpg\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`, `status`) VALUES (\'Deirdre Harper\', \'shoes\', \'Veritatis pariatur \', \'Germaine Henson\', NULL, \'687\', \'p6.jpg\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`, `status`) VALUES (:category:, :sub_category:, :detail:, :name:, :quantity:, :price:, :image:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\AdminProduct.php(126): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 05:40:01 -->  route cannot be found while reverse-routing.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 56.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('C:\\xampp\\htdocs\\FitHealth')
+ 2 SYSTEMPATH\Common.php(863): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Cart.php(24): redirect('cart')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('28')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 05:41:29 --> Undefined array key "image"
+in APPPATH\Views\user\product\cart.php on line 86.
+ 1 APPPATH\Views\user\product\cart.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'APPPATH\\Views\\user\\product\\cart.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(19): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 05:41:56 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 80.
+ 1 APPPATH\Views\user\product\cart.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(19): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 05:41:56 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 80.
+ 1 APPPATH\Views\user\product\cart.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(19): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 05:41:57 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 80.
+ 1 APPPATH\Views\user\product\cart.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(19): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-25 06:48:09 --> Column 'quantity' cannot be null
+CRITICAL - 2022-07-25 06:48:09 --> Column 'quantity' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`, `status`) VALUES (\'Ezra Wong\', \'Reed Meadows\', \'Accusantium magna se\', \'Anne Petty\', NULL, \'991\', \'p7.jpg\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`, `status`) VALUES (\'Ezra Wong\', \'Reed Meadows\', \'Accusantium magna se\', \'Anne Petty\', NULL, \'991\', \'p7.jpg\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`, `status`) VALUES (\'Ezra Wong\', \'Reed Meadows\', \'Accusantium magna se\', \'Anne Petty\', NULL, \'991\', \'p7.jpg\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`category`, `sub_category`, `detail`, `name`, `quantity`, `price`, `image`, `status`) VALUES (:category:, :sub_category:, :detail:, :name:, :quantity:, :price:, :image:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\AdminProduct.php(126): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 06:50:29 --> Undefined variable $imageName
+in APPPATH\Controllers\AdminProduct.php on line 123.
+ 1 APPPATH\Controllers\AdminProduct.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\AdminProduct.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminProduct->addproduct()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
