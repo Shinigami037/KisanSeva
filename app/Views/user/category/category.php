@@ -252,14 +252,14 @@
                                                 <h6 class="l-through">$<?php echo ($value['price'] + 100); ?></h6>
                                             </div>
                                             <div class="prd-bottom">
-                                                <a href="" class="social-info">
+                                                <a href="<?php echo base_url('buy/' . $value['id']); ?>" class="social-info">
                                                     <span class="ti-bag"></span>
                                                     <p class="hover-text">add to bag</p>
                                                 </a>
-                                                <a href="<?php echo base_url('buy/' . $value['id']); ?>" class="social-info">
+                                                <!-- <a href="" class="social-info">
                                                     <span class="bi bi-box-seam-fill"></span>
                                                     <p class="hover-text">Buy Now</p>
-                                                </a>
+                                                </a> -->
                                                 <!-- <a href="" class="social-info">
                                                 <span class="lnr lnr-sync"></span>
                                                 <p class="hover-text">compare</p>

@@ -110,3 +110,411 @@ in APPPATH\Controllers\AdminProduct.php on line 123.
  3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProduct))
  4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-25 15:00:12 --> Duplicate entry '' for key 'PRIMARY'
+CRITICAL - 2022-07-25 15:00:12 --> Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cart` (`user_id`) VALUES (\'18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cart` (`user_id`) VALUES (\'18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cart` (`user_id`) VALUES (\'18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cart` (`user_id`) VALUES (:user_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Cart.php(33): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:04:57 --> Undefined array key "id"
+in APPPATH\Controllers\Cart.php on line 37.
+ 1 APPPATH\Controllers\Cart.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Cart.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:34:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:34:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:35:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:36:04 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:36:06 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:38:40 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:38:41 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:39:21 --> Undefined array key 0
+in APPPATH\Controllers\Cart.php on line 35.
+ 1 APPPATH\Controllers\Cart.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Cart.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:39:23 --> Undefined array key 0
+in APPPATH\Controllers\Cart.php on line 35.
+ 1 APPPATH\Controllers\Cart.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Cart.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:39:23 --> Undefined array key 0
+in APPPATH\Controllers\Cart.php on line 35.
+ 1 APPPATH\Controllers\Cart.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Cart.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 15:42:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 35.
+ 1 APPPATH\Controllers\Cart.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 16:19:13 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 718.
+ 1 SYSTEMPATH\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Cart.php(48): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('17')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-25 16:19:53 --> Cannot add or update a child row: a foreign key constraint fails (`fithealth_db`.`orders`, CONSTRAINT `cart_id` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`))
+CRITICAL - 2022-07-25 16:19:53 --> Cannot add or update a child row: a foreign key constraint fails (`fithealth_db`.`orders`, CONSTRAINT `cart_id` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (\'16\', 1, \'173\', \'98ed91f21d61a83a525f7e1934b9f10b\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (\'16\', 1, \'173\', \'98ed91f21d61a83a525f7e1934b9f10b\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (\'16\', 1, \'173\', \'98ed91f21d61a83a525f7e1934b9f10b\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (:product_id:, :product_quantity:, :product_price:, :cart_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Cart.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-25 16:22:51 --> Cannot add or update a child row: a foreign key constraint fails (`fithealth_db`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`))
+CRITICAL - 2022-07-25 16:22:51 --> Cannot add or update a child row: a foreign key constraint fails (`fithealth_db`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (\'16\', 1, \'173\', \'da51fde9e4c8712a181d43fcc88e8b94\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (\'16\', 1, \'173\', \'da51fde9e4c8712a181d43fcc88e8b94\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (\'16\', 1, \'173\', \'da51fde9e4c8712a181d43fcc88e8b94\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (:product_id:, :product_quantity:, :product_price:, :cart_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Cart.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-25 16:23:02 --> Cannot add or update a child row: a foreign key constraint fails (`fithealth_db`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`))
+CRITICAL - 2022-07-25 16:23:02 --> Cannot add or update a child row: a foreign key constraint fails (`fithealth_db`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (\'16\', 1, \'173\', \'c11d443a420a2e20d0da48f6be266d7e\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (\'16\', 1, \'173\', \'c11d443a420a2e20d0da48f6be266d7e\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (\'16\', 1, \'173\', \'c11d443a420a2e20d0da48f6be266d7e\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `orders` (`product_id`, `product_quantity`, `product_price`, `cart_id`) VALUES (:product_id:, :product_quantity:, :product_price:, :cart_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Cart.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 16:26:06 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 80.
+ 1 APPPATH\Views\user\product\cart.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(54): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 16:36:25 --> Undefined array key "image"
+in APPPATH\Views\user\product\cart.php on line 86.
+ 1 APPPATH\Views\user\product\cart.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'APPPATH\\Views\\user\\product\\cart.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(19): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-25 16:38:44 --> Unknown column 'order.product_id' in 'on clause'
+CRITICAL - 2022-07-25 16:38:44 --> Unknown column 'order.product_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+JOIN `product` ON `product`.`id` = `order`.`product_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+JOIN `product` ON `product`.`id` = `order`.`product_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+JOIN `product` ON `product`.`id` = `order`.`product_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+JOIN `product` ON `product`.`id` = `order`.`product_id`', [], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Cart.php(20): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 16:49:11 --> Undefined variable $newid
+in APPPATH\Controllers\Cart.php on line 75.
+ 1 APPPATH\Controllers\Cart.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newid', 'APPPATH\\Controllers\\Cart.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('20')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 16:58:36 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:00:21 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:00:22 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:05:53 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:05:54 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:05:54 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:05:55 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:05:55 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:06:44 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:06:44 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:06:47 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 78.
+ 1 APPPATH\Controllers\Cart.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Cart.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:10:13 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:10:14 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:10:15 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:10:36 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:10:37 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:10:37 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:10:38 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-25 17:10:38 --> Undefined variable $items
+in APPPATH\Views\user\product\cart.php on line 81.
+ 1 APPPATH\Views\user\product\cart.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'APPPATH\\Views\\user\\product\\cart.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(22): view('user/product/cart')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

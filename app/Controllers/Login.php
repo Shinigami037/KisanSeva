@@ -49,7 +49,8 @@ class Login extends BaseController
                             $session = session();
                             $session->set('login', true);
                             $session->set('username', $username);
-                            // $session->set('id', $users['id']);
+                            $session->set('useremail', $users['user_email']);
+                            $session->set('userid', $users['id']);
                             return redirect('index');
                             // header("location: index.php");
                         } else {

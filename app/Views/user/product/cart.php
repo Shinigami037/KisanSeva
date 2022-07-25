@@ -77,8 +77,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php if ($items) : ?>
+                        
                                 <?php foreach ($items as $value) : ?>
+                                
                                     <tr>
                                         <td>
                                             <div class="media">
@@ -91,25 +92,26 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <h5>$<?php echo ($value['price']); ?></h5>
+                                            <h5>$<?php echo ($value['product_price']); ?></h5>
                                         </td>
                                         <td>
                                             <div class="product_count">
-                                                <h5><?php echo ($value['quantity']); ?></h5>
+                                                <h5><?php echo ($value['product_quantity']); ?></h5>
                                                 <!-- <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty"> -->
                                                 <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button> -->
                                                 <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button> -->
                                             </div>
                                         </td>
                                         <td>
-                                            <h5>$<?php echo ($value['price'] * $value['quantity']); ?></h5>
+                                            <h5>$<?php echo ($value['product_price'] * $value['product_quantity']); ?></h5>
                                         </td>
                                         <td>
                                             <a class="gray_btn" href="#">Update</a>
                                         </td>
                                     </tr>
+                                    
                                 <?php endforeach; ?>
-                            <?php endif; ?>
+                            
                             <!-- <tr>
                                 <td>
                                     <div class="media">
