@@ -5,7 +5,7 @@
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="public/img/fav.png">
+    <link rel="shortcut icon" href="<?= base_url('public/img/fav.png'); ?>">
     <!-- Author Meta -->
     <meta name="author" content="CodePixar">
     <!-- Meta Description -->
@@ -20,14 +20,16 @@
     <!--
             CSS
             ============================================= -->
-    <link rel="stylesheet" href="public/css/linearicons.css">
-    <link rel="stylesheet" href="public/css/owl.carousel.css">
-    <link rel="stylesheet" href="public/css/font-awesome.min.css">
-    <link rel="stylesheet" href="public/css/themify-icons.css">
-    <link rel="stylesheet" href="public/css/nice-select.css">
-    <link rel="stylesheet" href="public/css/nouislider.min.css">
-    <link rel="stylesheet" href="public/css/bootstrap.css">
-    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="<?= base_url('public/css/linearicons.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/owl.carousel.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/font-awesome.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/themify-icons.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/nice-select.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/nouislider.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/main.css'); ?>">
+
+    <script src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -52,7 +54,7 @@
                 <div class="col-first">
                     <h1>Shopping Cart</h1>
                     <nav class="d-flex align-items-center">
-                        <a href="index">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="<?= base_url('index'); ?>">Home<span class="lnr lnr-arrow-right"></span></a>
                         <a href="category">Cart</a>
                     </nav>
                 </div>
@@ -77,112 +79,45 @@
                             </tr>
                         </thead>
                         <tbody>
-                        
-                                <?php foreach ($items as $value) : ?>
-                                
-                                    <tr>
-                                        <td>
-                                            <div class="media">
-                                                <div class="d-flex">
-                                                    <img src="public/uploads/<?php echo ($value['image']); ?>">
-                                                </div>
-                                                <div class="media-body">
-                                                    <p><?php echo ($value['name']); ?></p>
-                                                </div>
+                            <?php $count = 0; ?>
+                            <?php foreach ($items as $value) : ?>
+
+                                <tr>
+
+                                    <input type="hidden" name="p_id" id="p_id" value="<?php echo $value['product_id']; ?>" />
+                                    <input type="hidden" name="c_id" id="c_id" value="<?php echo $value['cart_id']; ?>" />
+                                    <td>
+                                        <div class="media">
+                                            <div class="d-flex">
+                                                <img src="<?= base_url('public/uploads/' . $value['image']); ?>">
                                             </div>
-                                        </td>
-                                        <td>
-                                            <h5>$<?php echo ($value['product_price']); ?></h5>
-                                        </td>
-                                        <td>
-                                            <div class="product_count">
-                                                <h5><?php echo ($value['product_quantity']); ?></h5>
-                                                <!-- <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty"> -->
-                                                <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button> -->
-                                                <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button> -->
+                                            <div class="media-body">
+                                                <p><?php echo ($value['name']); ?></p>
                                             </div>
-                                        </td>
-                                        <td>
-                                            <h5>$<?php echo ($value['product_price'] * $value['product_quantity']); ?></h5>
-                                        </td>
-                                        <td>
-                                            <a class="gray_btn" href="#">Update</a>
-                                        </td>
-                                    </tr>
-                                    
-                                <?php endforeach; ?>
-                            
-                            <!-- <tr>
-                                <td>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="public/img/cart.jpg" alt="">
                                         </div>
-                                        <div class="media-body">
-                                            <p>Minimalistic shop for multipurpose use</p>
+                                    </td>
+                                    <td>
+                                        <h5>$<?php echo ($value['product_price']); ?></h5>
+                                    </td>
+                                    <td>
+                                        <div class="product_count">
+                                            <!-- <h5></h5> -->
+                                            <input type="number" name="<?php echo ($value['product_id']); ?>" id="" min="1" value="<?php echo ($value['product_quantity']); ?>" class="input-text qty" >
+                                            <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button> -->
+                                            <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button> -->
                                         </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$360.00</h5>
-                                </td>
-                                <td>
-                                    <div class="product_count">
-                                        <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$720.00</h5>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="public/img/cart.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <p>Minimalistic shop for multipurpose use</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$360.00</h5>
-                                </td>
-                                <td>
-                                    <div class="product_count">
-                                        <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5>$720.00</h5>
-                                </td>
-                            </tr>
-                            <tr class="bottom_button">
-                                <td>
-                                    <a class="gray_btn" href="#">Update Cart</a>
-                                </td>
-                                <td>
+                                    </td>
+                                    <td>
+                                        <h5>$<?php echo ($value['product_price'] * $value['product_quantity']); ?></h5>
+                                    </td>
+                                    <td>
+                                        <!-- <a class="gray_btn" href="#">Update</a> -->
+                                        <a class="gray_btn" href="#">Delete</a>
+                                    </td>
+                                </tr>
+                                <?php $count += ($value['product_price'] * $value['product_quantity']); ?>
+                            <?php endforeach; ?>
 
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <div class="cupon_text d-flex align-items-center">
-                                        <input type="text" placeholder="Coupon Code">
-                                        <a class="primary-btn" href="#">Apply</a>
-                                        <a class="gray_btn" href="#">Close Coupon</a>
-                                    </div>
-                                </td>
-                            </tr> -->
                             <tr>
                                 <td>
 
@@ -194,43 +129,9 @@
                                     <h5>Subtotal</h5>
                                 </td>
                                 <td>
-                                    <h5>$2160.00</h5>
+                                    <h5>$<?php echo ($count); ?></h5>
                                 </td>
                             </tr>
-                            <!-- <tr class="shipping_area">
-                                <td>
-
-                                </td> -->
-                            <!-- <td>
-
-                                </td> -->
-                            <!-- <td>
-                                    <h5>Shipping</h5>
-                                </td> -->
-                            <!-- <td>
-                                    <div class="shipping_box">
-                                        <ul class="list">
-                                            <li><a href="#">Flat Rate: $5.00</a></li>
-                                            <li><a href="#">Free Shipping</a></li>
-                                            <li><a href="#">Flat Rate: $10.00</a></li>
-                                            <li class="active"><a href="#">Local Delivery: $2.00</a></li>
-                                        </ul>
-                                        <h6>Calculate Shipping <i class="fa fa-caret-down" aria-hidden="true"></i></h6>
-                                        <select class="shipping_select">
-                                            <option value="1">Bangladesh</option>
-                                            <option value="2">India</option>
-                                            <option value="4">Pakistan</option>
-                                        </select>
-                                        <select class="shipping_select">
-                                            <option value="1">Select a State</option>
-                                            <option value="2">Select a State</option>
-                                            <option value="4">Select a State</option>
-                                        </select>
-                                        <input type="text" placeholder="Postcode/Zipcode">
-                                        <a class="gray_btn" href="#">Update Details</a>
-                                    </div>
-                                </td> -->
-                            <!-- </tr> -->
                             <tr class="out_button_area">
                                 <td>
 
@@ -243,7 +144,7 @@
                                 </td>
                                 <td>
                                     <div class="checkout_btn_inner d-flex align-items-center">
-                                        <a class="gray_btn" href="category">Continue Shopping</a>
+                                        <a class="gray_btn" href="<?= base_url('category') ?>">Continue Shopping</a>
                                         <a class="primary-btn" href="#">Proceed to checkout</a>
                                     </div>
                                 </td>
@@ -260,19 +161,49 @@
     <?php echo $this->include('user/templates/footer'); ?>
     <!-- End footer Area -->
 
-    <script src="public/js/vendor/jquery-2.2.4.min.js"></script>
+    <script>
+        // baseURL variable
+        $(document).ready(function() {
+            
+            $('#qty').change(function() {
+                var qty = $('#qty').val();
+                // $.ajax({
+                //     console: function() {   console.log($('#qty').val());}
+                //     });
+                // var pid = $('#p_id').val();
+                // var cid = $('#c_id').val();
+                $.ajax({
+                    url: "<?= base_url('/product-update') ?>",
+                    method: "post",
+                    data: {
+                        qty: qty,
+                        // pid : pid,
+                        // cid : cid,
+                        // action: action,
+                    },
+                    dataType: 'JSON',
+                    success: function(result) {
+                        // window.location.reload();
+                        console.log(result);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script src="<?= base_url('public/js/vendor/jquery-2.2.4.min.js'); ?>"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="public/js/vendor/bootstrap.min.js"></script>
-    <script src="public/js/jquery.ajaxchimp.min.js"></script>
-    <script src="public/js/jquery.nice-select.min.js"></script>
-    <script src="public/js/jquery.sticky.js"></script>
-    <script src="public/js/nouislider.min.js"></script>
-    <script src="public/js/jquery.magnific-popup.min.js"></script>
-    <script src="public/js/owl.carousel.min.js"></script>
+    <script src="<?= base_url('public/js/vendor/bootstrap.min.js'); ?>"></script>
+    <script src="<?= base_url('public/js/jquery.ajaxchimp.min.js'); ?>"></script>
+    <script src="<?= base_url('public/js/jquery.nice-select.min.js'); ?>"></script>
+    <script src="<?= base_url('public/js/jquery.sticky.js'); ?>"></script>
+    <script src="<?= base_url('public/js/nouislider.min.js'); ?>"></script>
+    <script src="<?= base_url('public/js/jquery.magnific-popup.min.js'); ?>"></script>
+    <script src="<?= base_url('public/js/owl.carousel.min.js'); ?>"></script>
     <!--gmaps Js-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="public/js/gmaps.min.js"></script>
-    <script src="public/js/main.js"></script>
+    <script src="<?= base_url('public/js/gmaps.min.js'); ?>"></script>
+    <script src="<?= base_url('public/js/main.js'); ?>"></script>
 </body>
 
 </html>

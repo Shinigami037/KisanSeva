@@ -67,6 +67,8 @@ $routes->get('/buy/(:num)', 'Cart::buy/$1');
 // $routes->post('/contact-process','Login::userLogin');
 $routes->post('/login', 'Login::userLogin');
 $routes->post('/registration', 'Login::userSignup');
+
+$routes->post('/product-update', 'Cart::productUpdate');
 // routes post method ends here
 // routes for user ends here
 

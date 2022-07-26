@@ -13,13 +13,16 @@ class Cart extends BaseController
 {
     public function cart()
     {
-        // $data['items'] = array(session('cart'));
-        // $order = new OrdersModel();
-        // $order->select('*');
-        // $order->join('product', 'product.id = orders.product_id');
-        // $data = $order->get()->getResultArray();
+        $newsession = new CartModel();
+        $order = new OrdersModel();
+
+        $fetch = $newsession->where('user_id', session('userid'))->where('order_status', 0)->first();
+
+        $order->select('*');
+        $order->join('product', 'product.id = orders.product_id');
+        $data = $order->where('cart_id', $fetch['id'])->get()->getResultArray();
         // $data['items'] = $order->findAll();
-        return view('user/product/cart');
+        return view('user/product/cart', ['items' => $data]);
     }
     public function buy($id = null)
     {
@@ -54,7 +57,7 @@ class Cart extends BaseController
                 $order->join('product', 'product.id = orders.product_id');
                 $order->where('cart_id', $newid);
                 $data3 = $order->get()->getResultArray();
-                return redirect()->to('cart'.['items' => $data3])->with('items',$data3);
+                return redirect()->to('cart' . ['items' => $data3])->with('items', $data3);
                 // die();
                 // $order->select('*');
                 // $subcategory->join('main_category', 'main_category.id = sub_category.category_id');
@@ -91,7 +94,12 @@ class Cart extends BaseController
             // $hello = $newsession->findAll();
 
             // die(md5($myTime));
-            
+
         }
     }
+    public function productUpdate(){
+        $data = [ 'items' => 0 ];
+        echo json_encode($data);
+    }
+
 }
