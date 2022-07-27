@@ -230,3 +230,41 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
  6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 15:29:07 --> Invalid file: user/orders/confirmation.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/orders/confirmation.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/orders/confirmation', [], true)
+ 3 APPPATH\Controllers\Checkout.php(28): view('user/orders/confirmation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Checkout->confirmation()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 15:38:48 --> Undefined variable $value
+in APPPATH\Views\user\order\confirmation.php on line 61.
+ 1 APPPATH\Views\user\order\confirmation.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Views\\user\\order\\confirmation.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\order\\confirmation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/order/confirmation', [], true)
+ 5 APPPATH\Controllers\Checkout.php(29): view('user/order/confirmation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Checkout->confirmation('bb80a8ccc74a619d53ea53d3a209e47b')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 16:10:31 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 60.
+ 1 APPPATH\Controllers\Cart.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Cart.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 16:37:13 --> Undefined variable $session
+in APPPATH\Views\user\profile\profile.php on line 73.
+ 1 APPPATH\Views\user\profile\profile.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\user\\profile\\profile.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(11): view('user/profile/profile')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Profile->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

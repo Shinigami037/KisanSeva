@@ -141,7 +141,7 @@
                                 <label for="f-option4">I’ve read and accept the </label>
                                 <a href="#">terms & conditions*</a>
                             </div>
-                            <a class="primary-btn" href="<?= base_url('confirmation') ?>">Proceed to Buy</a>
+                            <a class="primary-btn" href="<?= base_url('confirmation/'.$value['cart_id']) ?>">Proceed to Buy</a>
                         </div>
                     </div>
                 </div>

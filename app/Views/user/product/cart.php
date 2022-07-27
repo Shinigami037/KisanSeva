@@ -147,12 +147,9 @@
                                 <td>
                                     <div class="checkout_btn_inner d-flex align-items-center">
                                         <a class="gray_btn" href="<?= base_url('category') ?>">Continue Shopping</a>
-                                        <?php 
-                                            if(!empty($items)){
-                                                echo '<a class="primary-btn" href="checkout/'.$value['cart_id'].'">Proceed to checkout</a>';
-                                            }
-                                        ?>
-                                        
+                                        <?php if(!empty($items)){ ?>
+                                                <a class="primary-btn" href="<?= base_url('checkout/'.$value['cart_id']) ?>">Proceed to checkout</a>;
+                                        <?php } ?>    
                                     </div>
                                 </td>
                             </tr>

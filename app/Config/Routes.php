@@ -65,7 +65,7 @@ $routes->get('/buy/(:num)', 'Cart::buy/$1');
 $routes->get('/userprofile', 'Profile::profile');
 
 $routes->get('/checkout/(:any)', 'Checkout::checkout/$1');
-$routes->get('/confirmation', 'Checkout::confirmation');
+$routes->get('/confirmation/(:any)', 'Checkout::confirmation/$1');
 
 // routes get method ends here
 // routes post method start here

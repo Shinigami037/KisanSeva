@@ -6533,8 +6533,9 @@ button.bg-dark:hover {
     border-top-left-radius: .25rem !important;
     border-bottom-left-radius: .25rem !important
 }
-
+/* <!-- Changed height for rounded --> */
 .rounded-circle {
+    height: 250px;
     border-radius: 50% !important
 }
 

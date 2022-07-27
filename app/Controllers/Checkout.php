@@ -19,8 +19,19 @@ class Checkout extends BaseController
         $data = $order->where('cart_id', $id)->get()->getResultArray();
         return view('user/order/checkout',['items' => $data]);
     }
-    public function confirmation()
+    public function confirmation($id = null)
     {
-        return view('user/orders/confirmation');
+        // die($id);
+        $myTime = new Time('now');
+        $order = new OrdersModel();
+        $cart = new CartModel();
+        $ids = $order->where('cart_id', $id)->findColumn('id');
+        $order->whereIn('id',$ids)->set(['order_date' => $myTime])->update();
+        // die(print_r($hello));
+        $order->select('*');
+        $order->join('product', 'product.id = orders.product_id');
+        $data = $order->where('cart_id', $id)->get()->getResultArray();
+        $cart->update($id, ['order_status' => 1]);
+        return view('user/order/confirmation',['items' => $data]);
     }
 }

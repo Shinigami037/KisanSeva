@@ -33,139 +33,123 @@
     <?php echo $this->include('user/templates/header'); ?>
     <!-- End Header Area -->
 
-	<!-- Start Banner Area -->
-	<section class="banner-area organic-breadcrumb">
-		<div class="container">
-			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
-				<div class="col-first">
-					<h1>Confirmation</h1>
-					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Confirmation</a>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Banner Area -->
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Confirmation</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="category.html">Confirmation</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
 
-	<!--================Order Details Area =================-->
-	<section class="order_details section_gap">
-		<div class="container">
-			<h3 class="title_confirmation">Thank you. Your order has been received.</h3>
-			<div class="row order_d_inner">
-				<div class="col-lg-4">
-					<div class="details_item">
-						<h4>Order Info</h4>
-						<ul class="list">
-							<li><a><span>Order number</span> : 60235</a></li>
-							<li><a><span>Date</span> : Los Angeles</a></li>
-							<li><a><span>Total</span> : USD 2210</a></li>
-							<li><a><span>Payment method</span> : Check payments</a></li>
-						</ul>
-					</div>
-				</div>
-                
-				<div class="col-lg-4">
+    <!--================Order Details Area =================-->
+    <section class="order_details section_gap">
+        <?php $count = 0; ?>
+        <div class="container">
+            <h3 class="title_confirmation">Thank you. Your order has been received.</h3>
+            <div class="row order_d_inner">
+                <div class="col-lg-4">
+                    <div class="details_item">
+                        <h4>Order Info</h4>
+                        <ul class="list">
+                            <li><a><span>Order number</span>:<h5><?php echo ($items[0]['cart_id']); ?></h5></a></li>
+                            <li><a><span>Date</span> : <?php echo ($items[0]['order_date']); ?></a></li>
+                            <li><a><span>Payment method</span> : Cash On Delivery</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
                     <!-- Used for displaying Space -->
-				</div>
-				<div class="col-lg-4">
-					<div class="details_item">
-						<h4>Shipping Address</h4>
-						<ul class="list">
-							<li><a><span>Street</span> : 56/8</a></li>
-							<li><a><span>City</span> : Los Angeles</a></li>
-							<li><a><span>Country</span> : United States</a></li>
-							<li><a><span>Postcode </span> : 36952</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="order_details_table">
-				<h2>Order Details</h2>
-				<div class="table-responsive">
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col">Product</th>
-								<th scope="col">Quantity</th>
-								<th scope="col">Total</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<p>Pixelstore fresh Blackberry</p>
-								</td>
-								<td>
-									<h5>x 02</h5>
-								</td>
-								<td>
-									<p>$720.00</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p>Pixelstore fresh Blackberry</p>
-								</td>
-								<td>
-									<h5>x 02</h5>
-								</td>
-								<td>
-									<p>$720.00</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p>Pixelstore fresh Blackberry</p>
-								</td>
-								<td>
-									<h5>x 02</h5>
-								</td>
-								<td>
-									<p>$720.00</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h4>Subtotal</h4>
-								</td>
-								<td>
-									<h5></h5>
-								</td>
-								<td>
-									<p>$2160.00</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h4>Shipping</h4>
-								</td>
-								<td>
-									<h5></h5>
-								</td>
-								<td>
-									<p>Free Shipping</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h4>Total</h4>
-								</td>
-								<td>
-									<h5></h5>
-								</td>
-								<td>
-									<p>$2210.00</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Order Details Area =================-->
+                </div>
+                <div class="col-lg-4">
+                    <div class="details_item">
+                        <h4>Shipping Address</h4>
+                        <ul class="list">
+                            <li><a><span>Address</span> : gfjffgjfffgfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff56/8</a></li>
+                            <!-- <li><a><span>City</span> : Los Angeles</a></li> -->
+                            <li><a><span>Country</span> : India</a></li>
+                            <!-- <li><a><span>Postcode </span> : 36952</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="order_details_table">
+                <h2>Order Details</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($items as $value) : ?>
+                                <tr>
+                                    <td>
+                                        <p><?php echo ($value['name']); ?></p>
+                                    </td>
+                                    <td>
+                                        <h5>x <?php echo ($value['product_quantity']); ?></h5>
+                                    </td>
+                                    <td>
+                                        <p>$<?php echo ($value['product_price'] * $value['product_quantity']); ?></p>
+                                    </td>
+                                </tr>
+                                <?php $count += ($value['product_price'] * $value['product_quantity']); ?>
+                            <?php endforeach; ?>
+                            <tr>
+                                <td>
+                                    <h4>Subtotal</h4>
+                                </td>
+                                <td>
+                                    <h5></h5>
+                                </td>
+                                <td>
+                                    <p>$<?php echo ($count); ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Shipping</h4>
+                                </td>
+                                <td>
+                                    <h5></h5>
+                                </td>
+                                <td>
+                                    <p>Free Shipping</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Total</h4>
+                                </td>
+                                <td>
+                                    <h5></h5>
+                                </td>
+                                <td>
+                                    <p>$<?php echo ($count); ?></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="checkout_btn_inner d-flex align-items-center">
+                <a class="primary-btn" href="<?= base_url('category') ?>">Continue Shopping</a>
+            </div>
+        </div>
+    </section>
+    <!--================End Order Details Area =================-->
 
 
     <!-- start footer Area -->

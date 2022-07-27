@@ -30,7 +30,6 @@ class Cart extends BaseController
             return redirect()->to('login');
         } else {
             $myTime = new Time('now');
-
             $newsession = new CartModel();
             $product = new ProductModel();
             $order = new OrdersModel();
@@ -57,7 +56,8 @@ class Cart extends BaseController
                 $order->join('product', 'product.id = orders.product_id');
                 $order->where('cart_id', $newid);
                 $data3 = $order->get()->getResultArray();
-                return redirect()->to('cart' . ['items' => $data3])->with('items', $data3);
+                // return redirect()->to('cart')->with('items', $data3);
+                return view('user/product/cart', ['items' => $data3]);
                 // die();
                 // $order->select('*');
                 // $subcategory->join('main_category', 'main_category.id = sub_category.category_id');
