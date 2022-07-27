@@ -81,10 +81,10 @@
                         <form class="row login_form" action="login" method="post" id="contactForm" novalidate>
                             <?= csrf_field() ?>
                             <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="uname" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" required>
+                                <input type="text" class="form-control" id="uname" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" value="<?php echo set_value('username'); ?>" required>
                             </div>
                             <div class="col-md-12 form-group">
-                                <input type="password" class="form-control" id="upassword" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'"  required>
+                                <input type="password" class="form-control" id="upassword" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required>
                             </div>
                             <div class="col-md-12 form-group">
                                 <div class="creat_account">
