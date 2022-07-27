@@ -98,8 +98,17 @@ class Cart extends BaseController
         }
     }
     public function productUpdate(){
-        $data = [ 'items' => 0 ];
-        echo json_encode($data);
+        $order = new OrdersModel();
+        $order->where('cart_id', $this->request->getVar('cid'));
+        $id = $this->request->getVar('qty');
+        $order->where('product_id', $this->request->getVar('pid'))->first();
+        die($id);
+        $data = [
+            'id' => $id['id'],
+            'product_quantity' => $this->request->getVar('qty')
+        ];
+        $order->save($data);
+            // echo json_encode($data);
     }
 
 }

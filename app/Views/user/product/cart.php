@@ -102,7 +102,7 @@
                                     <td>
                                         <div class="product_count">
                                             <!-- <h5></h5> -->
-                                            <input type="number" name="<?php echo ($value['product_id']); ?>" id="" min="1" value="<?php echo ($value['product_quantity']); ?>" class="input-text qty" >
+                                            <input type="number" name="<?php echo ($value['product_id']); ?>" id="qty" min="1" value="<?php echo ($value['product_quantity']); ?>" class="input-text qty">
                                             <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button> -->
                                             <!-- <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button> -->
                                         </div>
@@ -112,7 +112,8 @@
                                     </td>
                                     <td>
                                         <!-- <a class="gray_btn" href="#">Update</a> -->
-                                        <a class="gray_btn" href="#">Delete</a>
+                                        <button type="button" class="btn btn-danger" id="btn" value="<?php echo ($value['product_id']); ?>">Delete</button>
+
                                     </td>
                                 </tr>
                                 <?php $count += ($value['product_price'] * $value['product_quantity']); ?>
@@ -164,27 +165,29 @@
     <script>
         // baseURL variable
         $(document).ready(function() {
-            
+            $('#btn').click(function() {
+                var id = $('#btn').val();
+                
+                console.log(id);
+            });
             $('#qty').change(function() {
                 var qty = $('#qty').val();
-                // $.ajax({
-                //     console: function() {   console.log($('#qty').val());}
-                //     });
-                // var pid = $('#p_id').val();
-                // var cid = $('#c_id').val();
+                var pid = $('#p_id').val();
+                var cid = $('#c_id').val();
+                console.log(qty,pid,cid);
                 $.ajax({
                     url: "<?= base_url('/product-update') ?>",
                     method: "post",
                     data: {
                         qty: qty,
-                        // pid : pid,
-                        // cid : cid,
+                        pid : pid,
+                        cid : cid,
                         // action: action,
                     },
                     dataType: 'JSON',
                     success: function(result) {
                         // window.location.reload();
-                        console.log(result);
+                        console.log("hii");
                     }
                 });
             });

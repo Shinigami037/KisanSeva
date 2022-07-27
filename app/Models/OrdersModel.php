@@ -11,5 +11,5 @@ class OrdersModel extends Model
     protected $useAutoIncrement = true;
 
     protected $returnType = 'array';
-    protected $allowedFields = ['product_id', 'product_quantity', 'product_price', 'cart_id' , 'order_date'];
+    protected $allowedFields = ['id','product_id', 'product_quantity', 'product_price', 'cart_id' , 'order_date'];
 }
