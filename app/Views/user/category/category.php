@@ -256,6 +256,8 @@
                                                     <span class="ti-bag"></span>
                                                     <p class="hover-text">add to bag</p>
                                                 </a>
+                                                <!-- <button class="btn btn-primary" type = "button"><span class="ti-bag"></span>
+                                                    <p class="hover-text">add to bag</p></button> -->
                                                 <!-- <a href="" class="social-info">
                                                     <span class="bi bi-box-seam-fill"></span>
                                                     <p class="hover-text">Buy Now</p>

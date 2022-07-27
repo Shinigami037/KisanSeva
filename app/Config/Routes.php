@@ -62,13 +62,16 @@ $routes->get('/userlogout', 'UserLogout::logout');
 $routes->get('/cart', 'Cart::cart');
 $routes->get('/buy/(:num)', 'Cart::buy/$1');
 
+$routes->get('/userprofile', 'Profile::profile');
+
 // routes get method ends here
 // routes post method start here
 // $routes->post('/contact-process','Login::userLogin');
 $routes->post('/login', 'Login::userLogin');
 $routes->post('/registration', 'Login::userSignup');
 
-$routes->get('/product-update', 'Cart::productUpdate');
+$routes->post('/product-update', 'Cart::productUpdate');
+$routes->post('/product-delete', 'Cart::productDelete');    
 // routes post method ends here
 // routes for user ends here
 

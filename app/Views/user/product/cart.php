@@ -79,6 +79,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                        
                             <?php $count = 0; ?>
                             <?php foreach ($items as $value) : ?>
 
@@ -167,14 +168,28 @@
         $(document).ready(function() {
             $('#btn').click(function() {
                 var id = $('#btn').val();
-                
+                var cid = $('#c_id').val();
                 console.log(id);
+                $.ajax({
+                    url: "<?= base_url('/product-delete') ?>",
+                    method: "post",
+                    data: {
+                        pid : id,
+                        cid : cid,
+                        // action: action,
+                    },
+                    dataType: 'JSON',
+                    success: function(result) {
+                        window.location.href='<?= base_url('cart')?>';
+                        // console.log(result);
+                    }
+                });
             });
             $('#qty').change(function() {
                 var qty = $('#qty').val();
                 var pid = $('#p_id').val();
                 var cid = $('#c_id').val();
-                console.log(qty,pid,cid);
+                // console.log(qty,pid,cid);
                 $.ajax({
                     url: "<?= base_url('/product-update') ?>",
                     method: "post",
@@ -186,8 +201,8 @@
                     },
                     dataType: 'JSON',
                     success: function(result) {
-                        // window.location.reload();
-                        console.log("hii");
+                        window.location.href='<?= base_url('cart')?>';
+                        // console.log(result);
                     }
                 });
             });

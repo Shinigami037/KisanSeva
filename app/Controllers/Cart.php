@@ -64,15 +64,24 @@ class Cart extends BaseController
                 // $data = $subcategory->get()->getResultArray();
                 // return view('user/product/cart');
             } else {
-
-                $data2 = [
-                    'product_id' => $id,
-                    'product_quantity' => 1,
-                    'product_price' => $pro['price'],
-                    'cart_id' => $fetch['id'],
-                ];
-
-                $order->insert($data2);
+                
+                $pid = $order->where('cart_id', $fetch['id'])->where('product_id', $id)->first();
+                if (empty($pid)) {
+                    $data2 = [
+                        'product_id' => $id,
+                        'product_quantity' => 1,
+                        'product_price' => $pro['price'],
+                        'cart_id' => $fetch['id'],
+                    ];
+                    $order->insert($data2);
+                }else {
+                    $up = [
+                        'id' => $pid['id'],
+                        'product_quantity' => $pid['product_quantity']+1
+                    ];
+                    $order->save($up);
+                }
+                
                 $order->select('*');
                 $order->join('product', 'product.id = orders.product_id');
                 // $order->where('cart_id', $fetch['id']);
@@ -97,18 +106,28 @@ class Cart extends BaseController
 
         }
     }
-    public function productUpdate(){
+    public function productUpdate()
+    {
         $order = new OrdersModel();
         $order->where('cart_id', $this->request->getVar('cid'));
-        $id = $this->request->getVar('qty');
-        $order->where('product_id', $this->request->getVar('pid'))->first();
-        die($id);
+        // $id = $this->request->getVar('qty');
+        $id = $order->where('product_id', $this->request->getVar('pid'))->first();
+        // $order->update($id, $data);
+        // die($id);
         $data = [
             'id' => $id['id'],
             'product_quantity' => $this->request->getVar('qty')
         ];
         $order->save($data);
-            // echo json_encode($data);
+        // $val = 
+        echo json_encode($data);
     }
-
+    public function productDelete(){
+        $order = new OrdersModel();
+        $order->where('product_id', $this->request->getVar('pid'));
+        $order->where('cart_id', $this->request->getVar('cid'));
+        $id = $order->first();
+        $order->delete($id);
+        echo json_encode($id);
+    }
 }

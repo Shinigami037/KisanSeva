@@ -10,11 +10,11 @@
 <!-- Start Header Area -->
 <header class="header_area sticky-header">
     <div class="main_menu">
-        
+
         <nav class="navbar navbar-expand-lg navbar-light main_box">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index"><img src="<?php echo base_url('img/logo.png'); ?>" alt=""></a>
+                <a class="navbar-brand logo_h" href="<?= base_url('index'); ?>"><img src="<?php echo base_url('img/logo.png'); ?>" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -23,19 +23,19 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="index">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="<?= base_url('index'); ?>">Home</a></li>
                         <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+                            <a href="<?= base_url('#'); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="category">All Products</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?= base_url('category'); ?>">All Products</a></li>
                                 <!-- <li class="nav-item"><a class="nav-link" href="single-product">Product Details</a></li> -->
                                 <!-- <li class="nav-item"><a class="nav-link" href="checkout">Product Checkout</a></li> -->
-                                <li class="nav-item"><a class="nav-link" href="cart">Shopping Cart</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?= base_url('cart'); ?>">Shopping Cart</a></li>
                                 <!-- <li class="nav-item"><a class="nav-link" href="confirmation">Confirmation</a></li> -->
                             </ul>
                         </li>
                         <!-- <li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+								<a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
 									<li class="nav-item"><a class="nav-link" href="single-blog">Blog Details</a></li>
@@ -47,6 +47,7 @@
                             if (session('login') == true) {
                                 // echo "<h1>You are not logged in.";
                                 // echo "You will be redirected";
+                                $var = base_url();
                                 echo '<a class="nav-link" href="userlogout">Log Out</a>';
                             } else {
                                 echo '<a class="nav-link" href="login">Login</a>';
@@ -55,6 +56,14 @@
 
                             <!-- <a class="nav-link" href="login">Login</a> -->
                         </li>
+                        <?php
+                        if (session('login') == true) {
+
+                            $var = base_url();
+                            echo '<li class="nav-item"><a class="nav-link" href="userprofile">My Profile</a></li>';
+                        }
+                        ?>
+
                         <!-- <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
@@ -63,10 +72,10 @@
 									<li class="nav-item"><a class="nav-link" href="elements">Elements</a></li>
 								</ul>
 							</li> -->
-                        <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?= base_url('contact'); ?>">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item"><a href="cart" class="cart"><span class="ti-bag"></span></a></li>
+                        <li class="nav-item"><a href="<?= base_url('cart'); ?>" class="cart"><span class="ti-bag"></span></a></li>
                         <li class="nav-item">
                             <button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
                         </li>

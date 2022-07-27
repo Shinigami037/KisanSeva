@@ -5,3 +5,192 @@ in APPPATH\Controllers\Cart.php on line 23.
  3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
  4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:29:52 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:29:53 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:30:19 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:30:19 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:30:20 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:30:20 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:30:24 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:30:24 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:30:24 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:31:28 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:31:28 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:31:28 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:31:29 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:37:11 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:37:14 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:37:19 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:38:25 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 23.
+ 1 APPPATH\Controllers\Cart.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:38:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 23.
+ 1 APPPATH\Controllers\Cart.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:39:04 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:39:52 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:42:16 --> Undefined property: CodeIgniter\View\View::$security
+in APPPATH\Views\user\product\cart.php on line 82.
+ 1 APPPATH\Views\user\product\cart.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$security', 'APPPATH\\Views\\user\\product\\cart.php', 82)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\product\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/product/cart', [], true)
+ 5 APPPATH\Controllers\Cart.php(25): view('user/product/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:43:56 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(440): CodeIgniter\Filters\Filters->run('product-update', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:45:32 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 02:48:31 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productUpdate()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 04:04:19 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2334.
+ 1 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\Cart.php(121): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->productDelete()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 04:56:35 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Cart.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 04:58:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 23.
+ 1 APPPATH\Controllers\Cart.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 04:59:02 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 60.
+ 1 APPPATH\Controllers\Cart.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Cart.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('17')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-27 04:59:58 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 60.
+ 1 APPPATH\Controllers\Cart.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Cart.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->buy('16')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
