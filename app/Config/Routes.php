@@ -63,6 +63,8 @@ $routes->get('/cart', 'Cart::cart');
 $routes->get('/buy/(:num)', 'Cart::buy/$1');
 
 $routes->get('/userprofile', 'Profile::profile');
+$routes->post('/profileupdate', 'Profile::update');
+$routes->post('/profilepassword', 'Profile::password');
 
 $routes->get('/checkout/(:any)', 'Checkout::checkout/$1');
 $routes->get('/confirmation/(:any)', 'Checkout::confirmation/$1');

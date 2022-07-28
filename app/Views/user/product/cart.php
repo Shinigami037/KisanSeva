@@ -79,7 +79,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                        
+
                             <?php $count = 0; ?>
                             <?php foreach ($items as $value) : ?>
 
@@ -147,9 +147,9 @@
                                 <td>
                                     <div class="checkout_btn_inner d-flex align-items-center">
                                         <a class="gray_btn" href="<?= base_url('category') ?>">Continue Shopping</a>
-                                        <?php if(!empty($items)){ ?>
-                                                <a class="primary-btn" href="<?= base_url('checkout/'.$value['cart_id']) ?>">Proceed to checkout</a>;
-                                        <?php } ?>    
+                                        <?php if (!empty($items)) { ?>
+                                            <a class="primary-btn" href="<?= base_url('checkout/' . $value['cart_id']) ?>">Proceed to checkout</a>
+                                        <?php } ?>
                                     </div>
                                 </td>
                             </tr>
@@ -176,13 +176,13 @@
                     url: "<?= base_url('/product-delete') ?>",
                     method: "post",
                     data: {
-                        pid : id,
-                        cid : cid,
+                        pid: id,
+                        cid: cid,
                         // action: action,
                     },
                     dataType: 'JSON',
                     success: function(result) {
-                        window.location.href='<?= base_url('cart')?>';
+                        window.location.href = '<?= base_url('cart') ?>';
                         // console.log(result);
                     }
                 });
@@ -197,13 +197,13 @@
                     method: "post",
                     data: {
                         qty: qty,
-                        pid : pid,
-                        cid : cid,
+                        pid: pid,
+                        cid: cid,
                         // action: action,
                     },
                     dataType: 'JSON',
                     success: function(result) {
-                        window.location.href='<?= base_url('cart')?>';
+                        window.location.href = '<?= base_url('cart') ?>';
                         // console.log(result);
                     }
                 });

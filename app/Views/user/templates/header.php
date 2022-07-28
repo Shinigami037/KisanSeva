@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-lg navbar-light main_box">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="<?= base_url('index'); ?>"><img src="<?php echo base_url('img/logo.png'); ?>" alt=""></a>
+                <a class="navbar-brand logo_h" href="<?= base_url('index'); ?>"><img class="logoUser" src="<?php echo base_url('public/gifs/home.gif'); ?>" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -43,26 +43,17 @@
 							</li> -->
 
                         <li class="nav-item">
-                            <?php
-                            if (session('login') == true) {
-                                // echo "<h1>You are not logged in.";
-                                // echo "You will be redirected";
-                                $var = base_url();
-                                echo '<a class="nav-link" href="userlogout">Log Out</a>';
-                            } else {
-                                echo '<a class="nav-link" href="login">Login</a>';
-                            }
-                            ?>
+                            <?php if (session('login') == true) : ?>
+                                <a class="nav-link" href="<?= base_url('userlogout'); ?>">Log Out</a>
+                            <?php else : ?>
+                                <a class="nav-link" href="<?= base_url('login'); ?>">Login</a>
+                            <?php endif; ?>
 
                             <!-- <a class="nav-link" href="login">Login</a> -->
                         </li>
-                        <?php
-                        if (session('login') == true) {
-
-                            $var = base_url();
-                            echo '<li class="nav-item"><a class="nav-link" href="userprofile">My Profile</a></li>';
-                        }
-                        ?>
+                        <?php if (session('login') == true) { ?>
+                            <li class="nav-item"><a class="nav-link" href="<?= base_url('userprofile'); ?>">My Profile</a></li>
+                        <?php } ?>
 
                         <!-- <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>

@@ -9,7 +9,7 @@ class UserModel extends Model
     protected $table = 'user';
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['user_name', 'user_password', 'user_email', 'customer_name'];
+    protected $allowedFields = ['user_name', 'user_password', 'user_email', 'customer_name', 'customer_address', 'customer_phone'];
     protected $returnType = 'array';
     // protected $allowedFields = ['user_name', 'user_passward', 'user_email', 'customer_name', 'customer_address', 'customer_phone'];
 }

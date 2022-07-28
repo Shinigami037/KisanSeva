@@ -1,0 +1,69 @@
+CRITICAL - 2022-07-28 11:28:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 23.
+ 1 APPPATH\Controllers\Cart.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-28 11:28:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 23.
+ 1 APPPATH\Controllers\Cart.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-28 16:29:56 --> Undefined variable $session
+in APPPATH\Views\user\profile\profile.php on line 18.
+ 1 APPPATH\Views\user\profile\profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\user\\profile\\profile.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(11): view('user/profile/profile')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Profile->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-28 17:53:43 --> Undefined variable $value
+in APPPATH\Views\user\order\checkout.php on line 144.
+ 1 APPPATH\Views\user\order\checkout.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Views\\user\\order\\checkout.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\order\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/order/checkout', [], true)
+ 5 APPPATH\Controllers\Checkout.php(20): view('user/order/checkout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Checkout->checkout('userprofile')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-28 17:54:45 --> Undefined variable $value
+in APPPATH\Views\user\order\checkout.php on line 144.
+ 1 APPPATH\Views\user\order\checkout.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Views\\user\\order\\checkout.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\order\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/order/checkout', [], true)
+ 5 APPPATH\Controllers\Checkout.php(20): view('user/order/checkout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Checkout->checkout('userprofile')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-28 17:54:53 --> Undefined variable $value
+in APPPATH\Views\user\order\checkout.php on line 144.
+ 1 APPPATH\Views\user\order\checkout.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Views\\user\\order\\checkout.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\order\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/order/checkout', [], true)
+ 5 APPPATH\Controllers\Checkout.php(20): view('user/order/checkout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Checkout->checkout('userprofile')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-28 17:56:01 --> Undefined variable $value
+in APPPATH\Views\user\order\checkout.php on line 144.
+ 1 APPPATH\Views\user\order\checkout.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Views\\user\\order\\checkout.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\order\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/order/checkout', [], true)
+ 5 APPPATH\Controllers\Checkout.php(20): view('user/order/checkout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Checkout->checkout('userprofile')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

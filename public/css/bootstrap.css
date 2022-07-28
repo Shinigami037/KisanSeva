@@ -226,6 +226,10 @@ img {
     border-style: none
 }
 
+.logoUser {
+    width: 75px;
+    height: 75px;
+}
 svg {
     overflow: hidden;
     vertical-align: middle
@@ -6535,7 +6539,7 @@ button.bg-dark:hover {
 }
 /* <!-- Changed height for rounded --> */
 .rounded-circle {
-    height: 250px;
+    /* height: 250px; */
     border-radius: 50% !important
 }
 
