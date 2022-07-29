@@ -25,6 +25,7 @@ class Checkout extends BaseController
         $myTime = new Time('now');
         $order = new OrdersModel();
         $cart = new CartModel();
+        $cart->update($id,['purchase_date' => $myTime]);
         $ids = $order->where('cart_id', $id)->findColumn('id');
         $order->whereIn('id',$ids)->set(['order_date' => $myTime])->update();
         // die(print_r($hello));

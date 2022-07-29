@@ -171,7 +171,7 @@
             $('#btn').click(function() {
                 var id = $('#btn').val();
                 var cid = $('#c_id').val();
-                console.log(id);
+                // console.log(id);
                 $.ajax({
                     url: "<?= base_url('/product-delete') ?>",
                     method: "post",

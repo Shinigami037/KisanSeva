@@ -231,14 +231,14 @@
                                                 <td>
                                                     <div class="media">
                                                         <div class="media-body">
-                                                            <p><?php echo $value['cart_id']; ?></p>
+                                                            <p><?php echo $value['id']; ?></p>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="media">
                                                         <div class="media-body">
-                                                            <p><?php echo $value['order_date']; ?></p>
+                                                            <p><?php echo $value['purchase_date']; ?></p>
                                                         </div>
                                                     </div>
                                                 </td>

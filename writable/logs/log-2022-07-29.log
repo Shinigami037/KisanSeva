@@ -1,0 +1,29 @@
+CRITICAL - 2022-07-29 02:56:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Cart.php on line 23.
+ 1 APPPATH\Controllers\Cart.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Cart.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Cart->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-29 03:08:30 --> Undefined array key "cart_id"
+in APPPATH\Views\user\profile\profile.php on line 234.
+ 1 APPPATH\Views\user\profile\profile.php(234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_id"', 'APPPATH\\Views\\user\\profile\\profile.php', 234)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(25): view('user/profile/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Profile->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-29 03:08:52 --> Undefined array key "order_date"
+in APPPATH\Views\user\profile\profile.php on line 241.
+ 1 APPPATH\Views\user\profile\profile.php(241): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_date"', 'APPPATH\\Views\\user\\profile\\profile.php', 241)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(25): view('user/profile/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Profile->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

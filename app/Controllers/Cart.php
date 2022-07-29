@@ -127,7 +127,7 @@ class Cart extends BaseController
         $order->where('product_id', $this->request->getVar('pid'));
         $order->where('cart_id', $this->request->getVar('cid'));
         $id = $order->first();
-        $order->delete($id);
+        $order->delete($id['id']);
         echo json_encode($id);
     }
 }

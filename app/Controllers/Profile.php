@@ -16,10 +16,11 @@ class Profile extends BaseController
 
         $data = $user->where('id', session('userid'))->first();
 
-        $order->select('*');
-        $order->join('orders', 'cart.id = orders.cart_id');
-        $order->where('order_status', 1);
-        $data3 = $order->get()->getResultArray();
+
+        // $order->select('*');
+        // $order->join('orders', 'cart.id = orders.cart_id');
+        // $order->where('order_status', 1);
+        $data3 = $order->where('order_status', 1)->where('user_id', session('userid'))->findAll();
 
         return view('user/profile/profile', ['items' => $data , 'order' => $data3]);
     }
