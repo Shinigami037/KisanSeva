@@ -13,15 +13,32 @@ class Cart extends BaseController
 {
     public function cart()
     {
+        if (session('login') != true) {
+            return redirect('login');
+        }
         $newsession = new CartModel();
         $order = new OrdersModel();
 
         $fetch = $newsession->where('user_id', session('userid'))->where('order_status', 0)->first();
 
+        $myTime = new Time('now');
+
+        if (empty($fetch)) {
+            $newid = md5($myTime);
+            $data = [
+                'id' => $newid,
+                'user_id' => session('userid'),
+            ];
+            $newsession->insert($data);
+            $order->select('*');
+            $order->join('product', 'product.id = orders.product_id');
+            $order->where('cart_id', $newid);
+            $data3 = $order->get()->getResultArray();
+            return view('user/product/cart', ['items' => $data3]);
+        } 
         $order->select('*');
         $order->join('product', 'product.id = orders.product_id');
         $data = $order->where('cart_id', $fetch['id'])->get()->getResultArray();
-        // $data['items'] = $order->findAll();
         return view('user/product/cart', ['items' => $data]);
     }
     public function buy($id = null)
@@ -64,7 +81,7 @@ class Cart extends BaseController
                 // $data = $subcategory->get()->getResultArray();
                 // return view('user/product/cart');
             } else {
-                
+
                 $pid = $order->where('cart_id', $fetch['id'])->where('product_id', $id)->first();
                 if (empty($pid)) {
                     $data2 = [
@@ -74,14 +91,14 @@ class Cart extends BaseController
                         'cart_id' => $fetch['id'],
                     ];
                     $order->insert($data2);
-                }else {
+                } else {
                     $up = [
                         'id' => $pid['id'],
-                        'product_quantity' => $pid['product_quantity']+1
+                        'product_quantity' => $pid['product_quantity'] + 1
                     ];
                     $order->save($up);
                 }
-                
+
                 $order->select('*');
                 $order->join('product', 'product.id = orders.product_id');
                 // $order->where('cart_id', $fetch['id']);
@@ -122,7 +139,8 @@ class Cart extends BaseController
         // $val = 
         echo json_encode($data);
     }
-    public function productDelete(){
+    public function productDelete()
+    {
         $order = new OrdersModel();
         $order->where('product_id', $this->request->getVar('pid'));
         $order->where('cart_id', $this->request->getVar('cid'));
