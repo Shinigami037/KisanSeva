@@ -1,0 +1,68 @@
+CRITICAL - 2022-10-14 05:08:42 --> md5(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH\Controllers\Login.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'md5(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Controllers\\Login.php', 92)
+ 2 APPPATH\Controllers\Login.php(92): md5(null)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userSignup()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-14 17:50:05 --> Column 'user_name' cannot be null
+CRITICAL - 2022-10-14 17:50:05 --> Column 'user_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`user_name`, `user_password`, `user_email`) VALUES (NULL, \'f3ed11bbdb94fd9ebdefbaf646ab94d3\', \'rivusubo@mailinator.com\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`user_name`, `user_password`, `user_email`) VALUES (NULL, \'f3ed11bbdb94fd9ebdefbaf646ab94d3\', \'rivusubo@mailinator.com\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`user_name`, `user_password`, `user_email`) VALUES (NULL, \'f3ed11bbdb94fd9ebdefbaf646ab94d3\', \'rivusubo@mailinator.com\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`user_name`, `user_password`, `user_email`) VALUES (:user_name:, :user_password:, :user_email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Login.php(97): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userSignup()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-14 18:59:49 --> Unknown column 'user_contact' in 'field list'
+CRITICAL - 2022-10-14 18:59:49 --> Unknown column 'user_contact' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (\'Micah Patton\', \'jywuw@mailinator.com\', \'9274088931\', \'f3ed11bbdb94fd9ebdefbaf646ab94d3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (\'Micah Patton\', \'jywuw@mailinator.com\', \'9274088931\', \'f3ed11bbdb94fd9ebdefbaf646ab94d3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (\'Micah Patton\', \'jywuw@mailinator.com\', \'9274088931\', \'f3ed11bbdb94fd9ebdefbaf646ab94d3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (:user_name:, :user_email:, :user_contact:, :user_password:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Login.php(98): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userSignup()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-14 19:03:00 --> Unknown column 'user_contact' in 'field list'
+CRITICAL - 2022-10-14 19:03:00 --> Unknown column 'user_contact' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (\'Micah Patton\', \'jywuw@mailinator.com\', \'9274088931\', \'da942bd08a73480b8af6273b9a94ae42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (\'Micah Patton\', \'jywuw@mailinator.com\', \'9274088931\', \'da942bd08a73480b8af6273b9a94ae42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (\'Micah Patton\', \'jywuw@mailinator.com\', \'9274088931\', \'da942bd08a73480b8af6273b9a94ae42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (:user_name:, :user_email:, :user_contact:, :user_password:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Login.php(98): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userSignup()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-14 19:14:01 --> Column 'user_name' cannot be null
+CRITICAL - 2022-10-14 19:14:01 --> Column 'user_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (NULL, NULL, NULL, \'b4b8daf4b8ea9d39568719e1e320076f\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (NULL, NULL, NULL, \'b4b8daf4b8ea9d39568719e1e320076f\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (NULL, NULL, NULL, \'b4b8daf4b8ea9d39568719e1e320076f\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`user_name`, `user_email`, `user_contact`, `user_password`) VALUES (:user_name:, :user_email:, :user_contact:, :user_password:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Login.php(98): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->userSignup()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

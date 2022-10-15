@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="public/assets/img/favicon.png" rel="icon">
+    <link rel="shortcut icon" type="image/png" href="<?php echo base_url('public/assets2/img/favicon.png'); ?>">
     <link href="public/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -39,22 +39,21 @@
 
 <body>
 
-    <main>
+    <main style="background-image: url('public/assets2/img/registration.jpg'); background-repeat:no-repeat; background-size:cover">
         <div class="container">
 
-            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
                             <div class="d-flex justify-content-center py-4">
-                                <a href="index.html" class="logo d-flex align-items-center w-auto">
-                                    <img src="public/assets/img/logo.png" alt="">
-                                    <span class="d-none d-lg-block">Fit Health</span>
-                                </a>
+
+                                <h1><span style="color: orange;" class="d-none d-lg-block">Kisan Seva</span></h1>
+
                             </div><!-- End Logo -->
 
-                            <div class="card mb-3">
+                            <div style="background: rgba(255, 255, 255, .6)" class="card mb-3">
 
                                 <div class="card-body">
 
@@ -65,25 +64,24 @@
 
                                     <form action="registration" method="post" class="row g-3 needs-validation" novalidate>
                                         <?= csrf_field() ?>
-                                        
+
                                         <div class="col-12">
-                                            <label for="yourName" class="form-label">Your Name</label>
+                                            <label for="yourName" class="form-label">Name</label>
                                             <input type="text" name="name" class="form-control" id="yourName" required>
                                             <div class="invalid-feedback">Please, enter your name!</div>
                                         </div>
 
                                         <div class="col-12">
-                                            <label for="yourEmail" class="form-label">Your Email</label>
-                                            <input type="email" name="email" class="form-control" id="yourEmail" required>
-                                            <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                                            <label for="yourEmail" class="form-label">Email</label>
+                                            <input type="email" name="email" class="form-control" id="yourEmail">
+
                                         </div>
 
                                         <div class="col-12">
-                                            <label for="yourUsername" class="form-label">Username</label>
+                                            <label for="yourContact" class="form-label">Contact No.</label>
                                             <div class="input-group has-validation">
-                                                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                                <input type="text" name="username" class="form-control" id="yourUsername" required>
-                                                <div class="invalid-feedback">Please choose a username.</div>
+                                                <input type="tel" name="contact" class="form-control" id="yourContact" required>
+                                                <div class="invalid-feedback">Please Enter Contact No.</div>
                                             </div>
                                         </div>
 
@@ -110,10 +108,10 @@
 
                                 </div>
                             </div>
-
+                            <!-- 
                             <div class="credits">
-                                Designed by Manashvee
-                            </div>
+                                <h4 style="color: black; font-style:italic; font-weight:1000;">Designed by MangoTheGangster</h4>
+                            </div> -->
 
                         </div>
                     </div>

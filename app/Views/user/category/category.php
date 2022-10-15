@@ -157,28 +157,32 @@
                     <div class="row">
                         <!-- new try -->
                         <?php foreach ($category as $key => $value) : ?>
-                            <?php if ($value['status'] == 1) : ?>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="single-product">
-                                        <img class="img-fluid" src="public/uploads/<?php echo ($value['image']); ?>" alt="">
-                                        <div class="product-details">
-                                            <h6><?php echo ($value['name']); ?></h6>
-                                            <div class="price">
-                                                <h6>$<?php echo ($value['price']); ?></h6>
-                                                <h6 class="l-through">$<?php echo ($value['price'] + 100); ?></h6>
-                                            </div>
-                                            <div class="prd-bottom">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-product">
+                                    <a href="<?php echo base_url('single-product/' . $value['id']); ?>"><img class="img-fluid" src="public/uploads/<?php echo ($value['image']); ?>" alt=""></a>
+                                    <div class="product-details">
+                                        <h6><a href="<?php echo base_url('single-product/' . $value['id']); ?>"><?php echo ($value['name']); ?></a></h6>
+                                        <div class="price">
+                                            <h6>$<?php echo ($value['price']); ?></h6>
+                                            <h6 class="l-through">$<?php echo ($value['price'] + 100); ?></h6>
+                                        </div>
+                                        <div class="prd-bottom">
+                                            <?php if ($value['status'] == 0) { ?>
+                                                <h3 style="color: red;">Out Of Stock</h3>
+                                            <?php } else { ?>
                                                 <a href="<?php echo base_url('buy/' . $value['id']); ?>" class="social-info">
                                                     <span class="ti-bag"></span>
                                                     <p class="hover-text">add to bag</p>
                                                 </a>
-                                                <!-- <button class="btn btn-primary" type = "button"><span class="ti-bag"></span>
+                                            <?php } ?>
+
+                                            <!-- <button class="btn btn-primary" type = "button"><span class="ti-bag"></span>
                                                     <p class="hover-text">add to bag</p></button> -->
-                                                <!-- <a href="" class="social-info">
+                                            <!-- <a href="" class="social-info">
                                                     <span class="bi bi-box-seam-fill"></span>
                                                     <p class="hover-text">Buy Now</p>
                                                 </a> -->
-                                                <!-- <a href="" class="social-info">
+                                            <!-- <a href="" class="social-info">
                                                 <span class="lnr lnr-sync"></span>
                                                 <p class="hover-text">compare</p>
                                             </a>
@@ -186,36 +190,23 @@
                                                 <span class="lnr lnr-move"></span>
                                                 <p class="hover-text">view more</p>
                                             </a> -->
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            <?php endif; ?>
+                            </div>
                         <?php endforeach; ?>
                         <!-- succsesful -->
                     </div>
                 </section>
                 <!-- End Best Seller -->
                 <!-- Start Filter Bar -->
-                <div class="filter-bar d-flex flex-wrap align-items-center">
-                    <!-- <div class="sorting mr-auto">
-                        <select>
-                            <option value="1">Show 12</option>
-                            <option value="1">Show 12</option>
-                            <option value="1">Show 12</option>
-                        </select>
-                    </div> -->
-                    <div>
-                        <?= $pager->links() ?>
-                        <!-- <a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
-                        <a href="#" class="active">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
-                        <a href="#">6</a>
-                        <a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
-                    </div>
+                <div class="filter-bar d-flex flex-wrap ">
+                    
                 </div>
+                <div><div>
+                    <?= $pager->links() ?>
+                </div></div>
+                
                 <!-- End Filter Bar -->
             </div>
         </div>

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\UserModel;
 
 use Config\App;
@@ -19,7 +20,7 @@ class Login extends BaseController
     public function userLogin()
     {
         helper(['form']);
-        $username = $this->request->getVar("username");
+        $username = $this->request->getVar("contact");
         $password = $this->request->getVar("password");
         // if ($username == 'Shinigami') {
         //     return redirect('admin');
@@ -27,7 +28,7 @@ class Login extends BaseController
         $data = [];
         if ($this->request->getMethod() == 'post') {
             $rules = [
-                'username' => 'required',
+                'contact' => 'required',
                 'password' => 'required|min_length[8]|alpha_numeric_punct',
             ];
 
@@ -39,7 +40,7 @@ class Login extends BaseController
                     // $db = \Config\Database::connect();
                     $userModel = new UserModel();
                     $currentPass = md5($password);
-                    $users = $userModel->where('user_name', $username)->first();
+                    $users = $userModel->where('user_contact', $username)->first();
                     if (!isset($users)) {
                         session()->setFlashdata('fail', 'Incorrect Username');
                         return redirect('login')->withInput();
@@ -49,7 +50,7 @@ class Login extends BaseController
                             $session = session();
                             $session->set('login', true);
                             $session->set('username', $username);
-                            $session->set('useremail', $users['user_email']);
+                            $session->set('useremail', '$users[]');
                             $session->set('userid', $users['id']);
                             return redirect('index');
                             // header("location: index.php");
@@ -83,15 +84,15 @@ class Login extends BaseController
     public function userSignup()
     {
         $name = $this->request->getVar("name");
-        $username = $this->request->getVar("username");
+        $contact = $this->request->getVar("contact");
         $email = $this->request->getVar("email");
         $password = $this->request->getVar("password");
 
         $values = [
-            'user_name' => $username,
-            'user_password' => md5($password),
+            'user_name' => $name,
             'user_email' => $email,
-            'customer_name' => $name,
+            'user_contact' => $contact,
+            'user_password' => md5($password)
         ];
         $userModel = new UserModel();
         $query = $userModel->insert($values);

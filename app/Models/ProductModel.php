@@ -11,5 +11,5 @@ class ProductModel extends Model
     protected $useAutoIncrement = true;
 
     protected $returnType = 'array';
-    protected $allowedFields = ['category','sub_category','detail','name','quantity','price','image', 'status'];
+    protected $allowedFields = ['id','category','sub_category','detail','name','quantity','price','image', 'status'];
 }

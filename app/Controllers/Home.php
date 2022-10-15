@@ -8,8 +8,9 @@ class Home extends BaseController
 {
     public function index()
     {
-        $userlist = new UserModel;
-        $data = $userlist->findAll();
-        return view("user/home/index",['name' => $data]);
+        return view("user/home/index");
+        // $userlist = new UserModel;
+        // $data = $userlist->findAll();
+        // return view("user/home/index",['name' => $data]);
     }
 }

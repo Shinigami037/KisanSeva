@@ -43,40 +43,38 @@ $routes->set404Override();
 // routes get method start here
 $routes->get('/', 'Home::index');
 $routes->get('/index', 'Home::index');
+$routes->get('/weather', 'Weather::index');
+// $routes->get('/category', 'Category::category');
 
-$routes->get('/category', 'Category::category');
+// $routes->get('/single-product/(:num)', 'Product::single_product/$1');
 
-$routes->get('/single-product', 'Product::single_product');
+// $routes->get('/checkout', 'Order::checkout');
+// $routes->get('/tracking', 'Order::tracking');
+// $routes->get('/confirmation', 'Order::confirmation');
 
-$routes->get('/login', 'Login::login');
-$routes->get('/registration', 'Login::signup');
+// $routes->get('/contact', 'Contact::contact');
 
-$routes->get('/checkout', 'Order::checkout');
-$routes->get('/tracking', 'Order::tracking');
-$routes->get('/confirmation', 'Order::confirmation');
+// $routes->get('/userlogout', 'UserLogout::logout');
 
-$routes->get('/contact', 'Contact::contact');
+// $routes->get('/userprofile', 'Profile::profile');
+// $routes->post('/profileupdate', 'Profile::update');
+// $routes->post('/profilepassword', 'Profile::password');
 
-$routes->get('/userlogout', 'UserLogout::logout');
-
-$routes->get('/cart', 'Cart::cart');
-$routes->get('/buy/(:num)', 'Cart::buy/$1');
-
-$routes->get('/userprofile', 'Profile::profile');
-$routes->post('/profileupdate', 'Profile::update');
-$routes->post('/profilepassword', 'Profile::password');
-
-$routes->get('/checkout/(:any)', 'Checkout::checkout/$1');
-$routes->get('/confirmation/(:any)', 'Checkout::confirmation/$1');
+// $routes->get('/checkout/(:any)', 'Checkout::checkout/$1');
+// $routes->get('/confirmation/(:any)', 'Checkout::confirmation/$1');
 
 // routes get method ends here
 // routes post method start here
 // $routes->post('/contact-process','Login::userLogin');
+$routes->get('/login', 'Login::login');
+$routes->get('/registration', 'Login::signup');
 $routes->post('/login', 'Login::userLogin');
 $routes->post('/registration', 'Login::userSignup');
 
+$routes->get('/buy/(:num)', 'Cart::buy/$1');
+$routes->get('/cart', 'Cart::cart');
 $routes->post('/product-update', 'Cart::productUpdate');
-$routes->post('/product-delete', 'Cart::productDelete');    
+$routes->post('/product-delete', 'Cart::productDelete');
 // routes post method ends here
 // routes for user ends here
 

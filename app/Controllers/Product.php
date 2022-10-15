@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\ProductModel;
 
 class Product extends BaseController
 {
-    public function single_product()
+    public function single_product($id = null)
     {
-        return view('user/product/' . "single_product");
+        $product = new ProductModel();
+        $data = $product->find($id);
+        return view('user/product/single-product',['items' => $data]);
     }
 
 }

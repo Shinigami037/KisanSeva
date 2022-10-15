@@ -1,127 +1,124 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
+<html lang="en">
 
 <head>
-    <!-- Mobile Specific Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="public/img/fav.png">
-    <!-- Author Meta -->
-    <meta name="author" content="CodePixar">
-    <!-- Meta Description -->
-    <meta name="description" content="">
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="">
-    <!-- meta character set -->
-    <meta charset="UTF-8">
-    <!-- Site Title -->
-    <title>Fit Health</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!--
-		CSS
-		============================================= -->
-    <link rel="stylesheet" href="public/css/linearicons.css">
-    <link rel="stylesheet" href="public/css/owl.carousel.css">
-    <link rel="stylesheet" href="public/css/themify-icons.css">
-    <link rel="stylesheet" href="public/css/font-awesome.min.css">
-    <link rel="stylesheet" href="public/css/nice-select.css">
-    <link rel="stylesheet" href="public/css/nouislider.min.css">
-    <link rel="stylesheet" href="public/css/bootstrap.css">
-    <link rel="stylesheet" href="public/css/main.css">
+    <title>Login</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" href="<?php echo base_url('public/assets2/img/favicon.png'); ?>">
+    <link href="public/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="public/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="public/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="public/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="public/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="public/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="public/assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <!-- Start Header Area -->
-    <?php echo $this->include('user/templates/header'); ?>
-    
-    <!-- End Header Area -->
-
-    <!-- Start Banner Area -->
-    <section class="banner-area organic-breadcrumb">
+    <main style="background-image: url('public/assets2/img/registration.jpg'); background-repeat:no-repeat; background-size:cover">
         <div class="container">
-            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
-                <div class="col-first">
-                    <h1>Login/Register</h1>
-                    <nav class="d-flex align-items-center">
-                        <a href="index">Home<span class="lnr lnr-arrow-right"></span></a>
-                        <a href="category">Login/Register</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Banner Area -->
 
-    <!--================Login Box Area =================-->
-    <section class="login_box_area section_gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="login_box_img">
-                        <img class="img-fluid" src="public/img/login.jpg" alt="">
-                        <div class="hover">
-                            <h4>New to our website?</h4>
-                            <p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-                            <a class="primary-btn" href="registration">Create an Account</a>
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                            <div class="d-flex justify-content-center py-4">
+
+                                <a href="<?= base_url('index'); ?>">
+                                    <h1><span style="color: orange;" class="d-none d-lg-block">Kisan Seva</span></h1>
+                                </a>
+
+                            </div><!-- End Logo -->
+
+                            <div style="background: rgba(255, 255, 255, .6)" class="card mb-3">
+
+                                <div class="card-body">
+
+                                    <div class="pt-4 pb-2">
+                                        <h5 class="card-title text-center pb-0 fs-4">Login</h5>
+                                    </div>
+                                    <?php
+                                    if (isset($validation)) {
+                                        echo $validation->listErrors();
+                                    }
+                                    ?>
+                                    <?php if (!empty(session()->getFlashdata('fail'))) : ?>
+                                        <div class="alert alert-danger"><?= session()->getFlashdata('fail'); ?></div>
+                                    <?php endif ?>
+                                    <form class="row login_form" action="login" method="post" id="contactForm" novalidate>
+                                        <?= csrf_field() ?>
+                                        <div class="col-12">
+                                            <label for="yourContact" class="form-label">Contact No.</label>
+                                            <div class="input-group has-validation">
+                                                <input type="tel" name="contact" class="form-control" id="yourUsername" required>
+                                                <div class="invalid-feedback">Please Enter Contact No.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourPassword" class="form-label">Password</label>
+                                            <input type="password" name="password" class="form-control" id="yourPassword" required>
+                                            <div class="invalid-feedback">Please enter your password!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100" type="submit">Login</button>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="small mb-0">Doesn't have account? <a href="registration">Sign Up</a></p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <!-- 
+                            <div class="credits">
+                                <h4 style="color: black; font-style:italic; font-weight:1000;">Designed by MangoTheGangster</h4>
+                            </div> -->
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="login_form_inner">
-                        <h3>Log in to enter</h3>
-                        <?php
-                        if (isset($validation)) {
-                            echo $validation->listErrors();
-                        }
-                        ?>
-                        <?php if (!empty(session()->getFlashdata('fail'))) : ?>
-                            <div class="alert alert-danger"><?= session()->getFlashdata('fail'); ?></div>
-                        <?php endif ?>
-                        <form class="row login_form" action="login" method="post" id="contactForm" novalidate>
-                            <?= csrf_field() ?>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="uname" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" value="<?php echo set_value('username'); ?>" required>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="password" class="form-control" id="upassword" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <div class="creat_account">
-                                    <!-- <input type="checkbox" id="f-option2" name="selector"> -->
-                                    <!-- <label for="f-option2">Keep me logged in</label> -->
-                                </div>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <button type="submit" value="submit" class="primary-btn">Log In</button>
-                                <!-- <a href="#">Forgot Password?</a> -->
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+
+            </section>
+
         </div>
-    </section>
-    <!--================End Login Box Area =================-->
+    </main><!-- End #main -->
 
-    <!-- start footer Area -->
-    <?php echo $this->include('user/templates/footer'); ?>
-    <!-- End footer Area -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+    <!-- Vendor JS Files -->
+    <script src="public/assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/assets/vendor/chart.js/chart.min.js"></script>
+    <script src="public/assets/vendor/echarts/echarts.min.js"></script>
+    <script src="public/assets/vendor/quill/quill.min.js"></script>
+    <script src="public/assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="public/assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="public/assets/vendor/php-email-form/validate.js"></script>
 
-    <script src="public/js/vendor/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="public/js/vendor/bootstrap.min.js"></script>
-    <script src="public/js/jquery.ajaxchimp.min.js"></script>
-    <script src="public/js/jquery.nice-select.min.js"></script>
-    <script src="public/js/jquery.sticky.js"></script>
-    <script src="public/js/nouislider.min.js"></script>
-    <script src="public/js/jquery.magnific-popup.min.js"></script>
-    <script src="public/js/owl.carousel.min.js"></script>
-    <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="public/js/gmaps.min.js"></script>
-    <script src="public/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="public/assets/js/main.js"></script>
+
 </body>
 
 </html>
