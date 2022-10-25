@@ -1,0 +1,153 @@
+CRITICAL - 2022-10-15 00:14:51 --> Undefined array key "main"
+in APPPATH\Controllers\Weather.php on line 22.
+ 1 APPPATH\Controllers\Weather.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "main"', 'APPPATH\\Controllers\\Weather.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Weather->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Weather))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 00:33:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Weather.php on line 22.
+ 1 APPPATH\Controllers\Weather.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Weather.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Weather->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Weather))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 00:39:39 --> Undefined array key "main"
+in APPPATH\Controllers\Weather.php on line 23.
+ 1 APPPATH\Controllers\Weather.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "main"', 'APPPATH\\Controllers\\Weather.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Weather->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Weather))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:15:58 --> Class "App\Models\ChatModel" not found
+in APPPATH\Controllers\Chat.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:24:53 --> Array to string conversion
+in APPPATH\Controllers\Chat.php on line 21.
+ 1 APPPATH\Controllers\Chat.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Chat.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:42:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Chat.php on line 21.
+ 1 APPPATH\Controllers\Chat.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Chat.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:43:21 --> Array to string conversion
+in APPPATH\Controllers\Chat.php on line 21.
+ 1 APPPATH\Controllers\Chat.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Chat.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:43:52 --> Undefined array key 0
+in APPPATH\Controllers\Chat.php on line 21.
+ 1 APPPATH\Controllers\Chat.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Chat.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:43:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Chat.php on line 21.
+ 1 APPPATH\Controllers\Chat.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Chat.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:44:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Chat.php on line 21.
+ 1 APPPATH\Controllers\Chat.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Chat.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:47:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Chat.php on line 22.
+ 1 APPPATH\Controllers\Chat.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Chat.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:49:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Chat.php on line 22.
+ 1 APPPATH\Controllers\Chat.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Chat.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:50:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Chat.php on line 21.
+ 1 APPPATH\Controllers\Chat.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Chat.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 04:51:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Chat.php on line 21.
+ 1 APPPATH\Controllers\Chat.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Chat.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 05:19:14 --> Undefined property: App\Controllers\Chat::$input
+in APPPATH\Controllers\Chat.php on line 20.
+ 1 APPPATH\Controllers\Chat.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Chat::$input', 'APPPATH\\Controllers\\Chat.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 05:19:14 --> Undefined property: App\Controllers\Chat::$input
+in APPPATH\Controllers\Chat.php on line 20.
+ 1 APPPATH\Controllers\Chat.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Chat::$input', 'APPPATH\\Controllers\\Chat.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 05:21:15 --> Undefined property: App\Controllers\Chat::$input
+in APPPATH\Controllers\Chat.php on line 20.
+ 1 APPPATH\Controllers\Chat.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Chat::$input', 'APPPATH\\Controllers\\Chat.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 05:21:15 --> Undefined property: App\Controllers\Chat::$input
+in APPPATH\Controllers\Chat.php on line 20.
+ 1 APPPATH\Controllers\Chat.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Chat::$input', 'APPPATH\\Controllers\\Chat.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 05:29:18 --> Unknown database 'chatbot'
+in APPPATH\Controllers\Chat.php on line 19.
+ 1 APPPATH\Controllers\Chat.php(19): mysqli_connect('localhost', 'rootuser', 'root', 'chatbot')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 05:30:33 --> Unknown column 'replies' in 'field list'
+in APPPATH\Controllers\Chat.php on line 24.
+ 1 APPPATH\Controllers\Chat.php(24): mysqli_query(Object(mysqli), 'SELECT replies FROM chatbot WHERE queries LIKE \'%Hello%\'')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->chat()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 05:43:36 --> Undefined array key "text"
+in APPPATH\Controllers\Chat.php on line 15.
+ 1 APPPATH\Controllers\Chat.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "text"', 'APPPATH\\Controllers\\Chat.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 05:43:47 --> Undefined array key "text"
+in APPPATH\Controllers\Chat.php on line 15.
+ 1 APPPATH\Controllers\Chat.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "text"', 'APPPATH\\Controllers\\Chat.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Chat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

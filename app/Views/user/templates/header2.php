@@ -38,15 +38,32 @@
                             <ul>
 
                                 <li><a href="<?= base_url('#about'); ?>">About</a></li>
-                                <li><a href="<?= base_url('weather'); ?>">Weather</a></li>
-                                <li><a href="#">Store</a></li>
-                                <li><a href="#">News</a></li>
+                                <li class="nav-item">
+                                    <?php if (session('login') == true) : ?>
+                                        <a class="nav-link" href="<?= base_url('weather'); ?>">Weather</a>
+                                    <?php else : ?>
+                                        <a style="color: grey;" class="nav-link" href="<?= base_url('#'); ?>">Weather</a>
+                                    <?php endif; ?>
+                                </li>
+                                <li><a href="<?= base_url('shop'); ?>">Store</a></li>
+                                <li><a href="<?= base_url('news'); ?>">News</a></li>
+                                <!-- <li><a href="">Chat Bot</a></li> -->
                                 <li><a href="<?= base_url('#contact'); ?>">Contact</a></li>
-                                <li><a href="<?= base_url('login'); ?>">Login</a></li>
-                                <li><a href="<?= base_url('registration'); ?>">Sign Up</a></li>
+                                <li class="nav-item">
+                                    <?php if (session('login') == true) : ?>
+                                        <a class="nav-link" href="<?= base_url('userlogout'); ?>">Log Out</a>
+                                    <?php else : ?>
+                                        <a class="nav-link" href="<?= base_url('login'); ?>">Login</a>
+                                    <?php endif; ?>
+                                </li>
+                                <li class="nav-item">
+                                    <?php if (session('login') != true) : ?>
+                                        <a class="nav-link" href="<?= base_url('registration'); ?>">Sign Up</a>
+                                    <?php endif; ?>
+                                </li>
                                 <li>
                                     <div class="header-icons">
-                                        <a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                                        <a class="shopping-cart" href="#"><i class="fas fa-shopping-cart"></i></a>
                                     </div>
                                 </li>
                             </ul>

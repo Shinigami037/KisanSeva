@@ -54,7 +54,7 @@ $routes->get('/weather', 'Weather::index');
 
 // $routes->get('/contact', 'Contact::contact');
 
-// $routes->get('/userlogout', 'UserLogout::logout');
+$routes->get('/userlogout', 'UserLogout::logout');
 
 // $routes->get('/userprofile', 'Profile::profile');
 // $routes->post('/profileupdate', 'Profile::update');
@@ -78,7 +78,11 @@ $routes->post('/product-delete', 'Cart::productDelete');
 // routes post method ends here
 // routes for user ends here
 
+$routes->get('/news', 'News::index');
 
+$routes->get('/chat', 'Chat::index');
+$routes->get('/shop', 'Product::index');
+$routes->post('/chat', 'Chat::chat');
 
 // routes for admin start here
 //Get routes for admin start here
@@ -88,6 +92,7 @@ $routes->get('/profile', 'Admin::profile');
 //Get routes for admin ends here
 //Post routes for admin start here
 $routes->post('/adminlogin', 'Admin::start');
+
 //Post routes for admin end here
 //Get routes for AdminCategory start here
 $routes->get('/addmaincategory', 'AdminCategory::mcategory');

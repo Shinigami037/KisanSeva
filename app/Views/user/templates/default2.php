@@ -55,7 +55,11 @@
 
     <!-- Template Main CSS File -->
     <link href="<?php echo base_url('public/assets/css/style.css'); ?>" rel="stylesheet">
-
+    <!-- chat bot -->
+    <link rel="stylesheet" href="<?php echo base_url('public/chatbot/style2.css'); ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- end chat bot -->
 </head>
 
 <body>
@@ -77,6 +81,9 @@
     <?php echo $this->include('user/templates/footer2'); ?>
     <!-- End footer Area -->
     <!-- jquery -->
+    <!--  -->
+    <script src="//code.tidio.co/3byzivwn825efnhferelmwbiwhzk93cz.js"  async></script>
+    <!--  -->
     <script src="<?php echo base_url('public/assets2/js/jquery-1.11.3.min.js'); ?>"></script>
     <!-- bootstrap -->
     <script src="<?php echo base_url('public/assets2/bootstrap/js/bootstrap.min.js'); ?>"></script>
@@ -115,6 +122,7 @@
     <script src="<?php echo base_url('public/assets3/js/plugins.js'); ?>"></script>
     <script src="<?php echo base_url('public/assets3/js/app.js'); ?>"></script>
     <!--  -->
+
 
 </body>
 
